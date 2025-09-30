@@ -43,11 +43,17 @@
             margin-top: 10px; 
             font-size: 0.9em;
             line-height: 1.4;
+            /* Einheitlichkeit erzwingen: Text auf 3 Zeilen begrenzen und abschneiden */
+            display: -webkit-box;
+            -webkit-line-clamp: 3; 
+            -webkit-box-orient: vertical;
+            overflow: hidden; 
+            text-overflow: ellipsis; 
         }
     </style>
 </head>
 <body>
-    <h1>Meine Filmsammlung (299 Filme)</h1>
+    <h1>Meine Filmsammlung (298 Filme)</h1>
 
     <div class="film-container">
         <img src="posters/poster_2_Guns_2013.jpg" alt="Poster für 2 Guns" class="poster">
@@ -834,7 +840,7 @@
         <div class="details">
             <h2>Dinner for One - Farbe (1999)</h2>
             <p class="genre">Genre: Kurzfilm, Komödie</p>
-            <p class="rating">Bewertung: ⭐ 8/10</p>
+            <p class="rating">Bewertung: ⭐ 6.7/10</p>
             <p class="plot">Bei Miss Sophies Abendessen zu ihrem 90. Geburtstag muss ihr Butler James für ihre vier verstorbenen Freunde einspringen - und dazu gehören jede Menge Drinks vor jedem Gang.</p>
         </div>
     </div>
@@ -1215,7 +1221,7 @@
             <h2>I Am Mother (2019)</h2>
             <p class="genre">Genre: Thriller, Sci-Fi</p>
             <p class="rating">Bewertung: ⭐ 6.7/10</p>
-            <p class="plot">Nach einer schweren Umweltkatastrophe wird ein automatisierter Bunker, der die Menschheit wiederbevölkern soll, aktiv. Ein Roboter namens "Mutter" züchtet mehrere Jahre lang einen menschlichen Embryo. Jahre später repariert und unterstützt der so herangewachsene Teenager namens "Tochter" ihre Mutter, die sie in komplexen moralischen und ethischen Lektionen unterrichtet und sie vor einer bevorstehenden Prüfung warnt.</p>
+            <p class="plot">Nach einer schweren Umweltkatastrophe wird ein automatisierter Bunker, der die Menschheit wiederbevölkern soll, aktiv. Ein Roboter namens Mutter züchtet mehrere Jahre lang einen menschlichen Embryo. Jahre später repariert und unterstützt der so herangewachsene Teenager namens Tochter ihre Mutter, die sie in komplexen moralischen und ethischen Lektionen unterrichtet und sie vor einer bevorstehenden Prüfung warnt.</p>
         </div>
     </div>
 
@@ -1555,7 +1561,7 @@
             <h2>Kung Fu Hustle (2004)</h2>
             <p class="genre">Genre: Action, Komödie</p>
             <p class="rating">Bewertung: ⭐ 7/10</p>
-            <p class="plot">Im Shanghai der 40er Jahre träumt der Möchtegern-Gangster Sing davon, Mitglied der berüchtigten "Axe"-Gang zu werden. Doch dafür muss er zuerst seine Kampfkünste unter Beweis stellen. Zu diesem Zweck soll er die augenscheinlich schwächlichen Besitzer eines heruntergekommenen Häuserblocks einschüchtern. Doch der Schein trügt, denn sowohl das Besitzer-Ehepaar als auch die übrigen Slum-Bewohner verfügen über außergewöhnliche Kung-Fu-Fähigkeiten. Unweigerlich kommt es zur großen Kung-Fu-Schlacht.</p>
+            <p class="plot">Im Shanghai der 40er Jahre träumt der Möchtegern-Gangster Sing davon, Mitglied der berüchtigten Axe-Gang zu werden. Doch dafür muss er zuerst seine Kampfkünste unter Beweis stellen. Zu diesem Zweck soll er die augenscheinlich schwächlichen Besitzer eines heruntergekommenen Häuserblocks einschüchtern. Doch der Schein trügt, denn sowohl das Besitzer-Ehepaar als auch die übrigen Slum-Bewohner verfügen über außergewöhnliche Kung-Fu-Fähigkeiten. Unweigerlich kommt es zur großen Kung-Fu-Schlacht.</p>
         </div>
     </div>
 
@@ -1679,7 +1685,6 @@
         </div>
     </div>
 
-
     <div class="film-container">
         <img src="posters/poster_Marlowe_2022.jpg" alt="Poster für Marlowe" class="poster">
         <div class="details">
@@ -1726,7 +1731,7 @@
             <h2>Men in Black III (2012)</h2>
             <p class="genre">Genre: Action, Sci-Fi</p>
             <p class="rating">Bewertung: ⭐ 6.8/10</p>
-            <p class="plot">Agent J und Agent K haben sich in ihrem Alltag bestens arrangiert. Als der hochgefährliche "Boris die Bestie" jedoch aus dem Alien-Hochsicherheitsgefängnis auf dem Mond ausbricht und auf die Erde flieht, gerät Ks Leben und die Erde in Gefahr. Er ist nämlich für Boris' Verhaftung verantwortlich. Um Ks Leben und die Erde zu retten, reist J durch die Zeit zurück ins Jahr 1969, wo er auf den jungen K trifft. Dort bleiben ihm nur 24 Stunden Zeit, ansonsten ist die Erde dem Untergang geweiht.</p>
+            <p class="plot">Agent J und Agent K haben sich in ihrem Alltag bestens arrangiert. Als der hochgefährliche Boris die Bestie jedoch aus dem Alien-Hochsicherheitsgefängnis auf dem Mond ausbricht und auf die Erde flieht, gerät Ks Leben und die Erde in Gefahr. Er ist nämlich für Boris' Verhaftung verantwortlich. Um Ks Leben und die Erde zu retten, reist J durch die Zeit zurück ins Jahr 1969, wo er auf den jungen K trifft. Dort bleiben ihm nur 24 Stunden Zeit, ansonsten ist die Erde dem Untergang geweiht.</p>
         </div>
     </div>
 
@@ -1892,7 +1897,6 @@
 
     <div class="film-container">
         <img src="posters/poster_Ohne_Limit_2000.jpg" alt="Poster für Ohne Limit" class="poster">
-        <div class="details">
         <div class="details">
             <h2>Ohne Limit (2011)</h2>
             <p class="genre">Genre: Thriller, Sci-Fi</p>
@@ -2307,7 +2311,7 @@
             <h2>The 6th Day (2000)</h2>
             <p class="genre">Genre: Action, Sci-Fi</p>
             <p class="rating">Bewertung: ⭐ 5.9/10</p>
-            <p class="plot">Adam Gibson ist ein Hubschrauberpilot, der gemeinsam mit seinem Freund Hank Morgan ein kleines Charterunternehmen führt. Er bekommt einen Auftrag vom Unternehmer Michael Drucker, der ein Unternehmen für das Klonen von Haustieren führt. Unter dem Vorwand, dass die Versicherung entsprechende Tests verlange, werden von Gibson und Morgan DNS-Proben entnommen sowie "Sehtests" durchgeführt.</p>
+            <p class="plot">Adam Gibson ist ein Hubschrauberpilot, der gemeinsam mit seinem Freund Hank Morgan ein kleines Charterunternehmen führt. Er bekommt einen Auftrag vom Unternehmer Michael Drucker, der ein Unternehmen für das Klonen von Haustieren führt. Unter dem Vorwand, dass die Versicherung entsprechende Tests verlange, werden von Gibson und Morgan DNS-Proben entnommen sowie Sehtests durchgeführt.</p>
         </div>
     </div>
 
@@ -2427,7 +2431,7 @@
             <h2>The Imitation Game – Ein streng geheimes Leben (2014)</h2>
             <p class="genre">Genre: Thriller, Krieg</p>
             <p class="rating">Bewertung: ⭐ 8/10</p>
-            <p class="plot">Der britische Geheimdienst engagiert im Zweiten Weltkrieg den Mathematiker Alan Turing für eine heikle Mission: Er soll mit seinem Team den Enigma-Geheimcode der deutschen Wehrmacht entschlüsseln. Mit seiner komplexen Entschlüsselungsmaschine gelingt dem Genie der Durchbruch. Turing wird zum gefeierten Star. Doch auch er hat ein Geheimnis, das nicht in die falschen Ohren gelangen darf: Er ist homosexuell. 1952 wird dem ehemaligen Helden dieses "Vergehen" zum Verhängnis.</p>
+            <p class="plot">Der britische Geheimdienst engagiert im Zweiten Weltkrieg den Mathematiker Alan Turing für eine heikle Mission: Er soll mit seinem Team den Enigma-Geheimcode der deutschen Wehrmacht entschlüsseln. Mit seiner komplexen Entschlüsselungsmaschine gelingt dem Genie der Durchbruch. Turing wird zum gefeierten Star. Doch auch er hat ein Geheimnis, das nicht in die falschen Ohren gelangen darf: Er ist homosexuell. 1952 wird dem ehemaligen Helden dieses Vergehen zum Verhängnis.</p>
         </div>
     </div>
 
@@ -2897,7 +2901,7 @@
             <h2>War Inc (2008)</h2>
             <p class="genre">Genre: Action, Komödie, Thriller</p>
             <p class="rating">Bewertung: ⭐ 5.5/10</p>
-            <p class="plot">Der Killer Brand Hauser bekommt den Auftrag den Öl-Minister Omar Sharif aus dem Mittleren Osten zu töten, damit der dem amerikanischen Konzern "Tamerlane" keine Schwierigkeiten mehr bereiten kann. Als Tarnung gibt Hauser vor, die Gala-Hochzeit des Popstars Yonica Babyyeah zu organisieren. Doch dann kommt ihm die neugierige Reporterin Natalie in die Quere und versucht die Wahrheit aufzudecken. Das Chaos bricht aus.</p>
+            <p class="plot">Der Killer Brand Hauser bekommt den Auftrag den Öl-Minister Omar Sharif aus dem Mittleren Osten zu töten, damit der dem amerikanischen Konzern Tamerlane keine Schwierigkeiten mehr bereiten kann. Als Tarnung gibt Hauser vor, die Gala-Hochzeit des Popstars Yonica Babyyeah zu organisieren. Doch dann kommt ihm die neugierige Reporterin Natalie in die Quere und versucht die Wahrheit aufzudecken. Das Chaos bricht aus.</p>
         </div>
     </div>
 
