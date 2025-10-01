@@ -8,42 +8,40 @@
         body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
         h1 { color: #a30000; border-bottom: 2px solid #a30000; padding-bottom: 10px; }
         
-        /* Film-Container ist jetzt ein Block-Element ohne Flex */
         .film-container {
             background-color: #fff;
             margin-bottom: 20px;
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* display: flex entfernt, um Poster zentrieren zu können */
+            /* Links-rechts Layout wiederherstellen */
+            display: flex;
+            align-items: flex-start;
         }
         
-        /* Wrapper zentrieren und feste Größe setzen */
+        /* Wrapper für Klickbarkeit und Abstand */
         .poster-wrapper { 
             width: 100px; 
             height: 150px; 
-            margin: 0 auto 15px auto; /* Zentrieren und Abstand nach unten */
+            margin-right: 20px; /* Abstand zu den Details */
             cursor: pointer; 
             display: block;
+            flex-shrink: 0; /* Verhindert, dass der Wrapper schrumpft */
         }
         
-        /* Poster-Bild: 100% des Wrappers */
+        /* Poster-Bild: Korrigiertes CSS für Seitenverhältnis */
         .poster {
             width: 100%; 
             height: 100%; 
             border-radius: 4px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            object-fit: cover; 
+            object-fit: cover; /* Stellt sicher, dass das Bild den Rahmen ausfüllt */
             background-color: #eee;
         }
         
-        /* Details-Bereich, um Texte zu zentrieren, wenn das Poster zentriert ist */
-        .details { text-align: center; } 
+        /* Details-Bereich füllt den Rest des Containers */
+        .details { flex-grow: 1; } 
         .details h2 { margin-top: 0; margin-bottom: 5px; color: #333; font-size: 1.8em; }
-        /* Plot soll linksbündig bleiben, daher Ausrichtung überschreiben */
-        .details .plot, .details .genre, .details .rating { text-align: left; } 
-        
-        /* --- Detail-Styles (wie zuvor) --- */
         .details .genre { 
             font-size: 1.5em; 
             color: #666; 
