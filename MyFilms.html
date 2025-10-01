@@ -17,18 +17,21 @@
             display: flex;
             align-items: flex-start;
         }
+        /* *** KORRIGIERT: Feste Größe für den Wrapper beibehalten *** */
         .poster-wrapper { 
             width: 100px; 
             height: 150px; 
             margin-right: 20px;
-            cursor: pointer; /* Zeigt an, dass das Bild anklickbar ist */
+            cursor: pointer; 
+            display: block;
         }
+        /* *** KORRIGIERT: Bildbreite/Höhe auf 100% setzen + object-fit *** */
         .poster {
             width: 100%; 
             height: 100%; 
             border-radius: 4px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            object-fit: cover; 
+            object-fit: cover; /* Stellt sicher, dass das Bild den Rahmen ausfüllt */
             background-color: #eee;
         }
         .details { flex-grow: 1; }
@@ -54,27 +57,26 @@
 
         /* --- Modal (Lightbox) Styles --- */
         .modal {
-            display: none; /* Standardmäßig versteckt */
+            display: none; 
             position: fixed; 
-            z-index: 1000; /* Ganz vorne */
-            padding-top: 50px; /* Position des Bildes (oben) */
+            z-index: 1000; 
+            padding-top: 50px; 
             left: 0;
             top: 0;
             width: 100%; 
             height: 100%; 
-            overflow: auto; /* Aktiviert Scrollen, falls nötig */
-            background-color: rgb(0,0,0); /* Fallback Farbe */
-            background-color: rgba(0,0,0,0.9); /* Schwarz mit Transparenz */
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.9); 
         }
 
         /* Modal-Inhalt (Bild) */
         .modal-content {
             margin: auto;
             display: block;
-            width: 80%;
-            max-width: 700px;
-            max-height: 90vh; /* Maximale Höhe des Viewports */
-            object-fit: contain; /* Stellt sicher, dass das gesamte Bild sichtbar ist */
+            width: 90%; /* Etwas breiter als 80% */
+            max-width: 900px; /* Max. Breite für große Bildschirme */
+            max-height: 90vh; 
+            object-fit: contain; 
         }
 
         /* Der Schließen-Button */
@@ -5741,10 +5743,7 @@
     </div>
 
     <script>
-        // Holen Sie sich das Modal-Element
         var modal = document.getElementById('imageModal');
-
-        // Holen Sie sich das Bild-Element im Modal
         var modalImg = document.getElementById("img01");
 
         // Funktion zum Öffnen des Modals
@@ -5755,12 +5754,10 @@
 
         // Funktion zum Schließen des Modals
         function closeModal(event) {
-            // Verhindert das Schließen, wenn direkt auf das Bild im Modal geklickt wird
-            if (event && event.target === modalImg) {
-                return; 
+            // Schließt nur, wenn auf den Hintergrund (modal) oder den Schließen-Button (span.close) geklickt wird
+            if (event.target === modal || event.target.className === 'close') {
+                modal.style.display = "none";
             }
-            // Schließt das Modal, wenn auf den Schließen-Button oder den Hintergrund geklickt wird
-            modal.style.display = "none";
         }
     </script>
 
