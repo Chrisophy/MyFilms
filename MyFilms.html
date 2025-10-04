@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Meine Filmsammlung (Scraping-Ergebnis)</title>
     <style>
-        /* ... (CSS unverändert) ... */
         html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
         body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
         h1 { color: #a30000; border-bottom: 2px solid #a30000; padding-bottom: 10px; }
@@ -59,7 +58,7 @@
     </style>
 </head>
 <body>
-    <h1>Meine Filmsammlung (296 Filme)</h1>
+    <h1>Meine Filmsammlung (314 Filme)</h1>
     
     <div class="controls">
         <div class="control-group">
@@ -79,6 +78,7 @@
 <option value="Animation">Animation</option>
 <option value="Biografie">Biografie</option>
 <option value="Drama">Drama</option>
+<option value="Familie">Familie</option>
 <option value="Familienfilm">Familienfilm</option>
 <option value="Fantasy">Fantasy</option>
 <option value="Geschichte">Geschichte</option>
@@ -95,6 +95,7 @@
 <option value="Roadmovie">Roadmovie</option>
 <option value="Romanze">Romanze</option>
 <option value="Sci-Fi">Sci-Fi</option>
+<option value="Science Fiction">Science Fiction</option>
 <option value="Science-Fiction">Science-Fiction</option>
 <option value="Sportfilm">Sportfilm</option>
 <option value="Talkshow">Talkshow</option>
@@ -153,14 +154,17 @@
 <option value="1979">1979</option>
 <option value="1978">1978</option>
 <option value="1977">1977</option>
+<option value="1976">1976</option>
 <option value="1974">1974</option>
 <option value="1973">1973</option>
 <option value="1972">1972</option>
+<option value="1970">1970</option>
 <option value="1968">1968</option>
 <option value="1966">1966</option>
 <option value="1965">1965</option>
 <option value="1964">1964</option>
 <option value="1963">1963</option>
+<option value="1962">1962</option>
 <option value="1959">1959</option>
 <option value="1957">1957</option>
 <option value="1956">1956</option>
@@ -1108,6 +1112,32 @@
 
     <div 
         class="film-container" 
+        data-title="code 7500"
+        data-year="2019"
+        data-genre="thriller"
+        data-cast="joseph gordon-levitt, omid memar, aylin tezel, carlo kitzlinger, murathan muslu"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Code_7500_2019.jpg" 
+                alt="Poster für Code 7500" 
+                class="poster" 
+                onclick="openModal('posters/poster_Code_7500_2019.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Code 7500 (2019)</h2>
+            <p class="genre">Genre: Thriller</p>
+            <p class="cast">Darsteller: Joseph Gordon-Levitt, Omid Memar, Aylin Tezel, Carlo Kitzlinger, Murathan Muslu</p>
+            <p class="rating">Bewertung: ⭐ 6.1/10</p>
+            <p class="plot">Ein Flug von Berlin nach Paris. Alltägliche Arbeiten im Cockpit eines Airbus A319. Co-Pilot Tobias Ellis bereitet routiniert den Abflug der Maschine vor. Der Start verläuft wie immer reibungslos. Doch dann hört man Geschrei in der Kabine. Eine Gruppe junger Männer, unter ihnen der achtzehnjährige Vedat, versuchen ins Cockpit einzudringen. Es beginnt ein Kampf zwischen Besatzung und Angreifern, eine Zerreißprobe zwischen dem Wunsch, einzelne Leben zu retten und noch größeren Schaden abzuwenden. Die Cockpittür wird zum Kampfgebiet und Tobias gerät in die Position, über Leben und Tod entscheiden zu müssen ...</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="code 8"
         data-year="2019"
         data-genre="action, krimi, drama"
@@ -1472,6 +1502,32 @@
 
     <div 
         class="film-container" 
+        data-title="der adler ist gelandet"
+        data-year="1976"
+        data-genre="abenteuer, drama, action, thriller, kriegsfilm"
+        data-cast="michael caine, donald sutherland, robert duvall, jenny agutter, donald pleasence"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Der_Adler_ist_gelandet_1976.jpg" 
+                alt="Poster für Der Adler ist gelandet" 
+                class="poster" 
+                onclick="openModal('posters/poster_Der_Adler_ist_gelandet_1976.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Der Adler ist gelandet (1976)</h2>
+            <p class="genre">Genre: Abenteuer, Drama, Action, Thriller, Kriegsfilm</p>
+            <p class="cast">Darsteller: Michael Caine, Donald Sutherland, Robert Duvall, Jenny Agutter, Donald Pleasence</p>
+            <p class="rating">Bewertung: ⭐ 6.6/10</p>
+            <p class="plot">Britischer Kriegsfilm von John Sturges nach einem Roman von Jack Higgins, der während des Zweiten Weltkriegs angesiedelt ist: Nach der verlorenen Schlacht von Stalingrad rücken die Alliierten immer weiter vor und Hitler bekommt die Idee, Churchill zu entführen, um so ein Druckmittel zu haben. Die Spione landen im Süden Englands und versuchen, an Informationen zu kommen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="der fantastische mr. fox"
         data-year="2009"
         data-genre="animation, abenteuer, komödie"
@@ -1831,6 +1887,32 @@
             <p class="cast">Darsteller: William Holden, Alec Guinness, Jack Hawkins, Sessue Hayakawa, James Donald</p>
             <p class="rating">Bewertung: ⭐ 8.1/10</p>
             <p class="plot">Nachdem er seine Differenzen mit einem japanischen Kommandeur eines Kriegsgefangenenlagers aus dem Weg geräumt hat, beaufsichtigt ein britischer Oberstleutnant seine Männer beim Bau einer Eisenbahnbrücke und kooperiert mit dem Feind. Scheinbar, denn die Alliierten planen sie zu zerstören.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="die eiserne maske"
+        data-year="1962"
+        data-genre="abenteuer"
+        data-cast="jean marais, sylva koscina, jean-françois poron, gisèle pascal, philippe lemaire"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Die_eiserne_Maske_1962.jpg" 
+                alt="Poster für Die eiserne Maske" 
+                class="poster" 
+                onclick="openModal('posters/poster_Die_eiserne_Maske_1962.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Die eiserne Maske (1962)</h2>
+            <p class="genre">Genre: Abenteuer</p>
+            <p class="cast">Darsteller: Jean Marais, Sylva Koscina, Jean-François Poron, Gisèle Pascal, Philippe Lemaire</p>
+            <p class="rating">Bewertung: ⭐ 5.8/10</p>
+            <p class="plot">D'Artagnan, der berühmte Hauptmann der Musketiere Ludwigs XIV., ist dem Zwillingsbruder des Königs auf den Fersen, der aus der Verbannung geflohen ist und zeitweilig den Thron bestiegen hat.</p>
         </div>
     </div>
 
@@ -2460,6 +2542,32 @@
 
     <div 
         class="film-container" 
+        data-title="eine fliege kommt selten allein"
+        data-year="2020"
+        data-genre="komödie, fantasy"
+        data-cast="grégoire ludig, david marsais, adèle exarchopoulos, india hair, bruno lochet"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Eine_Fliege_kommt_selten_allein_2020.jpg" 
+                alt="Poster für Eine Fliege kommt selten allein" 
+                class="poster" 
+                onclick="openModal('posters/poster_Eine_Fliege_kommt_selten_allein_2020.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Eine Fliege kommt selten allein (2020)</h2>
+            <p class="genre">Genre: Komödie, Fantasy</p>
+            <p class="cast">Darsteller: Grégoire Ludig, David Marsais, Adèle Exarchopoulos, India Hair, Bruno Lochet</p>
+            <p class="rating">Bewertung: ⭐ 6.3/10</p>
+            <p class="plot">BSS BSS BSS tönt es aus dem Kofferraum jenes alten Mercedes, den die Einfaltspinsel Manu und Jean-Gab geklaut haben, um eine Aktentasche von A nach B zu transportieren. Verursacherin des Geräuschs ist eine Fliege in der Größe eines Terriers, die so laut schnarcht, dass Manu lieber im Freien übernachtet. Die Freunde beschließen, das Insekt zu trainieren, um damit richtig viel Geld zu verdienen. Die verrücktesten Zufälle, Orte, Hündchen und Menschen kreuzen dabei ihren steinigen Weg zum Erfolg. Gewohnt superschräge Komödie von Frankreichs Kultregisseur Quentin Dupieux.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="eine frage der ehre"
         data-year="1992"
         data-genre="drama, thriller"
@@ -2715,6 +2823,32 @@
             <p class="cast">Darsteller: Nelly Frijda, Huub Stapel, René van 't Hof, Tatjana Simic, Horace Cohen</p>
             <p class="rating">Bewertung: ⭐ 6.6/10</p>
             <p class="plot">Eine eher asoziale Familie, bekommt die Chance, in einem bürgerlichen Viertel zu leben. Da sie von den dort lebenden Snobs nicht akzeptiert werden, geraten sie in alle möglichen Schwierigkeiten.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="freaks - sie sehen aus wie wir"
+        data-year="2018"
+        data-genre="science fiction, thriller"
+        data-cast="emile hirsch, bruce dern, grace park, amanda crew, lexy kolker"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Freaks_-_Sie_sehen_aus_wie_wir_2018.jpg" 
+                alt="Poster für Freaks - Sie sehen aus wie wir" 
+                class="poster" 
+                onclick="openModal('posters/poster_Freaks_-_Sie_sehen_aus_wie_wir_2018.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Freaks - Sie sehen aus wie wir (2018)</h2>
+            <p class="genre">Genre: Science Fiction, Thriller</p>
+            <p class="cast">Darsteller: Emile Hirsch, Bruce Dern, Grace Park, Amanda Crew, Lexy Kolker</p>
+            <p class="rating">Bewertung: ⭐ 6.7/10</p>
+            <p class="plot">„Sie sehen aus wie wir – Bitte melden Sie alles Ungewöhnliche.“ Gesucht werden die FREAKS, denn sie gelten als gefährlich. Währenddessen wird die siebenjährige Chloe von ihrem Vater in einem hermetisch abgeriegelten Haus festgehalten. Als sie in einem unbeobachteten Moment entwischen kann, kommt Chloe nach und nach hinter das Geheimnis der FREAKS. Und bringt damit nicht nur sich in Gefahr.</p>
         </div>
     </div>
 
@@ -3157,6 +3291,32 @@
             <p class="cast">Darsteller: Gerard Butler, Gary Oldman, Common, Linda Cardellini, Ethan Baird</p>
             <p class="rating">Bewertung: ⭐ 6.6/10</p>
             <p class="plot">Der unerfahrene Kapitän eines amerikanischen U-Boots schließt sich mit einer Einheit von US Navy Seals zusammen, um den russischen Präsidenten zu retten, der von einem abtrünnigen General entführt wurde.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="hypnotic"
+        data-year="2023"
+        data-genre="mystery, science fiction, thriller, action, drama"
+        data-cast="ben affleck, alice braga, william fichtner, j. d. pardo, hala finley"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Hypnotic_2023.jpg" 
+                alt="Poster für Hypnotic" 
+                class="poster" 
+                onclick="openModal('posters/poster_Hypnotic_2023.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Hypnotic (2023)</h2>
+            <p class="genre">Genre: Mystery, Science Fiction, Thriller, Action, Drama</p>
+            <p class="cast">Darsteller: Ben Affleck, Alice Braga, William Fichtner, J. D. Pardo, Hala Finley</p>
+            <p class="rating">Bewertung: ⭐ 6.2/10</p>
+            <p class="plot">Der Detective Daniel Rourke wird in ein Geheimnis verwickelt, das mit seiner verschwundenen Tochter und einem geheimen Regierungsprogramm zu tun hat, während er eine Reihe von unmöglichen, hochkarätigen Raubüberfällen untersucht.</p>
         </div>
     </div>
 
@@ -4956,6 +5116,110 @@
 
     <div 
         class="film-container" 
+        data-title="otto - der katastrofenfilm"
+        data-year="2000"
+        data-genre="komödie"
+        data-cast="otto waalkes, eva haßmann, reiner schöne, michael schweighöfer, wotan wilke möhring"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Otto_-_Der_Katastrofenfilm_2000.jpg" 
+                alt="Poster für Otto - Der Katastrofenfilm" 
+                class="poster" 
+                onclick="openModal('posters/poster_Otto_-_Der_Katastrofenfilm_2000.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Otto - Der Katastrofenfilm (2000)</h2>
+            <p class="genre">Genre: Komödie</p>
+            <p class="cast">Darsteller: Otto Waalkes, Eva Haßmann, Reiner Schöne, Michael Schweighöfer, Wotan Wilke Möhring</p>
+            <p class="rating">Bewertung: ⭐ 5.1/10</p>
+            <p class="plot">Aus den unendlichen Tiefebenen Ostfrieslands kommt ein Mann nach Hamburg und klopft ans Tor zur Welt. Trotz umfangreicher Sicherheitsvorkehrungen der zuständigen Katastrofenschutzstellen kann er passieren und nimmt mit einem ahnungslosen Dampfer Kurs auf Amerika, um auch diese Neue Welt zu erobern. Was er hinterläßt ist eine Schneise der Verwüstung, eine Bresche der Verwirrung, eine Milchstraße voll Musik, eine Sackgasse voller Wahnwitze und vielleicht eine Spur zu viel Wortspiele auf Kosten anderer. Doch was das Schlimmste ist: Er hat darüber auch noch einen Film gemacht!</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="otto - der neue film"
+        data-year="1987"
+        data-genre="komödie"
+        data-cast="otto waalkes, anja jaenicke, ute sander, friedrich schoenfelder, dirk dautzenberg"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Otto_-_Der_Neue_Film_1987.jpg" 
+                alt="Poster für Otto - Der Neue Film" 
+                class="poster" 
+                onclick="openModal('posters/poster_Otto_-_Der_Neue_Film_1987.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Otto - Der Neue Film (1987)</h2>
+            <p class="genre">Genre: Komödie</p>
+            <p class="cast">Darsteller: Otto Waalkes, Anja Jaenicke, Ute Sander, Friedrich Schoenfelder, Dirk Dautzenberg</p>
+            <p class="rating">Bewertung: ⭐ 5.7/10</p>
+            <p class="plot">Er ist Ostfrieslands Antwort auf Rambo und steht zwischen zwei Welten, zwei Frauen und zwei Tieren. Während er versucht, einen Hund mit Beißhemmung und eine Katze mit selbstmordabsichten zu heilen, läuft ihm der Traum seiner schlaflosen Nächte über den Weg: Gaby - schön wie eine Elfe, eiskalt wie eine Hundeschnauze. Otti balzt wie ein brünftiger Hirsch, doch Gaby denkt nur an Amboss, den Rabiator - ein echter Kerl mit Muckis aus Stahl und einem Hirn aus Schaumgummi.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="otto – der außerfriesische"
+        data-year="1989"
+        data-genre="komödie, romanze"
+        data-cast="otto waalkes, barbara may, volkmar kleinert, christine neubauer"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Otto_–_Der_Außerfriesische_1989.jpg" 
+                alt="Poster für Otto – Der Außerfriesische" 
+                class="poster" 
+                onclick="openModal('posters/poster_Otto_–_Der_Außerfriesische_1989.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Otto – Der Außerfriesische (1989)</h2>
+            <p class="genre">Genre: Komödie, Romanze</p>
+            <p class="cast">Darsteller: Otto Waalkes, Barbara May, Volkmar Kleinert, Christine Neubauer</p>
+            <p class="rating">Bewertung: ⭐ 5.8/10</p>
+            <p class="plot">Otto ist dazu bestimmt, seine Heimat Ostfriesland zu retten. Doch dazu braucht er die Hilfe seines Zwillingsbruders Benno Gross, der irgendwo in den USA rumturnt. Also heißt es Koffer packen und die geliebte Heimat verlassen, um Benno ausfindig zu machen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="otto – der liebesfilm"
+        data-year="1992"
+        data-genre="romanze, komödie"
+        data-cast="otto waalkes, jessika cardinahl, juraj kukura, peter schiff"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Otto_–_Der_Liebesfilm_1992.jpg" 
+                alt="Poster für Otto – Der Liebesfilm" 
+                class="poster" 
+                onclick="openModal('posters/poster_Otto_–_Der_Liebesfilm_1992.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Otto – Der Liebesfilm (1992)</h2>
+            <p class="genre">Genre: Romanze, Komödie</p>
+            <p class="cast">Darsteller: Otto Waalkes, Jessika Cardinahl, Juraj Kukura, Peter Schiff</p>
+            <p class="rating">Bewertung: ⭐ 5/10</p>
+            <p class="plot">Von Amors Pfeil getroffen, entflammt Straßenmusikant Otto in Liebe zu der schönen Tina. Die hält ihn wegen eines Missgeschicks jedoch für einen Taschendieb. Dafür fährt ihr Hund Seppi auf einmal voll auf Otto ab. Otto gibt nicht auf und baggert, was das Zeug hält. Kaum hat er die Holde für sich gewonnen, drohen Wohnungsnot, Intrigen, ein Liebestrank und eine geschwollene Nase das junge Glück zu zerstören.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="pakt der wölfe"
         data-year="2001"
         data-genre="action, abenteuer, drama"
@@ -5211,6 +5475,32 @@
             <p class="cast">Darsteller: John Cusack, Samuel L. Jackson, Isabelle Fuhrman, Clark Sarullo, Ethan Andrew Casto</p>
             <p class="rating">Bewertung: ⭐ 4.4/10</p>
             <p class="plot">Als ein mysteriöses Mobiltelefonsignal ein apokalyptisches Chaos verursacht, ist ein Künstler entschlossen, seinen kleinen Sohn in New England wiederzufinden.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="push"
+        data-year="2009"
+        data-genre="science fiction, action, abenteuer, thriller"
+        data-cast="chris evans, dakota fanning, camilla belle, djimon hounsou, cliff curtis"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Push_2009.jpg" 
+                alt="Poster für Push" 
+                class="poster" 
+                onclick="openModal('posters/poster_Push_2009.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Push (2009)</h2>
+            <p class="genre">Genre: Science Fiction, Action, Abenteuer, Thriller</p>
+            <p class="cast">Darsteller: Chris Evans, Dakota Fanning, Camilla Belle, Djimon Hounsou, Cliff Curtis</p>
+            <p class="rating">Bewertung: ⭐ 6.1/10</p>
+            <p class="plot">Nick und Cassie haben übernatürliche Fähigkeiten. Nick kann Dinge mit seinen Gedanken bewegen, Cassie kann in die Zukunft schauen. Sie beide wurden mit diesen Begabungen geboren und wollen eigentlich nur normal leben. Die skrupellose Regierungseinheit Division versucht, Menschen wie sie zu kontrollieren und zu Soldaten für ihre dunklen Zwecke zu machen. Wer sich weigert, wird eliminiert. Nick und Cassie geraten zwischen die Fronten und müssen sich entscheiden. Fliehen oder kämpfen.</p>
         </div>
     </div>
 
@@ -5757,6 +6047,32 @@
             <p class="cast">Darsteller: Charles Bronson, Henry Fonda, Claudia Cardinale</p>
             <p class="rating">Bewertung: ⭐ 8.5/10</p>
             <p class="plot">Ein geheimnisvoller Fremder mit einer Mundharmonika tut sich mit einem berüchtigten Desperado zusammen, um eine wunderschöne Witwe vor einem gnadenlosen Killer zu schützen, der für die Eisenbahngesellschaft arbeitet.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="stan & ollie"
+        data-year="2018"
+        data-genre="komödie, drama"
+        data-cast="steve coogan, john c. reilly, shirley henderson, nina arianda, rufus jones"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Stan___Ollie_2018.jpg" 
+                alt="Poster für Stan & Ollie" 
+                class="poster" 
+                onclick="openModal('posters/poster_Stan___Ollie_2018.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Stan & Ollie (2018)</h2>
+            <p class="genre">Genre: Komödie, Drama</p>
+            <p class="cast">Darsteller: Steve Coogan, John C. Reilly, Shirley Henderson, Nina Arianda, Rufus Jones</p>
+            <p class="rating">Bewertung: ⭐ 7.0/10</p>
+            <p class="plot">Laurel und Hardy befinden sich in der Endphase ihrer Karriere auf einer Tournee durch Großbritannien im Jahr 1953. Ihre Zeit als Comedy-Könige liegt lange hinter ihnen und nicht nur wegen enttäuschender Zuschauerzahlen ihrer neuen Show wissen die beiden alternden Komiker nicht genau, wie es weitergehen soll. Doch sie konnten sich bis jetzt noch immer gegenseitig zum Lachen bringen und schließlich überträgt sich ihr Charme durch ihre Performance auch auf die Zuschauer: Die Show wird doch noch zum Erfolg. Dennoch leidet die kreative Partnerschaft der beiden weiter unter den Gespenstern der Vergangenheit und auch die zunehmend schlechter werdende gesundheitliche Zustand von Hardy erinnert die beiden gnadenlos an das unausweichliche Ende ihrer Karriere.</p>
         </div>
     </div>
 
@@ -6360,6 +6676,32 @@
 
     <div 
         class="film-container" 
+        data-title="the last journey"
+        data-year="2020"
+        data-genre="science fiction, abenteuer"
+        data-cast="hugo becker, jean reno, paul hamy, lya oussadit-lessert, philippe katerine"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_The_Last_Journey_2020.jpg" 
+                alt="Poster für The Last Journey" 
+                class="poster" 
+                onclick="openModal('posters/poster_The_Last_Journey_2020.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>The Last Journey (2020)</h2>
+            <p class="genre">Genre: Science Fiction, Abenteuer</p>
+            <p class="cast">Darsteller: Hugo Becker, Jean Reno, Paul Hamy, Lya Oussadit-Lessert, Philippe Katerine</p>
+            <p class="rating">Bewertung: ⭐ 5.3/10</p>
+            <p class="plot">In naher Zukunft: Die Sonne ist erloschen. Ein geheimnisvoller roter Mond liefert den Menschen überlebenswichtige Energie, um auf der Erde weiter existieren zu können. Als er plötzlich seinen Kurs ändert und direkt auf die Erde zusteuert, droht er die gesamte Menschheit auszulöschen. Der einzige, der in der Lage ist die Apokalypse zu verhindern, ist der begabteste Astronaut seiner Zeit: Paul W.R.. Doch kurz vor Start der Mission verschwindet Paul spurlos. Unerbittlich von den verzweifelten Menschen gejagt, kreuzt Paul den Weg von Elma, einem Teenager mit explosivem Temperament, die ihn auf seiner Flucht begleitet.  Aufwändige Endzeit-Science-Fiction aus Frankreich.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="the lost king"
         data-year="2022"
         data-genre="komödie, drama"
@@ -6563,6 +6905,32 @@
             <p class="cast">Darsteller: Petr Kotlár, Nina Sunevic, Alla Sokolova, Stanislav Bilyi, Ostap Dziadek</p>
             <p class="rating">Bewertung: ⭐ 7.3/10</p>
             <p class="plot">Ein junger jüdischer Junge irgendwo in Osteuropa sucht Zuflucht während des Zweiten Weltkriegs, wo er auf viele verschiedene Charaktere trifft.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="the replacement killers - die ersatzkiller"
+        data-year="1999"
+        data-genre="action, krimi, thriller"
+        data-cast="chow yun-fat, mira sorvino, michael rooker, kenneth tsang, jürgen prochnow"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_The_Replacement_Killers_-_Die_Ersatzkiller_1999.jpg" 
+                alt="Poster für The Replacement Killers - Die Ersatzkiller" 
+                class="poster" 
+                onclick="openModal('posters/poster_The_Replacement_Killers_-_Die_Ersatzkiller_1999.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>The Replacement Killers - Die Ersatzkiller (1999)</h2>
+            <p class="genre">Genre: Action, Krimi, Thriller</p>
+            <p class="cast">Darsteller: Chow Yun-Fat, Mira Sorvino, Michael Rooker, Kenneth Tsang, Jürgen Prochnow</p>
+            <p class="rating">Bewertung: ⭐ 6.2/10</p>
+            <p class="plot">Der Sohn eines chinesischen Triadenbosses ist von einem amerikanischen Police Detective erschossen worden, und nun schickt der zornige Vater seinen besten Killer los, um den kleinen Sohn des Polizisten zu töten. Als der Killer den Auftrag jedoch nicht ausführt und lieber an der Seite einer schönen Fälscherin untertaucht, werden Gangster losgeschickt, um den Verräter zu töten ...</p>
         </div>
     </div>
 
@@ -7005,6 +7373,32 @@
             <p class="cast">Darsteller: Nicolas Cage, Nicole Kidman, Cam Gigandet, Ben Mendelsohn, Liana Liberato</p>
             <p class="rating">Bewertung: ⭐ 5.3/10</p>
             <p class="plot">Da sie als Lösegeld gehalten werden, wird die Lage eines Mannes und einer Frau durch die Entdeckung von Verrat und Täuschung immer schlimmer.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="true grit"
+        data-year="2010"
+        data-genre="drama, abenteuer, western"
+        data-cast="jeff bridges, hailee steinfeld, matt damon, josh brolin, barry pepper"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_True_Grit_2010.jpg" 
+                alt="Poster für True Grit" 
+                class="poster" 
+                onclick="openModal('posters/poster_True_Grit_2010.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>True Grit (2010)</h2>
+            <p class="genre">Genre: Drama, Abenteuer, Western</p>
+            <p class="cast">Darsteller: Jeff Bridges, Hailee Steinfeld, Matt Damon, Josh Brolin, Barry Pepper</p>
+            <p class="rating">Bewertung: ⭐ 7.3/10</p>
+            <p class="plot">Die 14-jährige Mattie Ross ist fest entschlossen, den kaltblütigen Mord an ihrem Vater nicht ungesühnt zu lassen. Da die Behörden ihr nicht helfen, will sie den feigen Mörder Tom Chaney mit eigenen Mitteln seiner gerechten Strafe zuführen. Für 100 Dollar engagiert sie den trunksüchtigen und raubeinigen U.S. Marshall Rooster Cogburn, der es mit dem Gesetz selbst alles andere als genau nimmt. Widerwillig lässt er sich von Mattie überreden, sie auf die Jagd nach Chaney mitzunehmen – quer durch die gesetzlosen Weiten der Prärie. Doch sie sind nicht allein, denn auch Texas Ranger LaBoeuf will den Flüchtigen stellen, um eine Kopfprämie zu kassieren, die auf Chaney wegen eines weiteren Mordes ausgesetzt ist. Unfreiwillig ziehen sie zu dritt weiter und schon bald kommt Mattie dem Mörder ihres Vaters gefährlich nah …</p>
         </div>
     </div>
 
@@ -7866,6 +8260,84 @@
         </div>
     </div>
 
+    <div 
+        class="film-container" 
+        data-title="zwei companeros"
+        data-year="1970"
+        data-genre="western"
+        data-cast="franco nero, tomas milian, jack palance, fernando rey, iris berben"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Zwei_Companeros_1970.jpg" 
+                alt="Poster für Zwei Companeros" 
+                class="poster" 
+                onclick="openModal('posters/poster_Zwei_Companeros_1970.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Zwei Companeros (1970)</h2>
+            <p class="genre">Genre: Western</p>
+            <p class="cast">Darsteller: Franco Nero, Tomas Milian, Jack Palance, Fernando Rey, Iris Berben</p>
+            <p class="rating">Bewertung: ⭐ 6.6/10</p>
+            <p class="plot">General Mongo, der persönliche Gier hinter der Fassade der Revolution versteckt, beherrscht ein mexikanisches Dorf und saugt es aus. Er ernennt einen Schuhputzer, "den Basken", zum Befehlshaber. Als Yodlaf Peterson, "der Schwede", nach San Bernardino kommt, verbündet er sich mit dem Basken, um an Geld zu kommen. Dazu müssen die beiden den politischen Führer der gewaltlosen Opposition, Professor Xantos, aus dem amerikanischen Gefängnis holen. Daran soll sie ein beauftragter Killer hindern. Nach erfolgreicher Befreiung können sie zwar den verräterischen General Mongo und seine Truppen auslöschen (u.a. mit Hilfe einer Gruppe junger "echter" Revolutionäre), Xantos jedoch verliert sein Leben. Peterson bleibt in Mexiko, um den Revolutionären zu helfen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="überflieger 2 - das geheimnis des großen juwels"
+        data-year="2023"
+        data-genre="animation, abenteuer, komödie, familie"
+        data-cast="jonathan failla, jeffrey hylton, dulcie smart, erik hansen, mala ghedia"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Überflieger_2_-_Das_Geheimnis_des_großen_Juwels_2023.jpg" 
+                alt="Poster für Überflieger 2 - Das Geheimnis des großen Juwels" 
+                class="poster" 
+                onclick="openModal('posters/poster_Überflieger_2_-_Das_Geheimnis_des_großen_Juwels_2023.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Überflieger 2 - Das Geheimnis des großen Juwels (2023)</h2>
+            <p class="genre">Genre: Animation, Abenteuer, Komödie, Familie</p>
+            <p class="cast">Darsteller: Jonathan Failla, Jeffrey Hylton, Dulcie Smart, Erik Hansen, Mala Ghedia</p>
+            <p class="rating">Bewertung: ⭐ 7.2/10</p>
+            <p class="plot">Der kleine Spatz Richard wurde von Störchen aufgezogen. Weil eine Gruppe von Spatzen von einem gierigen Pfau tyrannisiert wird, macht sich der kleine Vogel auf die Suche nach einem geheimnisvollen Edelstein.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="überflieger – kleine vögel, großes geklapper"
+        data-year="2017"
+        data-genre="animation, familie, fantasy, abenteuer, komödie"
+        data-cast="christian gaul, tilman döbler, nicolette krebitz, maud ackermann, schroeder kacmar"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Überflieger___Kleine_Vögel__großes_Geklapper_2017.jpg" 
+                alt="Poster für Überflieger – Kleine Vögel, großes Geklapper" 
+                class="poster" 
+                onclick="openModal('posters/poster_Überflieger___Kleine_Vögel__großes_Geklapper_2017.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Überflieger – Kleine Vögel, großes Geklapper (2017)</h2>
+            <p class="genre">Genre: Animation, Familie, Fantasy, Abenteuer, Komödie</p>
+            <p class="cast">Darsteller: Christian Gaul, Tilman Döbler, Nicolette Krebitz, Maud Ackermann, Schroeder Kacmar</p>
+            <p class="rating">Bewertung: ⭐ 6.0/10</p>
+            <p class="plot">Der Waisenvogel Richard wird von Störchen aufgezogen und fühlt sich wie einer von ihnen. Tatsächlich ist er allerdings ein kleiner Spatz. Als seine Ersatzeltern zusammen mit den anderen Störchen im Winter in den Süden fliegen, bleibt Richard zwangsläufig zurück, weil er die lange Reise wohl nicht schaffen würde. Er will sich damit jedoch nicht abfinden und seinen Pflegeeltern beweisen, dass er sehr wohl das Zeug zum Storch hat. Kurzerhand entschließt er sich, die lange und gefährliche Reise nach Afrika anzutreten. Zu seinem Glück ist er nicht allein: Zur Seite hat er den extrovertierten und karaokebegeisterten Wellensittich Kiki und eine deutlich zu groß geratene und etwas durchgeknallte Zwergeule namens Olga sowie deren imaginären Freund Oleg. Es ist der Beginn eines turbulenten Abenteuers für die drei ungleichen Vögel...</p>
+        </div>
+    </div>
+
     </div> 
     
     <div id="imageModal" class="modal" onclick="closeModal(event)">
@@ -7874,7 +8346,7 @@
     </div>
 
     <script>
-        // --- Modal Logik (Unverändert) ---
+        // --- Modal Logik ---
         var modal = document.getElementById('imageModal');
         var modalImg = document.getElementById("img01");
 
@@ -7889,7 +8361,7 @@
             }
         }
         
-        // --- Filter Logik (Unverändert) ---
+        // --- Filter Logik ---
         function applyFilters() {
             const titleSearch = document.getElementById('titleSearch').value.toLowerCase();
             const castSearch = document.getElementById('castSearch').value.toLowerCase();
