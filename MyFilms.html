@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Meine Filmsammlung (410 Filme)</title>
+    <title>Meine Filmsammlung (437 Filme)</title>
     <style>
         html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
         body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    <h1>Meine Filmsammlung (410 Filme)</h1>
+    <h1>Meine Filmsammlung (437 Filme)</h1>
     
     <div class="controls">
         <div class="control-group">
@@ -77,6 +77,7 @@
 <option value="Action">Action</option>
 <option value="Animation">Animation</option>
 <option value="Biografie">Biografie</option>
+<option value="Dokumentarfilm">Dokumentarfilm</option>
 <option value="Drama">Drama</option>
 <option value="Familie">Familie</option>
 <option value="Familienfilm">Familienfilm</option>
@@ -150,6 +151,7 @@
 <option value="1988">1988</option>
 <option value="1987">1987</option>
 <option value="1986">1986</option>
+<option value="1985">1985</option>
 <option value="1984">1984</option>
 <option value="1983">1983</option>
 <option value="1982">1982</option>
@@ -442,6 +444,32 @@
             <p class="cast">Darsteller: Nicolas Cage, Benjamin Bratt, Noah Le Gros, Karolina Wydra, Ian Tracey, Nicole Muñoz</p>
             <p class="rating">Bewertung: ⭐ 4.9/10</p>
             <p class="plot">Der todkranke Gangster Frank wird nach 19 Jahren aus dem Gefängnis entlassen, um seinen Lebensabend in Freiheit zu verbringen. Er nutzt die Gelegenheit, um einen blutigen Rachefeldzug gegen seine ehemaligen Bosse zu führen. Sie sind dafür verantwortlich, dass er für einen Mord verurteilt wurde, den er nicht begangen hat. Außerdem will Frank versuchen, seine Beziehung zu seinen Sohn Joey zu reparieren.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="a working man"
+        data-year="2025"
+        data-genre="action, krimi, thriller"
+        data-cast="jason statham, jason flemyng, merab ninidze, maximilian osinski, cokey falkow"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_A_Working_Man_2025.jpg" 
+                alt="Poster für A Working Man" 
+                class="poster" 
+                onclick="openModal('posters/poster_A_Working_Man_2025.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>A Working Man (2025)</h2>
+            <p class="genre">Genre: Action, Krimi, Thriller</p>
+            <p class="cast">Darsteller: Jason Statham, Jason Flemyng, Merab Ninidze, Maximilian Osinski, Cokey Falkow</p>
+            <p class="rating">Bewertung: ⭐ 6.7/10</p>
+            <p class="plot">Levon Cade hat eine erfolgreiche Militärkarriere im Bereich Geheimoperationen hinter sich gelassen, um ein einfaches Leben als Arbeiter auf dem Bau zu führen. Als jedoch die Tochter seines Vorgesetzten, die für ihn wie eine Tochter ist, von einem Menschenhändlerring entführt wird, zieht er noch einmal in den Kampf. Bei seiner Suche stößt er auf eine Welt voller Korruption, die selbst seine schlimmsten Vorstellungen übertrifft.</p>
         </div>
     </div>
 
@@ -1591,6 +1619,32 @@
 
     <div 
         class="film-container" 
+        data-title="charles dickens - der mann der weihnachten erfand"
+        data-year="2017"
+        data-genre="drama, historie, komödie, familie"
+        data-cast="dan stevens, christopher plummer, jonathan pryce, justin edwards, morfydd clark"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Charles_Dickens_-_Der_Mann_der_Weihnachten_erfand_2017.jpg" 
+                alt="Poster für Charles Dickens - Der Mann der Weihnachten erfand" 
+                class="poster" 
+                onclick="openModal('posters/poster_Charles_Dickens_-_Der_Mann_der_Weihnachten_erfand_2017.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Charles Dickens - Der Mann der Weihnachten erfand (2017)</h2>
+            <p class="genre">Genre: Drama, Historie, Komödie, Familie</p>
+            <p class="cast">Darsteller: Dan Stevens, Christopher Plummer, Jonathan Pryce, Justin Edwards, Morfydd Clark</p>
+            <p class="rating">Bewertung: ⭐ 6.8/10</p>
+            <p class="plot">Im Oktober des Jahres 1843 leidet Autor Charles Dickens stark unter den Misserfolgen seiner letzten drei Bücher. Von seinen Verlegern im Stich gelassen, beschließt er auf eigene Faust einen Roman zu veröffentlichen, von dem er hofft, dass er seine Familie finanziell über Wasser halten und seiner ins Stocken geratenen Karriere wieder neuen Schwung verleihen kann. Dabei heraus kommt „A Christmas Carol“ („Eine Weihnachtsgeschichte“) – eine der berühmtesten Erzählungen des legendären Schriftstellers.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="clean - rache ist ein schmutziges geschäft"
         data-year="2021"
         data-genre="action, krimi, drama"
@@ -2027,7 +2081,8 @@
             <p class="genre">Genre: Science Fiction, Abenteuer, Thriller</p>
             <p class="cast">Darsteller: Michael Paré, Nancy Allen, Eric Christmas, Bobby Di Cicco, Louise Latham</p>
             <p class="rating">Bewertung: ⭐ 6.1/10</p>
-            <p class="plot">Im Jahr 1943 betreibt die US Navy Experimente, die ihre Kriegsschiffe für das feindliche Radar unsichtbar machen sollen. Als einer dieser Versuche aus dem Ruder gerät, werden die beiden Soldaten David und Jimmy in das Jahr 1984 versetzt. Während sie unter dem Kulturschock zu leiden haben, wird der Geheimdienst auf sie aufmerksam und will sie in Gewahrsam nehmen. Noch größere Gefahr droht jedoch durch den Umstand, dass die Welt unweigerlich dem Untergang geweiht ist, sollte es David und Jimmy nicht gelingen, das Zeitloch zu schließen. Die Handlung des Science-Fiction-Films basiert tatsächlich auf der Legende vom Philadelphia Experiment.</p>
+            <p class="plot">Im Jahr 1943 betreibt die US Navy Experimente, die ihre Kriegsschiffe für das feindliche Radar unsichtbar machen sollen. Als einer dieser Versuche aus dem Ruder gerät, werden die beiden Soldaten David und Jimmy in das Jahr 1984 versetzt. Während sie unter dem Kulturschock zu leiden haben, wird der Geheimdienst auf sie aufmerksam und will sie in Gewahrsam nehmen. Noch größere Gefahr droht jedoch durch den Umstand, dass die Welt unweigerlich dem Untergang geweiht ist, sollte es David und Jimmy nicht gelingen, das Zeitloch zu schließen.
+ Die Handlung des Science-Fiction-Films basiert tatsächlich auf der Legende vom Philadelphia Experiment.</p>
         </div>
     </div>
 
@@ -2189,6 +2244,32 @@
 
     <div 
         class="film-container" 
+        data-title="der einzige zeuge"
+        data-year="1985"
+        data-genre="krimi, drama, liebesfilm, thriller"
+        data-cast="harrison ford, kelly mcgillis, josef sommer, lukas haas, jan rubeš"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Der_einzige_Zeuge_1985.jpg" 
+                alt="Poster für Der einzige Zeuge" 
+                class="poster" 
+                onclick="openModal('posters/poster_Der_einzige_Zeuge_1985.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Der einzige Zeuge (1985)</h2>
+            <p class="genre">Genre: Krimi, Drama, Liebesfilm, Thriller</p>
+            <p class="cast">Darsteller: Harrison Ford, Kelly McGillis, Josef Sommer, Lukas Haas, Jan Rubeš</p>
+            <p class="rating">Bewertung: ⭐ 7.1/10</p>
+            <p class="plot">Inspector John Book soll einen Mord an einem Kollegen aufklären, den ein zehnjähriger Amish- Junge als einziger Zeuge beobachtet hat. Als er merkt, daß er mit dem Fall in ein Wespennest sticht, taucht Book in der ländlichen Sicherheit der Amish-People unter. Diese Nachfahren einer altdeutschen Reformsekte führen ein Leben mit den Mitteln des 16. Jahrhunderts, was für den überzeugten Großstädter Book eine Menge neuer Erfahrungen bedeutet. Auf die Bösewichte braucht er trotzdem nicht lange zu warten.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="der fantastische mr. fox"
         data-year="2009"
         data-genre="abenteuer, animation, komödie, familie"
@@ -2236,6 +2317,84 @@
             <p class="cast">Darsteller: Richard Gere, Alfred Molina, Marcia Gay Harden, Hope Davis, Julie Delpy</p>
             <p class="rating">Bewertung: ⭐ 6.3/10</p>
             <p class="plot">In den frühen 70er Jahren ist der Schriftsteller Clifford Irving gerade mit seinem neuen Roman beim altehrwürdigen Verlagshaus McGraw-Hill abgeblitzt, als ihm, halb aus Rache, halb der pekuniären Not gehorchend, die Idee zu einem gewagten Betrug kommt. Irving behauptet gegenüber den Verlagsleuten, der exzentrische, seit Jahrzehnten nicht mehr in Öffentlichkeit aufgetretene Multimilliardär Howard Hughes habe ihn persönlich mit der Niederschrift seiner Memoiren beauftragt. Niemand kann das Gegenteil beweisen, und Irving bringt überzeugende Arbeitsproben.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="der hobbit - die schlacht der fünf heere"
+        data-year="2014"
+        data-genre="action, abenteuer, fantasy"
+        data-cast="ian mckellen, martin freeman, richard armitage, orlando bloom, evangeline lilly"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Der_Hobbit_-_Die_Schlacht_der_fünf_Heere_2014.jpg" 
+                alt="Poster für Der Hobbit - Die Schlacht der fünf Heere" 
+                class="poster" 
+                onclick="openModal('posters/poster_Der_Hobbit_-_Die_Schlacht_der_fünf_Heere_2014.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Der Hobbit - Die Schlacht der fünf Heere (2014)</h2>
+            <p class="genre">Genre: Action, Abenteuer, Fantasy</p>
+            <p class="cast">Darsteller: Ian McKellen, Martin Freeman, Richard Armitage, Orlando Bloom, Evangeline Lilly</p>
+            <p class="rating">Bewertung: ⭐ 7.3/10</p>
+            <p class="plot">Nachdem Smaug besiegt wurde, sitzt Thorin endlich auf dem Zwergenthron und hat sein Reich wieder. Doch der Kampf gegen den Drachen hat Spuren hinterlassen. Die Stadt Esgaroth wurde zerstört, ihre Bewohner sind nun obdachlos. Doch Thorin verweigert jede Hilfe genauso wie die Rückgabe von Teilen des Schatzes, die Smaug gestohlen hatte. Hobbit Bilbo versucht zwischen Zwergen, Elben und den Bürgern zu vermitteln, doch vergeblich. Thorin hält ihn für einen Verräter und auch Gandalf kann nichts mehr ausrichten. Es wird aufgerüstet und bald stehen sich die Armeen gegenüber…</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="der hobbit - eine unerwartete reise"
+        data-year="2012"
+        data-genre="abenteuer, fantasy, action"
+        data-cast="martin freeman, ian mckellen, richard armitage, james nesbitt, ken stott"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Der_Hobbit_-_Eine_unerwartete_Reise_2012.jpg" 
+                alt="Poster für Der Hobbit - Eine unerwartete Reise" 
+                class="poster" 
+                onclick="openModal('posters/poster_Der_Hobbit_-_Eine_unerwartete_Reise_2012.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Der Hobbit - Eine unerwartete Reise (2012)</h2>
+            <p class="genre">Genre: Abenteuer, Fantasy, Action</p>
+            <p class="cast">Darsteller: Martin Freeman, Ian McKellen, Richard Armitage, James Nesbitt, Ken Stott</p>
+            <p class="rating">Bewertung: ⭐ 7.4/10</p>
+            <p class="plot">Mit dem Besuch des weisen Zauberers Gandalf verändert sich das beschauliche Leben eines Hobbits für immer. Zögerlich schließt sich der unbedarfte Bilbo mit Gandalf der Mission von 13 mutigen Zwergen an, die ihr Reich zurückerobern wollen. Der furchterregende Drache Smaug, der es einst zerstörte, ist seit Jahrzehnten verschwunden. Doch ist das Monstrum wirklich tot und können die großen Gefahren dieses Abenteuers, darunter gefräßige Orks und wütende Trolle, wirklich von so kleinen Helden überwunden werden?</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="der hobbit - smaugs einöde"
+        data-year="2013"
+        data-genre="fantasy, abenteuer, action"
+        data-cast="ian mckellen, martin freeman, richard armitage, benedict cumberbatch, orlando bloom"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Der_Hobbit_-_Smaugs_Einöde_2013.jpg" 
+                alt="Poster für Der Hobbit - Smaugs Einöde" 
+                class="poster" 
+                onclick="openModal('posters/poster_Der_Hobbit_-_Smaugs_Einöde_2013.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Der Hobbit - Smaugs Einöde (2013)</h2>
+            <p class="genre">Genre: Fantasy, Abenteuer, Action</p>
+            <p class="cast">Darsteller: Ian McKellen, Martin Freeman, Richard Armitage, Benedict Cumberbatch, Orlando Bloom</p>
+            <p class="rating">Bewertung: ⭐ 7.6/10</p>
+            <p class="plot">Die Gefährten haben den Beginn ihrer unerwarteten Reise überstanden – auf ihrem Weg gen Osten begegnen sie nun dem Hautwechsler Beorn und im trügerischen Düsterwald einem Schwarm gigantischer Spinnen. Sie werden von den gefährlichen Waldelben gefangen genommen, können aber entkommen, erreichen Seestadt und schließlich den Einsamen Berg selbst, wo sie sich der größten Gefahr stellen müssen – einem Monster, das alle bisherigen an Grässlichkeit übertrifft: Der Drache Smaug fordert nicht nur den ganzen Mut der Gefährten heraus, sondern stellt auch ihre Freundschaft auf eine harte Probe – bis sie sich schließlich fragen müssen, ob ihre Reise überhaupt noch einen Sinn ergibt.</p>
         </div>
     </div>
 
@@ -2782,6 +2941,58 @@
             <p class="cast">Darsteller: Chris O'Donnell, Kiefer Sutherland, Oliver Platt, Charlie Sheen, Tim Curry</p>
             <p class="rating">Bewertung: ⭐ 6.4/10</p>
             <p class="plot">Eigentlich wollte sicher der junge D’Artagnan in Paris zum Musketier ausbilden lassen, doch der böse Kardinal Richelieu verfolgt diese Diener des Königs. D’Artagnan schliesst sich Athos (Athos, Porthos und Aramis an), Porthos und Aramis an, gemeinsam wollen sie einen Mordkomplott gegen den König verhindern…</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="die drei musketiere - d'artagnan"
+        data-year="2023"
+        data-genre="abenteuer, action, drama, historie"
+        data-cast="françois civil, vincent cassel, romain duris, pio marmaï, eva green"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Die_drei_Musketiere_-_D_Artagnan_2023.jpg" 
+                alt="Poster für Die drei Musketiere - D'Artagnan" 
+                class="poster" 
+                onclick="openModal('posters/poster_Die_drei_Musketiere_-_D_Artagnan_2023.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Die drei Musketiere - D'Artagnan (2023)</h2>
+            <p class="genre">Genre: Abenteuer, Action, Drama, Historie</p>
+            <p class="cast">Darsteller: François Civil, Vincent Cassel, Romain Duris, Pio Marmaï, Eva Green</p>
+            <p class="rating">Bewertung: ⭐ 6.9/10</p>
+            <p class="plot">D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="die drei musketiere - d'artagnan"
+        data-year="2023"
+        data-genre="abenteuer, action, drama, historie"
+        data-cast="françois civil, vincent cassel, romain duris, pio marmaï, eva green"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Die_drei_Musketiere_-_D_Artagnan_2023.jpg" 
+                alt="Poster für Die drei Musketiere - D'Artagnan" 
+                class="poster" 
+                onclick="openModal('posters/poster_Die_drei_Musketiere_-_D_Artagnan_2023.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Die drei Musketiere - D'Artagnan (2023)</h2>
+            <p class="genre">Genre: Abenteuer, Action, Drama, Historie</p>
+            <p class="cast">Darsteller: François Civil, Vincent Cassel, Romain Duris, Pio Marmaï, Eva Green</p>
+            <p class="rating">Bewertung: ⭐ 6.9/10</p>
+            <p class="plot">D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.</p>
         </div>
     </div>
 
@@ -3385,6 +3596,32 @@
 
     <div 
         class="film-container" 
+        data-title="edward mit den scherenhänden"
+        data-year="1990"
+        data-genre="fantasy, drama, liebesfilm"
+        data-cast="johnny depp, winona ryder, dianne wiest, anthony michael hall, kathy baker"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Edward_mit_den_Scherenhänden_1990.jpg" 
+                alt="Poster für Edward mit den Scherenhänden" 
+                class="poster" 
+                onclick="openModal('posters/poster_Edward_mit_den_Scherenhänden_1990.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Edward mit den Scherenhänden (1990)</h2>
+            <p class="genre">Genre: Fantasy, Drama, Liebesfilm</p>
+            <p class="cast">Darsteller: Johnny Depp, Winona Ryder, Dianne Wiest, Anthony Michael Hall, Kathy Baker</p>
+            <p class="rating">Bewertung: ⭐ 7.7/10</p>
+            <p class="plot">Ein Erfinder hat den großen Traum, einen künstlichen Menschen zu erschaffen. Doch bevor er Edward vollenden kann, stirbt er an einem Herzinfarkt. Von da an lebt Edward alleine in dessen Schloss weiter und hat dort Scheren wo eigentlich seine Hände sein sollten. Eines Tages macht sein Leben eine Wendung, als die Avon-Vertreterin Peg das Schloss betritt. Peg nimmt den Jungen mit den Scherenhänden bei sich auf. Schnell macht er sich bei der Nachbarschaft beliebt, indem er ihre Büsche in den unterschiedlichsten Formen trimmt und später sogar die Haare der Frauen des Vorortes frisiert. Als er sich allerdings in Pegs Tochter Kim verliebt und deren Freund Edward für seine Zwecke missbraucht, droht diese anfängliche Begeisterung langsam zu schwinden.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="ein gauner & gentleman"
         data-year="2018"
         data-genre="biografie, komödie, krimi"
@@ -3983,6 +4220,32 @@
 
     <div 
         class="film-container" 
+        data-title="fluch der karibik"
+        data-year="2003"
+        data-genre="abenteuer, fantasy, action"
+        data-cast="johnny depp, geoffrey rush, orlando bloom, keira knightley, jack davenport"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Fluch_der_Karibik_2003.jpg" 
+                alt="Poster für Fluch der Karibik" 
+                class="poster" 
+                onclick="openModal('posters/poster_Fluch_der_Karibik_2003.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Fluch der Karibik (2003)</h2>
+            <p class="genre">Genre: Abenteuer, Fantasy, Action</p>
+            <p class="cast">Darsteller: Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley, Jack Davenport</p>
+            <p class="rating">Bewertung: ⭐ 7.8/10</p>
+            <p class="plot">Im 17.Jahrhundert sucht der Pirat Jack Sparrow nach einem sagenumwobenen Schatz in der Karibik, als ihn das Schicksal mit dem jungen Will Turner zusammenführt, der aus anderen Gründen auf derselben Fährte ist: nämlich den berüchtigten Captain Barbossa und seine Crew abzufangen, die Wills große Liebe Elizabeth, die Tochter des britischen Gouverneurs entführt haben. Doch Barbossa umhüllt selbst ein düsteres Geheimnis: er und seine Männer sind verflucht und das Licht des Mondes bringt ihre Existenz zum Vorschein: sie sind wie lebende Skelette, monströs und tödlich. Um den Fluch zu brechen, brauchen sie Elizabeth als Opfer. Ein Wettrennen zur Insel des Todes beginnt...</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="freaks - sie sehen aus wie wir"
         data-year="2018"
         data-genre="science fiction, thriller"
@@ -4030,6 +4293,32 @@
             <p class="cast">Darsteller: Ethan Hawke, Uma Thurman, Jude Law, Gore Vidal, Xander Berkeley</p>
             <p class="rating">Bewertung: ⭐ 7.7/10</p>
             <p class="plot">Ein genetisch minderwertiger Mann nimmt die Identität eines genetisch überlegenen an, um seinen Lebenstraum zu verwirklichen: ins All zu reisen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="gemeinsam unbesiegbar: das making of doctor strange in the multiverse of madness"
+        data-year="2022"
+        data-genre="dokumentarfilm"
+        data-cast="bruce campbell, kevin feige, sam raimi, richie palmer, michael waldron"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_GEMEINSAM_UNBESIEGBAR__Das_Making_of_Doctor_Strange_in_the_Multiverse_of_Madness_2022.jpg" 
+                alt="Poster für GEMEINSAM UNBESIEGBAR: Das Making of Doctor Strange in the Multiverse of Madness" 
+                class="poster" 
+                onclick="openModal('posters/poster_GEMEINSAM_UNBESIEGBAR__Das_Making_of_Doctor_Strange_in_the_Multiverse_of_Madness_2022.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>GEMEINSAM UNBESIEGBAR: Das Making of Doctor Strange in the Multiverse of Madness (2022)</h2>
+            <p class="genre">Genre: Dokumentarfilm</p>
+            <p class="cast">Darsteller: Bruce Campbell, Kevin Feige, Sam Raimi, Richie Palmer, Michael Waldron</p>
+            <p class="rating">Bewertung: ⭐ 7.1/10</p>
+            <p class="plot">Keine Beschreibung gefunden.</p>
         </div>
     </div>
 
@@ -4238,6 +4527,32 @@
             <p class="cast">Darsteller: Daniel Brühl, Katrin Sass, Maria Simon, Tschulpan Chamatowa</p>
             <p class="rating">Bewertung: ⭐ 7.8/10</p>
             <p class="plot">Kurz vor dem Fall der Mauer fällt Alex' Mutter, eine überzeugte Bürgerin der DDR, nach einem Herzinfarkt ins Koma - und verschläft den Siegeszug des Kapitalismus. Als sie wie durch ein Wunder acht Monate später die Augen aufschlägt, erwacht sie in einem neuen Land. Erfahren darf sie von alledem jedoch nichts: zu angeschlagen ist ihr schwaches Herz. Um seine Mutter zu retten, muss Alex auf 79 Quadratmetern in Windeseile die DDR wieder auferstehen lassen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="green lantern"
+        data-year="2011"
+        data-genre="abenteuer, action, thriller, science fiction"
+        data-cast="ryan reynolds, blake lively, peter sarsgaard, mark strong, tim robbins"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Green_Lantern_2011.jpg" 
+                alt="Poster für Green Lantern" 
+                class="poster" 
+                onclick="openModal('posters/poster_Green_Lantern_2011.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Green Lantern (2011)</h2>
+            <p class="genre">Genre: Abenteuer, Action, Thriller, Science Fiction</p>
+            <p class="cast">Darsteller: Ryan Reynolds, Blake Lively, Peter Sarsgaard, Mark Strong, Tim Robbins</p>
+            <p class="rating">Bewertung: ⭐ 5.2/10</p>
+            <p class="plot">Im ebenso endlosen wie geheimnisvollen Universum existiert seit Jahrhunderten eine kleine, aber schlagkräftige Einheit, die für Gesetz und Gerechtigkeit eintritt: das Green Lantern Corps. Jeder Green Lantern wird durch einen Eid auf die Bruderschaft der Krieger dazu verpflichtet, in der Galaxis Recht und Ordnung aufrecht zu erhalten, alle tragen einen Ring, der ihnen übernatürliche Kräfte verleiht. Doch als ein neuer Gegner namens Parallax das Gleichgewicht der Kräfte im Universum auszuhebeln droht, liegt das Schicksal der Green Lanterns und der gesamten Erde in der Hand ihres jüngsten Rekruten: Er ist der erste Mensch, der in ihre Reihen aufgenommen wurde – Hal Jordan.</p>
         </div>
     </div>
 
@@ -4498,6 +4813,32 @@
             <p class="cast">Darsteller: Dustin Hoffman, Robin Williams, Julia Roberts, Bob Hoskins, Maggie Smith</p>
             <p class="rating">Bewertung: ⭐ 6.8/10</p>
             <p class="plot">Als Captain Hook seine Kinder entführt, muss ein erwachsener Peter Pan nach Neverland zurückkehren und seinen jugendlichen Geist zurückgewinnen, um seinen alten Feind herauszufordern.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="horton hört ein hu!"
+        data-year="2008"
+        data-genre="animation, komödie, familie, abenteuer, fantasy"
+        data-cast="jim carrey, steve carell, carol burnett, will arnett, seth rogen"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Horton_hört_ein_Hu__2008.jpg" 
+                alt="Poster für Horton hört ein Hu!" 
+                class="poster" 
+                onclick="openModal('posters/poster_Horton_hört_ein_Hu__2008.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Horton hört ein Hu! (2008)</h2>
+            <p class="genre">Genre: Animation, Komödie, Familie, Abenteuer, Fantasy</p>
+            <p class="cast">Darsteller: Jim Carrey, Steve Carell, Carol Burnett, Will Arnett, Seth Rogen</p>
+            <p class="rating">Bewertung: ⭐ 6.5/10</p>
+            <p class="plot">Horton ist ein sympathischer, phantasievoller Elefant, auf den man sich verlassen kann. Er lebt im Dschungel von Nümpels und hört eines Tages den Hilferuf eines Staubkorns: es sind die Hus. Für Horton ist klar, er muss Hu-Heim und dessen winzig kleine Kreaturen trotz des Spottes und der bösen Streiche anderer Dschungelbewohner beschützen: denn ein Mensch ist ein Mensch wie klein er auch sei. Dabei muss er sich vor allem gegen das überfürsorgliche Känguru und den fiesen Adler Vlad durchsetzen; aber auch die anderen Bewohner des Dschungels sehen durch Hortons angebliche Verrücktheit ihre Gemeinschaft bedroht.</p>
         </div>
     </div>
 
@@ -5751,6 +6092,32 @@
 
     <div 
         class="film-container" 
+        data-title="legende"
+        data-year="1985"
+        data-genre="abenteuer, fantasy"
+        data-cast="tom cruise, mia sara, tim curry, david bennent, alice playten"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Legende_1985.jpg" 
+                alt="Poster für Legende" 
+                class="poster" 
+                onclick="openModal('posters/poster_Legende_1985.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Legende (1985)</h2>
+            <p class="genre">Genre: Abenteuer, Fantasy</p>
+            <p class="cast">Darsteller: Tom Cruise, Mia Sara, Tim Curry, David Bennent, Alice Playten</p>
+            <p class="rating">Bewertung: ⭐ 6.2/10</p>
+            <p class="plot">Um die Welt in seine Gewalt zu bringen, will der Herr der Finsternis alle lebenden Einhörner umbringen. Denn erst, wenn das strahlende, positive Licht, das von den Einhörnern in die Welt gebracht wird, erlischt, kann die Dunkelheit um sich greifen und ihre Herrschaft beginnen. Um dies zu erreichen, sendet der Herr der Finsternis zahlreiche Kobolde in den magischen Wald, in dem die letzten Einhörner beheimatet sind. Durch eine List gelingt es ihnen, die arglose junge Prinzessin Lily in ihre Pläne einzubinden und eines der magischen Wesen zu töten. Das letzte lebende Einhorn und die Prinzessin selbst werden von den Kobolden gefangen genommen und zu ihrem Herren verschleppt. Als der Geliebte der Prinzessin, der Waldläufer Jack, davon erfährt, macht er sich auf den Weg seine Liebe und das Licht der Welt vor dem Bösen zu bewahren...</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="legenden der leidenschaft"
         data-year="1994"
         data-genre="drama, liebesfilm, kriegsfilm"
@@ -6609,6 +6976,32 @@
 
     <div 
         class="film-container" 
+        data-title="mufasa: der könig der löwen"
+        data-year="2024"
+        data-genre="abenteuer, familie, animation"
+        data-cast="aaron pierre, kelvin harrison, jr., tiffany boone, kagiso lediga, preston nyman"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Mufasa__Der_König_der_Löwen_2024.jpg" 
+                alt="Poster für Mufasa: Der König der Löwen" 
+                class="poster" 
+                onclick="openModal('posters/poster_Mufasa__Der_König_der_Löwen_2024.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Mufasa: Der König der Löwen (2024)</h2>
+            <p class="genre">Genre: Abenteuer, Familie, Animation</p>
+            <p class="cast">Darsteller: Aaron Pierre, Kelvin Harrison, Jr., Tiffany Boone, Kagiso Lediga, Preston Nyman</p>
+            <p class="rating">Bewertung: ⭐ 7.3/10</p>
+            <p class="plot">Der verwaiste Mufasa ist verloren und allein, bis er auf Taka, den Erben einer königlichen Blutlinie, trifft. Dies ist der Beginn einer sagenhaften Reise, welche die Verbundenheit der beiden auf die Probe stellt, als sie sich einem tödlichen Feind gegenübersehen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="mulan – legende einer kriegerin"
         data-year="2009"
         data-genre="action, krieg"
@@ -6760,6 +7153,32 @@
             <p class="cast">Darsteller: Kevin Costner, Gene Hackman, Sean Young, Will Patton, Howard Duff, Leon Russom</p>
             <p class="rating">Bewertung: ⭐ 7.6/10</p>
             <p class="plot">Der hochdekorierte Marineoffizier Tom Farrell beginnt im Pentagon, seinem neuen Arbeitsplatz, ein Verhältnis mit Susan Atwell, ohne zu ahnen, dass sie die Geliebte des Verteidigungsministers David Brice ist. Eines Tages wird Susan tot aufgefunden. Brice beauftragt ausgerechnet Tom, den vermutlichen Mord zu untersuchen. Bei seinen Nachforschungen entdeckt Tom schockierende Details, doch als sein eigenes Verhältnis mit Susan bekannt wird, wird er selbst immer weiter in die Enge getrieben.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="nobody 2"
+        data-year="2025"
+        data-genre="action, thriller"
+        data-cast="bob odenkirk, connie nielsen, john ortiz, colin hanks, rza"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Nobody_2_2025.jpg" 
+                alt="Poster für Nobody 2" 
+                class="poster" 
+                onclick="openModal('posters/poster_Nobody_2_2025.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Nobody 2 (2025)</h2>
+            <p class="genre">Genre: Action, Thriller</p>
+            <p class="cast">Darsteller: Bob Odenkirk, Connie Nielsen, John Ortiz, Colin Hanks, RZA</p>
+            <p class="rating">Bewertung: ⭐ 7.0/10</p>
+            <p class="plot">Vier Jahre nachdem er sich versehentlich mit der russischen Mafia angelegt hatte, arbeitet Hutch noch immer seinen Schuldenberg von 30 Millionen Dollar ab. Unzählige dreckige Jobs erledigt, zahllose Auftragsmorde vor sich: Ein Ende ist für den gestressten Killer nicht absehbar. Zunehmend leidet die Ehe mit seiner Frau Becca unter seinem zeitintensiven Job. Um mehr Zeit miteinander zu verbringen, machen sie einen Kurzurlaub mit ihren Kindern im Wild Bill’s Majestic Midway Wasserpark, wo Hutch schon als Kind glückliche Ferien verbrachte. Mit Hutchs Vater freuen sie sich auf eine entspannte Zeit in Plummerville. Doch eine Begegnung mit Vorstadtschlägern weckt die Aufmerksamkeit des korrupten Wasserparkbesitzers und seines zwielichtigen Sheriffs. Hutch steckt plötzlich in neuen Schwierigkeiten und trifft auf den härtesten Gangsterboss, dem er je gegenüberstand.</p>
         </div>
     </div>
 
@@ -7129,6 +7548,58 @@
 
     <div 
         class="film-container" 
+        data-title="pirates of the caribbean - am ende der welt"
+        data-year="2007"
+        data-genre="abenteuer, fantasy, action"
+        data-cast="johnny depp, geoffrey rush, orlando bloom, keira knightley, jack davenport"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Pirates_of_the_Caribbean_-_Am_Ende_der_Welt_2007.jpg" 
+                alt="Poster für Pirates of the Caribbean - Am Ende der Welt" 
+                class="poster" 
+                onclick="openModal('posters/poster_Pirates_of_the_Caribbean_-_Am_Ende_der_Welt_2007.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Pirates of the Caribbean - Am Ende der Welt (2007)</h2>
+            <p class="genre">Genre: Abenteuer, Fantasy, Action</p>
+            <p class="cast">Darsteller: Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley, Jack Davenport</p>
+            <p class="rating">Bewertung: ⭐ 7.3/10</p>
+            <p class="plot">Seitdem Cutler Beckett und die East India Trading Company das Herz von Davy Jones besitzen und so über ihn und seine scheinbar unbesiegbare Flying Dutchman gebieten, machen sie erbarmungslos Jagd auf sämtliche Piraten und deren Sympathisanten. Der hohe Rat der Piraten will sich versammeln, um über eine Taktik zu beratschlagen, doch dafür müssen alle Piratenfürsten anwesend sein - auch Captain Jack Sparrow, der nun in der Unterwelt weilt. Seine Freunde Will Turner und Elizabeth Swann machen sich mit Hilfe des wieder zum Leben erweckten Kapitän Barbossa auf die Suche nach dem Ende der Welt, an dem sich der Eingang zur Unterwelt befindet. Dafür benötigen sie die Hilfe des unbarmherzigen Piratenfürsten Sao Feng...</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="pirates of the caribbean - fluch der karibik 2"
+        data-year="2006"
+        data-genre="abenteuer, fantasy, action"
+        data-cast="johnny depp, orlando bloom, keira knightley, stellan skarsgård, bill nighy"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Pirates_of_the_Caribbean_-_Fluch_der_Karibik_2_2006.jpg" 
+                alt="Poster für Pirates of the Caribbean - Fluch der Karibik 2" 
+                class="poster" 
+                onclick="openModal('posters/poster_Pirates_of_the_Caribbean_-_Fluch_der_Karibik_2_2006.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Pirates of the Caribbean - Fluch der Karibik 2 (2006)</h2>
+            <p class="genre">Genre: Abenteuer, Fantasy, Action</p>
+            <p class="cast">Darsteller: Johnny Depp, Orlando Bloom, Keira Knightley, Stellan Skarsgård, Bill Nighy</p>
+            <p class="rating">Bewertung: ⭐ 7.4/10</p>
+            <p class="plot">Diesmal sieht sich Captain Jack Sparrow, gerade erst dem Fluch der Black Pearl entkommen, mit einem neuen lebensbedrohenden Abenteuer konfrontiert: Denn Jack steht in lebenslanger Schuld bei Davy Jones, dem legendären Kapitän des Flying Dutchman und Herrscher über die Tiefen des Ozeans. Wenn er keinen Weg findet, den Bann zu brechen, ist er zu einem höllischen Leben nach dem Tode in ewiger Finsternis verdammt. Doch damit nicht genug: Jacks ausgesprochen existenzielle Probleme erweisen sich obendrein als Hindernis für die bevorstehende Hochzeit seiner Freunde Will Turner und Elizabeth Swann, die wider Willen in die andauernden Eskapaden des Kapitäns verwickelt werden. Das Abenteuer kann beginnen ...</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="plane"
         data-year="2023"
         data-genre="action, abenteuer, thriller"
@@ -7150,6 +7621,110 @@
             <p class="cast">Darsteller: Gerard Butler, Mike Colter, Tony Goldwyn, Yoson An, Evan Dane Taylor</p>
             <p class="rating">Bewertung: ⭐ 6.5/10</p>
             <p class="plot">Ein Pilot findet sich in einem Kriegsgebiet wieder, nachdem er gezwungen ist, sein Verkehrsflugzeug während eines schrecklichen Sturms zu landen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="planet der affen"
+        data-year="2011"
+        data-genre="science fiction, abenteuer, drama, action"
+        data-cast="charlton heston, roddy mcdowall, kim hunter, maurice evans, james whitmore"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Planet_der_Affen_2011.jpg" 
+                alt="Poster für Planet der Affen" 
+                class="poster" 
+                onclick="openModal('posters/poster_Planet_der_Affen_2011.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Planet der Affen (2011)</h2>
+            <p class="genre">Genre: Science Fiction, Abenteuer, Drama, Action</p>
+            <p class="cast">Darsteller: Charlton Heston, Roddy McDowall, Kim Hunter, Maurice Evans, James Whitmore</p>
+            <p class="rating">Bewertung: ⭐ 7.6/10</p>
+            <p class="plot">Astronaut Taylor überlebt den Raum-Zeitsprung durch das All – 2000 Jahre in die Zukunft. Eine Notlandung verschlägt ihn auf einen entfernten Planeten, der von Affen regiert wird. Auf grausame Weise missbrauchen die herrschenden Affen eine primitive Menschenrasse für Experimente und zur Unterhaltung. Schon bald wird Taylor selbst zum Gejagten, seine einzige Hoffnung auf Rettung ist ein hilfsbereiter Schimpansen-Wissenschaftler.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="planet der affen - revolution"
+        data-year="2014"
+        data-genre="science fiction, action, drama, thriller"
+        data-cast="andy serkis, jason clarke, toby kebbell, gary oldman, keri russell"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Planet_der_Affen_-_Revolution_2014.jpg" 
+                alt="Poster für Planet der Affen - Revolution" 
+                class="poster" 
+                onclick="openModal('posters/poster_Planet_der_Affen_-_Revolution_2014.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Planet der Affen - Revolution (2014)</h2>
+            <p class="genre">Genre: Science Fiction, Action, Drama, Thriller</p>
+            <p class="cast">Darsteller: Andy Serkis, Jason Clarke, Toby Kebbell, Gary Oldman, Keri Russell</p>
+            <p class="rating">Bewertung: ⭐ 7.3/10</p>
+            <p class="plot">Nachdem durch die randalierenden und genetisch veränderten Affen und den ausgebrochenen Virus die Weltbevölkerung drastisch reduziert wurde, versuchen einige wenige Überlebende ihr Dasein in San Francisco zu fristen. Aber auch bei den Affen ergeben sich Probleme. Der Anführer Caesar muss seine Machtposition in den eigenen Rängen behaupten. Mittlerweile hat er selbst eine Frau und ein Baby. Seinen Artgenossen hat er mittlerweile beigebracht, sich mithilfe einer Zeichenspracheuntereinander zu verständigen. Alles deutet darauf hin, dass der Waffenstillstand zwischen Affen und den überlebenden Menschen nicht von Dauer sein wird. Bald schon wird sich entscheiden, welche der beiden Spezies die Erde in Zukunft dominieren wird.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="planet der affen - survival"
+        data-year="2017"
+        data-genre="drama, science fiction, kriegsfilm"
+        data-cast="andy serkis, woody harrelson, karin konoval, terry notary, steve zahn"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Planet_der_Affen_-_Survival_2017.jpg" 
+                alt="Poster für Planet der Affen - Survival" 
+                class="poster" 
+                onclick="openModal('posters/poster_Planet_der_Affen_-_Survival_2017.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Planet der Affen - Survival (2017)</h2>
+            <p class="genre">Genre: Drama, Science Fiction, Kriegsfilm</p>
+            <p class="cast">Darsteller: Andy Serkis, Woody Harrelson, Karin Konoval, Terry Notary, Steve Zahn</p>
+            <p class="rating">Bewertung: ⭐ 7.2/10</p>
+            <p class="plot">Der Krieg, den Koba mit den von der Seuche stark dezimierten Menschen angezettelt hat, ist in vollem Gange. Affen-Anführer Caesar geht es dabei gar nicht länger ums Gewinnen, er will lediglich einen Weg finden, wie er mit seinem Stamm in Frieden leben kann. Doch eine Spezialeinheit unter Führung des brutalen Colonel will Caesar um jeden Preis tot sehen und so werden im Urwald vor den Toren San Franciscos weiterhin blutige Gefechte ausgetragen, die in einem heimtückischen Anschlag auf das geheime Versteck der Affen gipfeln, das ein Verräter preisgegeben hat. Nun gärt in dem sonst friedliebenden Caesar das Bedürfnis nach Rache und mit seiner rechten Hand Rocket und einigen weiteren Getreuen macht er sich auf die beschwerliche Suche nach dem Colonel, fest entschlossen, keine Gnade mehr walten zu lassen.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="planet der affen: new kingdom"
+        data-year="2024"
+        data-genre="science fiction, abenteuer, action"
+        data-cast="owen teague, freya allan, kevin durand, peter macon, william h. macy"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Planet_der_Affen__New_Kingdom_2024.jpg" 
+                alt="Poster für Planet der Affen: New Kingdom" 
+                class="poster" 
+                onclick="openModal('posters/poster_Planet_der_Affen__New_Kingdom_2024.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Planet der Affen: New Kingdom (2024)</h2>
+            <p class="genre">Genre: Science Fiction, Abenteuer, Action</p>
+            <p class="cast">Darsteller: Owen Teague, Freya Allan, Kevin Durand, Peter Macon, William H. Macy</p>
+            <p class="rating">Bewertung: ⭐ 7.1/10</p>
+            <p class="plot">Etwa 300 Jahre nach der blutigen und verlustreichen Schlacht zwischen den von Caesar angeführten Affen und den Menschen unter Kommando des Colonels, haben sich in der Oase, in die Caesar seine Artgenossen einst geführt hat, mehrere Affengesellschaften parallel entwickelt. Die Menschen hingegen sind wieder Wilde geworden. Einige der Affenclans haben noch nie etwas von Caesar gehört. Andere wiederum nutzen dessen Legendenstatus aus, um seine Lehren zugunsten ehrgeiziger Ziele zu verdrehen. Vor diesem Hintergrund versklavt der Affenanführer Proximus Caesar andere Clans, um eine geheime, menschliche Technologie zu finden. Als der Schimpanse Noa mitansehen muss, wie seine Sippe entführt wird, begibt er sich zusammen mit dem menschlichen Mädchen Mae auf die Suche, um seine verschleppten Artgenossen zu finden und zu befreien...</p>
         </div>
     </div>
 
@@ -7727,6 +8302,32 @@
 
     <div 
         class="film-container" 
+        data-title="shang-chi and the legend of the ten rings"
+        data-year="2021"
+        data-genre="action, abenteuer, fantasy"
+        data-cast="simu liu, tony leung chiu-wai, awkwafina, ben kingsley, 张梦儿"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Shang-Chi_and_the_Legend_of_the_Ten_Rings_2021.jpg" 
+                alt="Poster für Shang-Chi and the Legend of the Ten Rings" 
+                class="poster" 
+                onclick="openModal('posters/poster_Shang-Chi_and_the_Legend_of_the_Ten_Rings_2021.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Shang-Chi and the Legend of the Ten Rings (2021)</h2>
+            <p class="genre">Genre: Action, Abenteuer, Fantasy</p>
+            <p class="cast">Darsteller: Simu Liu, Tony Leung Chiu-wai, Awkwafina, Ben Kingsley, 张梦儿</p>
+            <p class="rating">Bewertung: ⭐ 7.5/10</p>
+            <p class="plot">Shang-Chi wurde von der terroristischen Geheimorganisation der Ten Rings seit frühster Kindheit zum Killer ausgebildet. Trotz dieses intensiven Martial-Arts-Trainings hat der junge Mann aber versucht, sich ein normales Leben in San Francisco aufzubauen.  Doch als er gerade glaubt, sein früheres Leben vielleicht wirklich hinter sich gelassen zu haben, holt die Vergangenheit ihn wieder ein. Zusammen mit seiner alten Kindheitsfreundin Katy wird er von seinem kriminellen Vater Wenwu in eine Welt gezogen, in der niemand irgendjemanden mit Samthandschuhen anfasst. Nur die zehn Ringe des Mandarin können das Blatt im Kampf gegen das Böse vielleicht noch wenden.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="shooter"
         data-year="2007"
         data-genre="action, drama, thriller"
@@ -8299,6 +8900,58 @@
 
     <div 
         class="film-container" 
+        data-title="terminator 2 - tag der abrechnung"
+        data-year="1991"
+        data-genre="action, thriller, science fiction"
+        data-cast="arnold schwarzenegger, linda hamilton, edward furlong, robert patrick, earl boen"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Terminator_2_-_Tag_der_Abrechnung_1991.jpg" 
+                alt="Poster für Terminator 2 - Tag der Abrechnung" 
+                class="poster" 
+                onclick="openModal('posters/poster_Terminator_2_-_Tag_der_Abrechnung_1991.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Terminator 2 - Tag der Abrechnung (1991)</h2>
+            <p class="genre">Genre: Action, Thriller, Science Fiction</p>
+            <p class="cast">Darsteller: Arnold Schwarzenegger, Linda Hamilton, Edward Furlong, Robert Patrick, Earl Boen</p>
+            <p class="rating">Bewertung: ⭐ 8.1/10</p>
+            <p class="plot">Zehn Jahre nach der Terrorherrschaft des ersten Terminators kehrt ein neuer Killer-Cyborg auf die Erde zurück. Der Auftrag des T-1000 lautet: John Connor muss sterben. Der zwölfjährige John ist der einzige, der eines fernen Tages die Menschheit vor der Übernahme der Weltherrschaft durch die Maschinen retten könnte. Doch die Rebellen aus der Zukunft sind wachsam. Zum Schutz für John entsenden sie einen umprogrammierten Terminator der alten Generation, den T-800, auf die Erde.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="terminator 3 - rebellion der maschinen"
+        data-year="2003"
+        data-genre="action, thriller, science fiction"
+        data-cast="arnold schwarzenegger, nick stahl, claire danes, kristanna loken, earl boen"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Terminator_3_-_Rebellion_der_Maschinen_2003.jpg" 
+                alt="Poster für Terminator 3 - Rebellion der Maschinen" 
+                class="poster" 
+                onclick="openModal('posters/poster_Terminator_3_-_Rebellion_der_Maschinen_2003.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Terminator 3 - Rebellion der Maschinen (2003)</h2>
+            <p class="genre">Genre: Action, Thriller, Science Fiction</p>
+            <p class="cast">Darsteller: Arnold Schwarzenegger, Nick Stahl, Claire Danes, Kristanna Loken, Earl Boen</p>
+            <p class="rating">Bewertung: ⭐ 6.2/10</p>
+            <p class="plot">Zehn Jahre sind vergangen, seit mit John Connors Hilfe der Weltuntergang verhindert und die Menschheit vor ihrer Zerstörung bewahrt wurde. Heute, im Alter von 25 Jahren, führt Connor ein Leben am Rande der Gesellschaft – ohne Wohnung, Kreditkarten, Mobiltelefon und ohne Job. Es gibt keinen Hinweis auf seine Existenz: er hinterlässt keine Spur, die von “Skynet” verfolgt werden könnte – dem hoch entwickelten Netzwerk von Maschinen, die einst versucht hatten, ihn zu töten und Krieg gegen die Menschen zu führen. Bis der T-X aus dem Schatten der Zukunft tritt: Skynets bisher am höchsten entwickelte, tödliche Menschmaschine, ebenso sexy wie gnadenlos. T-X soll vollenden, was ihr Vorgänger T-1000 nicht ausführen konnte. Connors einzige Überlebenschance ist der Terminator, die legendäre, einst auf ihn angesetzte Killermaschine. Ihnen bleibt nur wenig Zeit: Sie müssen T-X ausschalten – sonst ist die Apokalypse nicht aufzuhalten.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
         data-title="the 12th man - kampf ums überleben"
         data-year="2017"
         data-genre="kriegsfilm, drama"
@@ -8554,6 +9207,32 @@
             <p class="cast">Darsteller: Sylvester Stallone, Jason Statham, Jet Li, Dolph Lundgren, Eric Roberts</p>
             <p class="rating">Bewertung: ⭐ 6.4/10</p>
             <p class="plot">Ein CIA-Mitarbeiter engagiert ein Söldnerteam, um einen lateinamerikanischen Diktator und einen abtrünnigen CIA-Agenten zu eliminieren.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="the factory"
+        data-year="2012"
+        data-genre="krimi, thriller, mystery"
+        data-cast="john cusack, jennifer carpenter, mae whitman, dallas roberts, sonya walger"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_The_Factory_2012.jpg" 
+                alt="Poster für The Factory" 
+                class="poster" 
+                onclick="openModal('posters/poster_The_Factory_2012.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>The Factory (2012)</h2>
+            <p class="genre">Genre: Krimi, Thriller, Mystery</p>
+            <p class="cast">Darsteller: John Cusack, Jennifer Carpenter, Mae Whitman, Dallas Roberts, Sonya Walger</p>
+            <p class="rating">Bewertung: ⭐ 5.6/10</p>
+            <p class="plot">Die Statistik besagt, falls eine Entführung nicht innerhalb der ersten 48 Stunden aufgeklärt wird, bleibt das Opfer für immer verschwunden. Für den Polizisten Mike Fletcher wird diese Statistik zur bitteren Wahrheit: Seine eigene Tochter wird entführt! Damit beginnt die Jagd nach einem wahnsinnigen Serientäter, bei der Fletcher mit Hilfe seiner Kollegin Kelsey Walker alle Regeln und Gesetze bricht -- während seine Tochter sich einem grausamen Schicksal in einem Kellerverlies stellen muss.</p>
         </div>
     </div>
 
@@ -9516,6 +10195,32 @@
             <p class="cast">Darsteller: Reiley McClendon, Cassidy Gifford, Brianne Howey, Olivia Draguicevich, Max Wright</p>
             <p class="rating">Bewertung: ⭐ 6.2/10</p>
             <p class="plot">Ein Professor betritt eine Höhle und geht verloren. Einige seiner Schüler kommen auf der Suche nach ihm und werden auch in der Höhle gefangen. Ein paar Sekunden in der Höhle entsprechen einem Jahr im Freien.</p>
+        </div>
+    </div>
+
+    <div 
+        class="film-container" 
+        data-title="titanic"
+        data-year="1997"
+        data-genre="drama, liebesfilm"
+        data-cast="leonardo dicaprio, kate winslet, billy zane, kathy bates, frances fisher"
+    >
+        
+        <div class="poster-wrapper">
+            <img 
+                src="posters/poster_Titanic_1997.jpg" 
+                alt="Poster für Titanic" 
+                class="poster" 
+                onclick="openModal('posters/poster_Titanic_1997.jpg')" 
+                title="Klicken für größere Ansicht"
+            >
+        </div>
+        <div class="details">
+            <h2>Titanic (1997)</h2>
+            <p class="genre">Genre: Drama, Liebesfilm</p>
+            <p class="cast">Darsteller: Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates, Frances Fisher</p>
+            <p class="rating">Bewertung: ⭐ 7.9/10</p>
+            <p class="plot">Atlantischer Ozean, 1912: Auf der Jungfernfahrt der Titanic trifft der mittellose Maler Jack Dawson auf die schöne, aber unglückliche Erste-Klasse-Passagierin Rose DeWitt Bukater. Rose reist gemeinsam mit ihrer Mutter und ihrem versnobten Verlobten Cal, den sie aus finanziellen Gründen heiraten soll, aber nicht liebt. Als Jack beobachtet, wie Rose über die Reling klettert, um sich ins Meer zu stürzen, und ihren sicheren Tod abwenden kann, beginnt für beide eine Liebesgeschichte über Klassengrenzen hinweg. Gemeinsam mit Jack entdeckt Rose das ausgelassene Leben der einfachen Passagiere unter Deck der Titanic und das wahre Wesen der Liebe. Währenddessen steuert die als unsinkbar geltende Titanic geradewegs auf einen Eisberg zu.</p>
         </div>
     </div>
 
@@ -10935,6 +11640,16 @@
         "rating_val": 5.4
     },
     {
+        "title": "8 Blickwinkel",
+        "year": "2008",
+        "genre": "Drama, Action, Thriller, Krimi",
+        "cast": "Dennis Quaid, Matthew Fox, Forest Whitaker, Sigourney Weaver, William Hurt",
+        "plot": "Bei einem Gipfeltreffen im spanischen Salamanca hat US-Präsident Ashton mit Staatsmännern aus aller Welt ein bahnbrechendes Bündnis im Kampf gegen den Terror geschlossen. Doch als er seine Rede hält, wird er erschossen. Sofort machen sich die beiden Secret Service Agenten Thomas Barnes und Kent Taylor auf die Suche nach dem Attentäter. Und schnell zeigt sich, dass dieses Attentat nur der Anfang war. Ein Wettlauf gegen die Zeit beginnt, in dem auch der Tourist Howard Lewis, der das Attentat mit seiner Videokamera gefilmt hat, und die amerikanische Fernsehproduzentin Rex Brooks, die für die Live-Übertragung der Rede verantwortlich war, eine Rolle spielen.",
+        "poster": "posters/poster_8_Blickwinkel_2008.jpg",
+        "rating": "6.4/10",
+        "rating_val": 6.4
+    },
+    {
         "title": "A Score to Settle",
         "year": "2019",
         "genre": "Action, Thriller",
@@ -11005,6 +11720,16 @@
         "rating_val": 6.0
     },
     {
+        "title": "Alibi.com",
+        "year": "2017",
+        "genre": "Komödie, Familie",
+        "cast": "Philippe Lacheau, Élodie Fontan, Julien Arruti, Tarek Boudali, Nathalie Baye",
+        "plot": "Alibi.com nennt sich die Firma, die Grégory Van Huffel gegründet hat und zusammen mit seinem Geschäftspartner Augustin und seinem neusten Angestellten Mehdi betreibt. Die Geschäftsidee ist dabei folgende: Immer wenn andere Menschen sich in eine brenzlige Situation gebracht haben und zur Rechtfertigung gegenüber anderen eine plausible Ausrede brauchen, wo sie während ihrer Abwesenheit waren und was sie getan haben, denken Greg und Co. sich ein Alibi für ihre Kunden aus. Bisher war seine Firma für Greg ein äußerst einträgliches Geschäftsmodell. Kompliziert wird sein Job für ihn erst, als er sich in Florence Martin verliebt. Sie kann Lügner und Betrüger nicht ausstehen – was Greg dazu bringt, die wahre Natur seines Berufs vor ihr zu verbergen. Es kommt jedoch noch schlimmer …",
+        "poster": "posters/poster_Alibi.com_2017.jpg",
+        "rating": "6.5/10",
+        "rating_val": 6.5
+    },
+    {
         "title": "All Is Lost",
         "year": "2013",
         "genre": "Action, Abenteuer, Drama",
@@ -11025,6 +11750,16 @@
         "rating_val": 7.2
     },
     {
+        "title": "American Night",
+        "year": "2021",
+        "genre": "Action, Thriller, Krimi",
+        "cast": "Jonathan Rhys Meyers, Paz Vega, Emile Hirsch, Michael Madsen, Jeremy Piven",
+        "plot": "Der Kunsthändler John Kaplan (Jonathan Rhys Meyers) und der skrupellose Kopf der New Yorker Mafia Michael Rubino (Emile Hirsch) führen einen Kampf um Geld, Kunst, Macht und Liebe. Denn beiden Männer haben ein Bild von Andy Warhol ins Auge gefasst: John möchte das Gemälde für seine neu eröffnete Galerie, Michael hingegen ist trotz seines Gangster-Lebens ein Kunstliebhaber und will das Bild für seine private Sammlung bekommen. Doch John und Michael sind nicht die einzigen zwielichtigen Gestalten, die hinter dem Bild her sind. Auch die Museumskuratorin Sarah (Paz Vega) sowie der Stuntman Vincent (Jeremy Piven) sind hinter dem Kunstwerk her...",
+        "poster": "posters/poster_American_Night_2021.jpg",
+        "rating": "4.1/10",
+        "rating_val": 4.1
+    },
+    {
         "title": "American Outlaws",
         "year": "2001",
         "genre": "Action, Drama, Western",
@@ -11033,6 +11768,16 @@
         "poster": "posters/poster_American_Outlaws_2001.jpg",
         "rating": "5.9/10",
         "rating_val": 5.9
+    },
+    {
+        "title": "Amistad - Das Sklavenschiff",
+        "year": "1997",
+        "genre": "Drama, Historie, Mystery",
+        "cast": "Morgan Freeman, Nigel Hawthorne, Anthony Hopkins, Djimon Hounsou, Matthew McConaughey",
+        "plot": "Sklavenhändler entführen aus der britischen Kolonie Sierra Leone eine Gruppe von Afrikanern. Die Sklaven wehren sich, indem sie das Sklavenschiff entführen. Sie werden jedoch auf dem Ozean von einem amerikanischen Schiff aufgebracht und nach Amerika transportiert. Dort angekommen, werden die Afrikaner verhaftet und vor Gericht gestellt. Dabei beanspruchen unterschiedliche Parteien das Schiff und die Sklaven als ihr Eigentum. Der Prozess entwickelt sich dadurch zu einem absurden Gezerre um Macht und Besitz, bei dem es nicht mehr um das Schicksal der Menschen geht, bis ein Rechtsanwalt alles daran setzt, die Rechte der Afrikaner zu wahren. Der Film wurde auf der Grundlage einer wahren Begebenheit gedreht.",
+        "poster": "posters/poster_Amistad_-_Das_Sklavenschiff_1997.jpg",
+        "rating": "7.0/10",
+        "rating_val": 7.0
     },
     {
         "title": "Anon - Mit den Augen des Killers",
@@ -11205,6 +11950,16 @@
         "rating_val": 5.2
     },
     {
+        "title": "Blendende Weihnachten",
+        "year": "2006",
+        "genre": "Komödie, Familie",
+        "cast": "Danny DeVito, Matthew Broderick, Kristin Davis, Kristin Chenoweth, Alia Shawkat",
+        "plot": "Wenn man in dem beschaulichen Provinznest Cloverdale in New England von “Mr. Christmas” spricht, kann nur Doktor Steve Finch gemeint sein. Seit Jahren zieht der Familienvater im letzten Monat des Jahres ein straffes Weihnachtsprogramm durch: basteln, singen, backen, Schlittenfahrten. Steve hat nicht nur das am schönsten geschmückte Haus, er ist auch hoch geschätzter Experte für alle Fragen rund um das Fest der Liebe. Doch eines Tages zieht der frustrierte Buddy Hall ins Nachbarhaus ein, der sich in den Kopf gesetzt hat, “Mr. Christmas” vom Thron zu stoßen. Er will sein Haus mit so vielen Lichterketten schmücken, dass man es vom Weltall aus sehen kann. Doch Steve gibt sich nicht kampflos geschlagen und rüstet ebenfalls auf.",
+        "poster": "posters/poster_Blendende_Weihnachten_2006.jpg",
+        "rating": "5.6/10",
+        "rating_val": 5.6
+    },
+    {
         "title": "Blitz",
         "year": "2011",
         "genre": "Krimi, Action, Thriller",
@@ -11263,6 +12018,16 @@
         "poster": "posters/poster_Bullet_Train_2022.jpg",
         "rating": "7.3/10",
         "rating_val": 7.3
+    },
+    {
+        "title": "Bulletproof Monk - Der kugelsichere Mönch",
+        "year": "2003",
+        "genre": "Action, Komödie, Fantasy",
+        "cast": "Chow Yun-Fat, Seann William Scott, Jaime King, Karel Roden, Victoria Smurfit",
+        "plot": "Der titelgebende Martial-Arts-Meister und Zen-Buddhist erkennt widerwillig im gerissenen Taschendieb Kar seinen Nachfolger an. Der sympathische Kleinganove soll in Zukunft an seiner Statt jene mysteriöse Schriftrolle hüten, die dem Besitzer unbeschränkte Macht und Unsterblichkeit gewährt. Und so beginnt ein intensives Training auf die ehrenvolle Aufgabe. Zunächst gilt es aber, sich der heimtückischen Attacken des Alt-Nazis Struker zu erwehren, der seit 60 Jahren versucht, das wertvolle Pergament in seine Hände zu bekommen.",
+        "poster": "posters/poster_Bulletproof_Monk_-_Der_kugelsichere_Mönch_2003.jpg",
+        "rating": "5.5/10",
+        "rating_val": 5.5
     },
     {
         "title": "Burke & Hare",
@@ -11575,6 +12340,16 @@
         "rating_val": 7.0
     },
     {
+        "title": "Der kleine Lord",
+        "year": "1980",
+        "genre": "Familie, Drama, TV-Film",
+        "cast": "Rick Schroder, Alec Guinness, Eric Porter, Colin Blakely, Connie Booth",
+        "plot": "Der siebenjährige Cedric Errol lebt mit seiner amerikanischen Mutter in sehr bescheidenen Verhältnissen. Eines Tages taucht ein Mann auf und erklärt, dass Cedric der einzige Erbe des Titels und Vermögens seines Großvaters ist. Cedric soll den Titel Lord Fauntleroy erhalten und im Schloss des Großvaters leben und erzogen werden.",
+        "poster": "posters/poster_Der_kleine_Lord_1980.jpg",
+        "rating": "7.4/10",
+        "rating_val": 7.4
+    },
+    {
         "title": "Der Legionär",
         "year": "1998",
         "genre": "Action, Kriegsfilm, Abenteuer, Historie",
@@ -11673,6 +12448,16 @@
         "poster": "posters/poster_Der_Patriot_2000.jpg",
         "rating": "7.2/10",
         "rating_val": 7.2
+    },
+    {
+        "title": "Der Rausch",
+        "year": "2020",
+        "genre": "Komödie, Drama",
+        "cast": "Mads Mikkelsen, Thomas Bo Larsen, Magnus Millang, Lars Ranthe, Maria Bonnevie",
+        "plot": "Früher war Martin Lehrer aus Leidenschaft – heute sind nicht nur die Schüler von seinem fehlenden Enthusiasmus gelangweilt, auch in Martins Ehe ist die Luft raus. Seinen drei Freunden, die am selben Gymnasium unterrichten, geht es nicht viel besser. Bei einer angeheiterten Geburtstagsrunde diskutieren sie die Theorie eines norwegischen Philosophen: Nach dieser ist ein Mensch nur mit einem erhöhten Alkoholgehalt im Blut zu Bestleistungen fähig. Solch eine gewagte These muss überprüft werden. Die vier beschließen den Selbsttest zu machen und während der Arbeit einen bestimmten Pegel zu halten. Soll nicht sogar Churchill den Zweiten Weltkrieg in einem Alkoholrausch gewonnen haben? Mit neuem Antrieb stürzen sie sich in ihre geheime wissenschaftliche Studie. Die Wirkung lässt nicht lange auf sich warten …",
+        "poster": "posters/poster_Der_Rausch_2020.jpg",
+        "rating": "7.6/10",
+        "rating_val": 7.6
     },
     {
         "title": "Der Supercop",
@@ -11783,6 +12568,16 @@
         "poster": "posters/poster_Die_Herrschaft_des_Feuers_2002.jpg",
         "rating": "6.2/10",
         "rating_val": 6.2
+    },
+    {
+        "title": "Die Hochzeit meines besten Freundes",
+        "year": "1997",
+        "genre": "Komödie, Liebesfilm",
+        "cast": "Julia Roberts, Dermot Mulroney, Cameron Diaz, Rupert Everett, Philip Bosco",
+        "plot": "Die Restaurantkritikerin Julianne hat dem Sportreporter Michael die ewige Treue geschworen – als beste Freundin wohlgemerkt. Sie ist sicher, dass sie, wenn überhaupt, nur einander heiraten werden. Entsprechend fühlt sich Julianne vor den Kopf geschlagen, als Michael sie aus heiterem Himmel zu seiner Hochzeit mit der Millionenerbin Kimmy einlädt. Für Julianne steht fest: Die Nebenbuhlerin muss aus dem Feld geschlagen werden – koste es, was es wolle. Dabei schreckt Julianne vor nichts zurück: Hinterlist, Lügen und E-Mail-Betrug sollen sie ans Ziel ihrer heimlichen Träume führen. Und tatsächlich: Kurz vor der Hochzeit scheint Michael langsam weich zu werden …",
+        "poster": "posters/poster_Die_Hochzeit_meines_besten_Freundes_1997.jpg",
+        "rating": "6.6/10",
+        "rating_val": 6.6
     },
     {
         "title": "Die Jury",
@@ -12075,6 +12870,26 @@
         "rating_val": 6.8
     },
     {
+        "title": "Elektra",
+        "year": "2005",
+        "genre": "Action, Fantasy, Abenteuer",
+        "cast": "Jennifer Garner, Goran Višnjić, Will Yun Lee, Cary-Hiroyuki Tagawa, Terence Stamp",
+        "plot": "Sie ist schnell, durchtrainiert, perfekt - Elektra ist nach ihrem Beinahe-Tod in \"Daredevil\" nach wie vor die beste Auftragsmörderin der Welt. Man vergleicht sie mit einem tödlichen Phantom und keine kann so elegant mit Messern umgehen wie sie. Doch als Elektra die 13-jährige Abby und deren Vater Mark töten soll, bringt sie es nicht übers Herz, beschützt die beiden sogar vor einen Anschlag des dunklen Geheimbunds \"The Hand\". Ein gnadenloser Krieg zwischen Gut und Böse beginnt, bei dem Elektra all ihr Können und Wissen auf eine Karte setzen muss, um Mark und Abby zu retten...",
+        "poster": "posters/poster_Elektra_2005.jpg",
+        "rating": "5.0/10",
+        "rating_val": 5.0
+    },
+    {
+        "title": "Escape Plan 2 - Hades",
+        "year": "2018",
+        "genre": "Action, Thriller, Krimi, Mystery, Science Fiction",
+        "cast": "Sylvester Stallone, Dave Bautista, Jesse Metcalfe, 50 Cent, 黄晓明",
+        "plot": "Ray Breslin und sein Team sind darauf spezialisiert, selbst aus den sichersten Gefängnissen der Welt Menschen zu befreien. Doch dann wird Breslins bester Agent Shu Ren entführt und in einem High-Tech-Gefängnis eingesperrt, das so modern ist, wie kein anderer Knast zuvor. Für Breslin scheint es keine Möglichkeit zu geben, seinen Mitarbeiter zu befreien, zumal das Gefängnis sogar stetig seine Form verändert, es also keinerlei Plan gibt. Doch gemeinsam mit unter anderem Tech-Experte Hush ist Breslin wild entschlossen, trotzdem einen Weg zu finden...",
+        "poster": "posters/poster_Escape_Plan_2_-_Hades_2018.jpg",
+        "rating": "5.2/10",
+        "rating_val": 5.2
+    },
+    {
         "title": "eXistenZ",
         "year": "1999",
         "genre": "Action, Thriller, Science Fiction",
@@ -12093,6 +12908,16 @@
         "poster": "posters/poster_Fantastic_Movie_2007.jpg",
         "rating": "3.9/10",
         "rating_val": 3.9
+    },
+    {
+        "title": "Fargo",
+        "year": "1996",
+        "genre": "Krimi, Drama, Thriller",
+        "cast": "Frances McDormand, William H. Macy, Steve Buscemi, Peter Stormare, Harve Presnell",
+        "plot": "Es könnte der Plan zum perfekten Verbrechen sein: Der abgebrannte Autoverkäufer Jerry Lundegaard engagiert zwei Galgenvögel, die seine Ehefrau entführen und vom ebenso reichen wie geizigen Schwiegervater ein Lösegeld erpressen sollen. Doch die beiden Schmalspur-Gangster, der eine ein hypernervöses Wrack, der andere ein schweigsamer Psychopath, gehen derart stümperhaft zu Werke, daß mit einemmal drei Menschen tot in der verschneiten Einöde Minnesotas liegen. Ein Fall für Marge Gunderson. Die hochschwangere Polizistin nimmt die Spur auf – Blutstropfen für Blutstropfen.",
+        "poster": "posters/poster_Fargo_1996.jpg",
+        "rating": "7.8/10",
+        "rating_val": 7.8
     },
     {
         "title": "Feinde Hostiles",
@@ -12193,6 +13018,16 @@
         "poster": "posters/poster_Gattaca_1997.jpg",
         "rating": "7.7/10",
         "rating_val": 7.7
+    },
+    {
+        "title": "Genie und Schnauze",
+        "year": "1988",
+        "genre": "Komödie, Krimi",
+        "cast": "Michael Caine, Ben Kingsley, Jeffrey Jones, Lysette Anthony, Nigel Davenport",
+        "plot": "Sherlock Holmes hat es nie gegeben. Dr. Watson ist in Wirklichkeit das Superhirn und präsentiert den drittklassigen Schauspieler, Trinker und Schürzenjäger Reginald Kincaid der Öffentlichkeit als Sherlock Holmes. Als Watson seinen Strohmann nach einem seiner Exzesse entläßt, muß er feststellen, daß an der Wahrheit kein Interesse besteht und niemand dem “Assistenten” Watson einen Fall anvertrauen will. Kincaid wird reaktiviert und steht mehr oder weniger zufällig bei der Wiederbeschaffung gestohlener 5-Pfund-Druckplatten seinen Mann, mit denen Bösewicht Moriarty die britische Wirtschaft in den Ruin treiben will.",
+        "poster": "posters/poster_Genie_und_Schnauze_1988.jpg",
+        "rating": "6.7/10",
+        "rating_val": 6.7
     },
     {
         "title": "Gesetz der Rache",
@@ -12605,6 +13440,16 @@
         "rating_val": 5.0
     },
     {
+        "title": "Jane Got a Gun",
+        "year": "2015",
+        "genre": "Western, Action, Drama",
+        "cast": "Natalie Portman, Joel Edgerton, Ewan McGregor, Noah Emmerich, Boyd Holbrook",
+        "plot": "Jane ist mit einem der übelsten Gangster der Stadt verheiratet. Als dieser sich dazu entschließt, sich gegen seine eigene Bande zu stellen, wird er schnell zum Ziel und bei einem Angriff der ehemaligen, von dem skrupellosen Colin McCann angeführten, Kumpanen schwer verletzt. Der Ehemann schafft es trotz acht Kugeln in seinem Körper, nach Hause zurückzukehren, wo er Jane warnen kann, dass seine ehemalige Bande nun nach ihm suchen wird. Jane wird klar, dass nur sie die Familie und das Grundstück noch beschützen kann und so holt sie sich Hilfe bei ihrem alten Freund Dan Frost, einem Revolverhelden, der den Anführer der Gangster-Bande schon länger ins Auge gefasst hat. Darüber hinaus ist er heimlich in Jane verliebt und sieht so seine Chance gekommen. Jane und Dan entdecken alte Gefühle füreinander, als sie sich der Bande entgegenstellen und um ihr eigenes Überleben kämpfen.",
+        "poster": "posters/poster_Jane_Got_a_Gun_2015.jpg",
+        "rating": "5.8/10",
+        "rating_val": 5.8
+    },
+    {
         "title": "Jeepers Creepers 2",
         "year": "2003",
         "genre": "Horror, Mystery",
@@ -12643,6 +13488,16 @@
         "poster": "posters/poster_Jungle_2017.jpg",
         "rating": "6.7/10",
         "rating_val": 6.7
+    },
+    {
+        "title": "Kandahar",
+        "year": "2023",
+        "genre": "Action, Thriller, Kriegsfilm",
+        "cast": "Gerard Butler, Navid Negahban, Travis Fimmel, Ali Fazal, Bahador Foladi",
+        "plot": "Tom Harris ist ein im Nahen Osten stationierter Undercover-CIA-Agent. Als ein Geheimdienstleck seine geheime Mission aufdeckt, müssen Harris und sein Übersetzer sich durch die Wüste kämpfen, um Kandahar in Afghanistan zu erreichen und den Elite-Spezialeinheiten, die sie jagen, zu entkommen.",
+        "poster": "posters/poster_Kandahar_2023.jpg",
+        "rating": "6.8/10",
+        "rating_val": 6.8
     },
     {
         "title": "Karate Kid I",
@@ -12743,6 +13598,16 @@
         "poster": "posters/poster_Knives_Out_-_Mord_ist_Familiensache_2019.jpg",
         "rating": "7.9/10",
         "rating_val": 7.9
+    },
+    {
+        "title": "Kompromat - Die Macht der Lüge",
+        "year": "2022",
+        "genre": "Thriller, Drama",
+        "cast": "Gilles Lellouche, Joanna Kulig, Michail Witaljewitsch Gorewoi, Sasha Piltsin, Михаил Сафронов",
+        "plot": "Sibirien, 2017: Der französische Diplomat Mathieu wird Opfer einer Intrige des russischen Geheimdienstes. Vor den Augen seiner Tochter wird er verhaftet, inhaftiert und isoliert. Ohne Chance auf Verteidigung oder Hilfe von der eigenen Regierung bleibt dem Staatsfeind nur ein Ausweg, wenn er seine Familie je wiedersehen will: die abenteuerliche Flucht auf eigene Faust durch ein fremdes und feindseliges Land.",
+        "poster": "posters/poster_Kompromat_-_Die_Macht_der_Lüge_2022.jpg",
+        "rating": "6.3/10",
+        "rating_val": 6.3
     },
     {
         "title": "Konferenz der Tiere",
@@ -13095,6 +13960,16 @@
         "rating_val": 5.1
     },
     {
+        "title": "Mord im Orientexpress",
+        "year": "1974",
+        "genre": "Drama, Thriller, Mystery",
+        "cast": "Albert Finney, Lauren Bacall, Martin Balsam, Ingrid Bergman, Sean Connery",
+        "plot": "Hercule Poirot steht vor einem seiner schwierigsten Fälle: In einer eisigen Winternacht muss der Orient Express aus Istanbul anhalten und am nächsten Morgen wird die Leiche eines, mit 12 Messerstichen ermordeten, reichen Geschäftsmannes aufgefunden.",
+        "poster": "posters/poster_Mord_im_Orientexpress_1974.jpg",
+        "rating": "7.1/10",
+        "rating_val": 7.1
+    },
+    {
         "title": "Mortal – Mut ist unsterblich",
         "year": "2020",
         "genre": "Action, Abenteuer, Drama",
@@ -13263,6 +14138,16 @@
         "poster": "posters/poster_Otto_-_Der_Neue_Film_1987.jpg",
         "rating": "5.7/10",
         "rating_val": 5.7
+    },
+    {
+        "title": "Pakt der Rache",
+        "year": "2011",
+        "genre": "Action, Drama, Thriller",
+        "cast": "Nicolas Cage, January Jones, Guy Pearce, Harold Perrineau, Jennifer Carpenter",
+        "plot": "Will Gerards geordnetes Leben als Highschool-Lehrer nimmt ein plötzliches Ende, als seine Frau Laura Opfer eines brutalen Überfalls wird. Vom Täter fehlt jede Spur. Im Krankenhaus trifft Will auf einen unbekannten, der sich selbst Simon nennt. Von Verzweiflung und Rachedurst getrieben lässt sich Will auf ein unmoralisches Angebot ein: Der zwielichtige Simon ist Mitglied einer Untergrundorganisation, die sich auf Selbstjustiz spezialisiert hat. Er verspricht Will Gerechtigkeit, indem er Lauras Angreifer findet und tötet. Doch alles im Leben hat seinen Preis. Die Gegenleistung, die Simon einfordert, bringt nicht nur Laura, sondern auch Will selbst in Lebensgefahr.",
+        "poster": "posters/poster_Pakt_der_Rache_2011.jpg",
+        "rating": "5.9/10",
+        "rating_val": 5.9
     },
     {
         "title": "Pakt der Wölfe",
@@ -13455,6 +14340,16 @@
         "rating_val": 5.6
     },
     {
+        "title": "Running Man",
+        "year": "1987",
+        "genre": "Action, Thriller, Science Fiction",
+        "cast": "Arnold Schwarzenegger, Richard Dawson, María Conchita Alonso, Yaphet Kotto, Jim Brown",
+        "plot": "Im Jahr 2011 trägt die populärste Fernsehshow den Namen 'Running Man'. Straffällig gewordene Männer und Frauen müssen ihren Preis gegenüber der Gesellschaft mit dem Tod bezahlen. Dieser Tod tritt allerdings erst nach einem brutalen, aussichtslosen Kampf gegen die Gladiatoren von 'Running Man' ein. Jetzt allerdings befindet sich Ben Richards in der Todeszone und der Moderator der Show, Damon Killian  sollte niemals Richards letzte Worte vergessen: Ich komme wieder.",
+        "poster": "posters/poster_Running_Man_1987.jpg",
+        "rating": "6.5/10",
+        "rating_val": 6.5
+    },
+    {
         "title": "Running Scared",
         "year": "2006",
         "genre": "Action, Krimi, Drama",
@@ -13515,6 +14410,16 @@
         "rating_val": 6.8
     },
     {
+        "title": "Schnappt Shorty",
+        "year": "1995",
+        "genre": "Komödie, Thriller, Krimi",
+        "cast": "John Travolta, Gene Hackman, Rene Russo, Danny DeVito, Dennis Farina",
+        "plot": "Chili Palmer ist nicht nur ein recht „erfolgreicher“ Schuldeneintreiber, sondern auch ein Kinofan, und das von ganzem Herzen. Da trifft es sich doch gut, dass sein neuester Auftrag ihn nach Hollywood, das Herz der amerikanischen Filmproduktion, verschlägt. Schon bald erkennt Chili eine Sache ganz deutlich: Zwischen seinem Job und dem eines Filmproduzenten gibt es gar nicht so viele Unterschiede.",
+        "poster": "posters/poster_Schnappt_Shorty_1995.jpg",
+        "rating": "6.5/10",
+        "rating_val": 6.5
+    },
+    {
         "title": "Selfless – Der Fremde in mir",
         "year": "2015",
         "genre": "Action, Mystery, Science-Fiction",
@@ -13543,6 +14448,16 @@
         "poster": "posters/poster_Shooter_2007.jpg",
         "rating": "7.1/10",
         "rating_val": 7.1
+    },
+    {
+        "title": "Shorta - Das Gesetz der Straße",
+        "year": "2020",
+        "genre": "Action, Krimi",
+        "cast": "Jacob Lohmann, Simon Sears, Tarek Zayat, Issa Khattab, Abdelmalik Dhaflaoui",
+        "plot": "Als der 19-jährige Talib in Polizeigewahrsam seinen tödlichen Verletzungen erliegt, brechen in einem dänischen Vorstadt-Ghetto Proteste aus. In dieser heiklen Situation werden zwei ungleiche Cops auf Streife geschickt. Als sie einen jungen Unruhestifter festnehmen, kommt es zur Eskalation. Zusammen mit ihrem Gefangenen fliehen sie durch das urbane Labyrinth, das sich immer mehr in einen Bürgerkriegsschauplatz verwandelt.",
+        "poster": "posters/poster_Shorta_-_Das_Gesetz_der_Straße_2020.jpg",
+        "rating": "6.3/10",
+        "rating_val": 6.3
     },
     {
         "title": "Sie leben!",
@@ -13583,6 +14498,16 @@
         "poster": "posters/poster_Sleepy_Hollow_1999.jpg",
         "rating": "7.3/10",
         "rating_val": 7.3
+    },
+    {
+        "title": "Snatch - Schweine und Diamanten",
+        "year": "2000",
+        "genre": "Krimi, Komödie",
+        "cast": "Jason Statham, Alan Ford, Stephen Graham, Brad Pitt, Dennis Farina",
+        "plot": "Diamantendieb und -kurier Franky Four Fingers, der im Auftrag des New Yorker Gangsters Avi in Antwerpen einen großen Stein geraubt hat, macht auf seinem Weg zurück nach Manhattan in London halt. Er soll kleinere Steine bei Avis Cousin Doug „The Head“ und anderen Juwelieren in Hatton Garden abliefern. Zur gleichen Zeit steht der unerfahrene Boxpromoter Turkish mit seinem Geschäftspartner Tommy vor seinem ersten großen Kampf, den er mit dem uneingeschränkten Boss der Gegend, dem Boxpromoter und Schweinefarmbesitzer Brick Top auf die Beine stellt. Ungünstig ist allerdings, dass Turkishs Kämpfer Gorgeous George zuvor bei einem anderen Fight von dem irischen Zigeuner Mickey O'Neil auf die Bretter geschickt worden ist. Kurzerhand setzen Turkish und Tommy ihren neuen Schützling Mickey für den abgekarteten Kampf ein ...",
+        "poster": "posters/poster_Snatch_-_Schweine_und_Diamanten_2000.jpg",
+        "rating": "7.8/10",
+        "rating_val": 7.8
     },
     {
         "title": "Snow White and the Huntsman",
@@ -13653,6 +14578,16 @@
         "poster": "posters/poster_Sterben_will_gelernt_sein_2010.jpg",
         "rating": "5.7/10",
         "rating_val": 5.7
+    },
+    {
+        "title": "Sterne",
+        "year": "1959",
+        "genre": "Drama, Kriegsfilm",
+        "cast": "Sasha Krusharska, Jürgen Frohriep, Erik S. Klein, Stefan Pejchev, Georgi Naumov",
+        "plot": "Griechische Juden haben 1943 auf ihrer Deportation ins Todeslager Auschwitz einen dreitägigen Aufenthalt in einer kleinen bulgarischen Stadt. Hier begegnet der Wehrmachts-Unteroffizier Walter  der Jüdin Ruth. Sie bittet ihn um Hilfe für eine gebärende Mitgefangene. Er hilft so gut er kann, verliebt sich in Ruth und sie sich in ihn. Durch diese Liebe beginnt sich der ehemalige Kunststudent, der als Soldat seine Pflicht erfüllen wollte, zu wandeln. Er gerät in Konflikt mit seinem Vorgesetzten und Freund Kurt, der sehr überheblich und brutal ist. Zunächst lehnt Walter es ab, den im Wehrmachtsstützpunkt arbeitenden bulgarischen Widerstandskämpfern zu helfen. Aber dann ...",
+        "poster": "posters/poster_Sterne_1959.jpg",
+        "rating": "7.5/10",
+        "rating_val": 7.5
     },
     {
         "title": "Stiefbrüder",
@@ -13825,6 +14760,16 @@
         "rating_val": 6.4
     },
     {
+        "title": "The Florida Project",
+        "year": "2017",
+        "genre": "Drama",
+        "cast": "Brooklynn Prince, Bria Vinaite, Willem Dafoe, Christopher Rivera, Valeria Cotto",
+        "plot": "Die sechsjährige Moonee (Brooklynn Prince) lebt unweit des Disneylands im sonnigen Orlando. Gemeinsam mit ihren Freunden Scooty (Christopher Rivera) und Jancey (Valeria Cotto) streicht sie durch die Gegend und treibt allerhand Schabernack. Das Trio erbettelt sich Geld für Eis, legen die Stromversorgung eines gesamten Wohnblockes lahm und klettern in leerstehende Häuser. Als Moonees Mutter die Miete für ihre kleine Wohnung nicht mehr zahlen kann und auch die tatkräftige Unterstützung der Tochter durch den Verkauf von billigen Parfüm-Kopien nicht mehr hilft, entscheidet sie sich zu einem drastischen Schritt...",
+        "poster": "posters/poster_The_Florida_Project_2017.jpg",
+        "rating": "7.4/10",
+        "rating_val": 7.4
+    },
+    {
         "title": "The Fog – Nebel des Grauens",
         "year": "2005",
         "genre": "Horror, Mystery",
@@ -13833,6 +14778,16 @@
         "poster": "posters/poster_The_Fog___Nebel_des_Grauens_2005.jpg",
         "rating": "3.7/10",
         "rating_val": 3.7
+    },
+    {
+        "title": "The Foreigner",
+        "year": "2017",
+        "genre": "Action, Thriller, Krimi",
+        "cast": "Pierce Brosnan, Jackie Chan, Rory Fleck-Byrne, Ray Fearon, Charlie Murphy",
+        "plot": "Der demütige Restaurantbesitzer Quan hat in seiner Vergangenheit schon unendliches Leid ertragen müssen und hoffte in London alles hinter sich gelassen zu haben. Mit seiner Tochter Fan führt er ein glückliches Leben … bis diese bei einem Bombenattentat irischer Terroristen ums Leben kommt. Weil die Polizei auch nach Wochen noch keine Ermittlungsergebnisse präsentieren kann, macht er sich selbst auf die Suche nach Antworten und stößt dabei auf den irischen Politiker Liam Hennessy. Der hat dem Terror zwar öffentlich abgeschworen, doch Quan ist überzeugt, dass Hennessy die Namen der Täter kennt. Deswegen nimmt er ihn ins Visier und bedroht ihn selbst mit einer Bombe, um an die Namen der Täter zu kommen. Weil er nun selbst in Gefahr schwebt, schlägt Hennessy zurück. Es kommt zum erbitterten Duell der beiden Männer …",
+        "poster": "posters/poster_The_Foreigner_2017.jpg",
+        "rating": "7.0/10",
+        "rating_val": 7.0
     },
     {
         "title": "The Fountain",
@@ -13845,6 +14800,16 @@
         "rating_val": 7.1
     },
     {
+        "title": "The Glass House",
+        "year": "2001",
+        "genre": "Drama, Thriller",
+        "cast": "Leelee Sobieski, Diane Lane, Stellan Skarsgård, Trevor Morgan, Chris Noth",
+        "plot": "Ruby lebt ein ganz normales Leben mit ihren Eltern und ihrem Bruder. Ihre Freizeit verbringt sie damit, Partys zu feiern und ihr Leben zu genießen. Als sie von einer Party zurückkommt, ändert sich ihr Leben jedoch schlagartig, denn ihre Eltern sind bei einem Autounfall verunglückt. Danach nimmt das benachbarte Ehepaar Glass sich der beiden Geschwister an. Die Kinder ziehen mit den neuen Vormündern nach Malibu in einen beeindruckenden Palast aus Glas und Stahl. Zunächst fühlen sich die Kinder bei den neuen Eltern recht wohl, doch mit der Zeit haben die beiden immer mehr Zweifel an den guten Absichten des Ehepaares Glass …",
+        "poster": "posters/poster_The_Glass_House_2001.jpg",
+        "rating": "6.0/10",
+        "rating_val": 6.0
+    },
+    {
         "title": "The Green Hornet",
         "year": "2011",
         "genre": "Action, Komödie",
@@ -13853,6 +14818,16 @@
         "poster": "posters/poster_The_Green_Hornet_2011.jpg",
         "rating": "5.8/10",
         "rating_val": 5.8
+    },
+    {
+        "title": "The Green Knight",
+        "year": "2021",
+        "genre": "Abenteuer, Drama, Fantasy",
+        "cast": "Dev Patel, Alicia Vikander, Joel Edgerton, Sarita Choudhury, Sean Harris",
+        "plot": "Sir Gawain, Ritter der Tafelrunde, begibt sich auf die Reise seines Lebens. Um sich vor seiner Familie, seinem Volk und nicht zuletzt auch vor sich selbst unter Beweis zu stellen, will der Neffe von König Artus sich mit dem Prüfer der Menschen messen: dem sagenumwobenen Grünen Ritter.",
+        "poster": "posters/poster_The_Green_Knight_2021.jpg",
+        "rating": "6.6/10",
+        "rating_val": 6.6
     },
     {
         "title": "The Grey - Unter Wölfen",
@@ -13945,6 +14920,16 @@
         "rating_val": 5.3
     },
     {
+        "title": "The Last Stand",
+        "year": "2013",
+        "genre": "Action, Krimi, Thriller",
+        "cast": "Arnold Schwarzenegger, Johnny Knoxville, Jaimie Alexander, Zach Gilford, Kristen DeVore Rakes",
+        "plot": "Sheriff Ray Owens, einst ein knallharter Cop aus Los Angeles, hat es in eine verschlafene Kleinstadt an der Grenze zu Mexiko verschlagen. Schon bald wird seine geballte Erfahrung gefordert, denn einem gewieften Drogengangster ist in Las Vegas die Flucht aus einem schwer bewachten Gefangenenkonvoi gelungen und er rast direkt auf Owens Bezirk zu - begleitet von seinen Spießgesellen. Owens will ihn keinesfalls über die Grenze lassen – auch wenn ihm nur ein kleines Grüppchen von Laien und Chaoten zur Seite steht.",
+        "poster": "posters/poster_The_Last_Stand_2013.jpg",
+        "rating": "6.1/10",
+        "rating_val": 6.1
+    },
+    {
         "title": "The Lost King",
         "year": "2022",
         "genre": "Komödie, Drama",
@@ -14033,6 +15018,16 @@
         "poster": "posters/poster_The_Pirates_of_Somalia_2017.jpg",
         "rating": "6.9/10",
         "rating_val": 6.9
+    },
+    {
+        "title": "Cold Prey 3 - The Beginning",
+        "year": "2011",
+        "genre": "Horror",
+        "cast": "Ida Marie Bakkerud, Julie Rusti, Kim S. Falck-Jørgensen, Pål Stokka, Arthur Berning",
+        "plot": "In den Siebzigern von seinem Vater im Keller der einsamen Wohnhütte missbraucht, von der Mutter im Stich gelassen, möchte er aus Missgunst Jugendliche töten, die all die Freiheiten, Freuden und den Spaß genießen können, die er niemals hatte. In den 80ern ist er für sich allein verantwortlich und lässt seiner Rache freien Lauf. Eine Gruppe von Jugendlichen macht Urlaub in den vereisten Bergen Norwegens. Doch sie rechnen nicht damit, dass in dem stillgelegten Hotel noch jemand wohnt. Der frühere Hotelmanager hatte einen Sohn. Dessen Mordgelüsten kommen die Jugendlichen gerade recht. Die Saga des Spitzhackenmörders nimmt hier ihren Anfang.",
+        "poster": "posters/poster_Cold_Prey_3_-_The_Beginning_2011.jpg",
+        "rating": "5.8/10",
+        "rating_val": 5.8
     },
     {
         "title": "The Replacement Killers - Die Ersatzkiller",
@@ -14325,6 +15320,16 @@
         "rating_val": 8.0
     },
     {
+        "title": "Underworld",
+        "year": "2003",
+        "genre": "Fantasy, Action, Thriller",
+        "cast": "Kate Beckinsale, Scott Speedman, Michael Sheen, Shane Brolly, Bill Nighy",
+        "plot": "Seit Jahrhunderten herrscht Krieg zwischen den Vampiren und den Werwölfen, Lycans genannt. Gegen den Willen des Vampir-Anführer Kraven findet die schöne Selene heraus, dass es die Werwölfe auf den unscheinbaren Menschen Michael abgesehen haben. Denn dieser trägt den ewigen Konflikt der beiden Parteien in sich. Als sich Michael nach dem Biss von Chef-Lycan Lucian allmählich in einen Werwolf verwandelt, ist das Liebespaar auf sich allein gestellt. Verzweifelt wendet sich Selene an Vampirgott Viktor. Ein fataler Fehler.",
+        "poster": "posters/poster_Underworld_2003.jpg",
+        "rating": "6.8/10",
+        "rating_val": 6.8
+    },
+    {
         "title": "Unheimliche Begegnung der dritten Art",
         "year": "1977",
         "genre": "Sci-Fi, Thriller",
@@ -14515,6 +15520,16 @@
         "rating_val": 7.1
     },
     {
+        "title": "Wind River",
+        "year": "2017",
+        "genre": "Krimi, Mystery, Drama",
+        "cast": "Jeremy Renner, Elizabeth Olsen, Gil Birmingham, Graham Greene, Jon Bernthal",
+        "plot": "Cory Lambert arbeitet für den United States Fish and Wildlife Service und macht vor allem Jagd auf Kojoten und andere Raubtiere im Indianer-Reservat Wind River. Den kürzlichen Tod seiner Teenager-Tochter hat er noch nicht überwunden, da stolpert er in der Wildnis über die Leiche einer vergewaltigten und erfrorenen Jugendlichen. Um den Täter zu fassen, wird die noch sehr junge FBI-Agentin Jane Banner auf den Fall angesetzt. Weil sie sich in dem rauen Gelände und mit den schwierigen Wetterverhältnissen vor Ort allerdings nicht auskennt, bittet sie Cory um Hilfe bei ihren Ermittlungen und gemeinsam brechen sie auf ins Ungewisse.",
+        "poster": "posters/poster_Wind_River_2017.jpg",
+        "rating": "7.4/10",
+        "rating_val": 7.4
+    },
+    {
         "title": "Wings of Freedom - Auf den Schwingen der Freiheit",
         "year": "2016",
         "genre": "Drama, Historie, Kriegsfilm",
@@ -14645,314 +15660,274 @@
         "rating_val": 6.6
     },
     {
-        "title": "8 Blickwinkel",
-        "year": "2008",
-        "genre": "Drama, Action, Thriller, Krimi",
-        "cast": "Dennis Quaid, Matthew Fox, Forest Whitaker, Sigourney Weaver, William Hurt",
-        "plot": "Bei einem Gipfeltreffen im spanischen Salamanca hat US-Präsident Ashton mit Staatsmännern aus aller Welt ein bahnbrechendes Bündnis im Kampf gegen den Terror geschlossen. Doch als er seine Rede hält, wird er erschossen. Sofort machen sich die beiden Secret Service Agenten Thomas Barnes und Kent Taylor auf die Suche nach dem Attentäter. Und schnell zeigt sich, dass dieses Attentat nur der Anfang war. Ein Wettlauf gegen die Zeit beginnt, in dem auch der Tourist Howard Lewis, der das Attentat mit seiner Videokamera gefilmt hat, und die amerikanische Fernsehproduzentin Rex Brooks, die für die Live-Übertragung der Rede verantwortlich war, eine Rolle spielen.",
-        "poster": "posters/poster_8_Blickwinkel_2008.jpg",
-        "rating": "6.4/10",
-        "rating_val": 6.4
-    },
-    {
-        "title": "Alibi.com",
-        "year": "2017",
-        "genre": "Komödie, Familie",
-        "cast": "Philippe Lacheau, Élodie Fontan, Julien Arruti, Tarek Boudali, Nathalie Baye",
-        "plot": "Alibi.com nennt sich die Firma, die Grégory Van Huffel gegründet hat und zusammen mit seinem Geschäftspartner Augustin und seinem neusten Angestellten Mehdi betreibt. Die Geschäftsidee ist dabei folgende: Immer wenn andere Menschen sich in eine brenzlige Situation gebracht haben und zur Rechtfertigung gegenüber anderen eine plausible Ausrede brauchen, wo sie während ihrer Abwesenheit waren und was sie getan haben, denken Greg und Co. sich ein Alibi für ihre Kunden aus. Bisher war seine Firma für Greg ein äußerst einträgliches Geschäftsmodell. Kompliziert wird sein Job für ihn erst, als er sich in Florence Martin verliebt. Sie kann Lügner und Betrüger nicht ausstehen – was Greg dazu bringt, die wahre Natur seines Berufs vor ihr zu verbergen. Es kommt jedoch noch schlimmer …",
-        "poster": "posters/poster_Alibi.com_2017.jpg",
-        "rating": "6.5/10",
-        "rating_val": 6.5
-    },
-    {
-        "title": "American Night",
-        "year": "2021",
-        "genre": "Action, Thriller, Krimi",
-        "cast": "Jonathan Rhys Meyers, Paz Vega, Emile Hirsch, Michael Madsen, Jeremy Piven",
-        "plot": "Der Kunsthändler John Kaplan (Jonathan Rhys Meyers) und der skrupellose Kopf der New Yorker Mafia Michael Rubino (Emile Hirsch) führen einen Kampf um Geld, Kunst, Macht und Liebe. Denn beiden Männer haben ein Bild von Andy Warhol ins Auge gefasst: John möchte das Gemälde für seine neu eröffnete Galerie, Michael hingegen ist trotz seines Gangster-Lebens ein Kunstliebhaber und will das Bild für seine private Sammlung bekommen. Doch John und Michael sind nicht die einzigen zwielichtigen Gestalten, die hinter dem Bild her sind. Auch die Museumskuratorin Sarah (Paz Vega) sowie der Stuntman Vincent (Jeremy Piven) sind hinter dem Kunstwerk her...",
-        "poster": "posters/poster_American_Night_2021.jpg",
-        "rating": "4.1/10",
-        "rating_val": 4.1
-    },
-    {
-        "title": "Amistad - Das Sklavenschiff",
-        "year": "1997",
-        "genre": "Drama, Historie, Mystery",
-        "cast": "Morgan Freeman, Nigel Hawthorne, Anthony Hopkins, Djimon Hounsou, Matthew McConaughey",
-        "plot": "Sklavenhändler entführen aus der britischen Kolonie Sierra Leone eine Gruppe von Afrikanern. Die Sklaven wehren sich, indem sie das Sklavenschiff entführen. Sie werden jedoch auf dem Ozean von einem amerikanischen Schiff aufgebracht und nach Amerika transportiert. Dort angekommen, werden die Afrikaner verhaftet und vor Gericht gestellt. Dabei beanspruchen unterschiedliche Parteien das Schiff und die Sklaven als ihr Eigentum. Der Prozess entwickelt sich dadurch zu einem absurden Gezerre um Macht und Besitz, bei dem es nicht mehr um das Schicksal der Menschen geht, bis ein Rechtsanwalt alles daran setzt, die Rechte der Afrikaner zu wahren. Der Film wurde auf der Grundlage einer wahren Begebenheit gedreht.",
-        "poster": "posters/poster_Amistad_-_Das_Sklavenschiff_1997.jpg",
-        "rating": "7.0/10",
-        "rating_val": 7.0
-    },
-    {
-        "title": "Blendende Weihnachten",
-        "year": "2006",
-        "genre": "Komödie, Familie",
-        "cast": "Danny DeVito, Matthew Broderick, Kristin Davis, Kristin Chenoweth, Alia Shawkat",
-        "plot": "Wenn man in dem beschaulichen Provinznest Cloverdale in New England von “Mr. Christmas” spricht, kann nur Doktor Steve Finch gemeint sein. Seit Jahren zieht der Familienvater im letzten Monat des Jahres ein straffes Weihnachtsprogramm durch: basteln, singen, backen, Schlittenfahrten. Steve hat nicht nur das am schönsten geschmückte Haus, er ist auch hoch geschätzter Experte für alle Fragen rund um das Fest der Liebe. Doch eines Tages zieht der frustrierte Buddy Hall ins Nachbarhaus ein, der sich in den Kopf gesetzt hat, “Mr. Christmas” vom Thron zu stoßen. Er will sein Haus mit so vielen Lichterketten schmücken, dass man es vom Weltall aus sehen kann. Doch Steve gibt sich nicht kampflos geschlagen und rüstet ebenfalls auf.",
-        "poster": "posters/poster_Blendende_Weihnachten_2006.jpg",
-        "rating": "5.6/10",
-        "rating_val": 5.6
-    },
-    {
-        "title": "Bulletproof Monk - Der kugelsichere Mönch",
-        "year": "2003",
-        "genre": "Action, Komödie, Fantasy",
-        "cast": "Chow Yun-Fat, Seann William Scott, Jaime King, Karel Roden, Victoria Smurfit",
-        "plot": "Der titelgebende Martial-Arts-Meister und Zen-Buddhist erkennt widerwillig im gerissenen Taschendieb Kar seinen Nachfolger an. Der sympathische Kleinganove soll in Zukunft an seiner Statt jene mysteriöse Schriftrolle hüten, die dem Besitzer unbeschränkte Macht und Unsterblichkeit gewährt. Und so beginnt ein intensives Training auf die ehrenvolle Aufgabe. Zunächst gilt es aber, sich der heimtückischen Attacken des Alt-Nazis Struker zu erwehren, der seit 60 Jahren versucht, das wertvolle Pergament in seine Hände zu bekommen.",
-        "poster": "posters/poster_Bulletproof_Monk_-_Der_kugelsichere_Mönch_2003.jpg",
-        "rating": "5.5/10",
-        "rating_val": 5.5
-    },
-    {
-        "title": "Der kleine Lord",
-        "year": "1980",
-        "genre": "Familie, Drama, TV-Film",
-        "cast": "Rick Schroder, Alec Guinness, Eric Porter, Colin Blakely, Connie Booth",
-        "plot": "Der siebenjährige Cedric Errol lebt mit seiner amerikanischen Mutter in sehr bescheidenen Verhältnissen. Eines Tages taucht ein Mann auf und erklärt, dass Cedric der einzige Erbe des Titels und Vermögens seines Großvaters ist. Cedric soll den Titel Lord Fauntleroy erhalten und im Schloss des Großvaters leben und erzogen werden.",
-        "poster": "posters/poster_Der_kleine_Lord_1980.jpg",
-        "rating": "7.4/10",
-        "rating_val": 7.4
-    },
-    {
-        "title": "Der Rausch",
-        "year": "2020",
-        "genre": "Komödie, Drama",
-        "cast": "Mads Mikkelsen, Thomas Bo Larsen, Magnus Millang, Lars Ranthe, Maria Bonnevie",
-        "plot": "Früher war Martin Lehrer aus Leidenschaft – heute sind nicht nur die Schüler von seinem fehlenden Enthusiasmus gelangweilt, auch in Martins Ehe ist die Luft raus. Seinen drei Freunden, die am selben Gymnasium unterrichten, geht es nicht viel besser. Bei einer angeheiterten Geburtstagsrunde diskutieren sie die Theorie eines norwegischen Philosophen: Nach dieser ist ein Mensch nur mit einem erhöhten Alkoholgehalt im Blut zu Bestleistungen fähig. Solch eine gewagte These muss überprüft werden. Die vier beschließen den Selbsttest zu machen und während der Arbeit einen bestimmten Pegel zu halten. Soll nicht sogar Churchill den Zweiten Weltkrieg in einem Alkoholrausch gewonnen haben? Mit neuem Antrieb stürzen sie sich in ihre geheime wissenschaftliche Studie. Die Wirkung lässt nicht lange auf sich warten …",
-        "poster": "posters/poster_Der_Rausch_2020.jpg",
-        "rating": "7.6/10",
-        "rating_val": 7.6
-    },
-    {
-        "title": "Die Hochzeit meines besten Freundes",
-        "year": "1997",
-        "genre": "Komödie, Liebesfilm",
-        "cast": "Julia Roberts, Dermot Mulroney, Cameron Diaz, Rupert Everett, Philip Bosco",
-        "plot": "Die Restaurantkritikerin Julianne hat dem Sportreporter Michael die ewige Treue geschworen – als beste Freundin wohlgemerkt. Sie ist sicher, dass sie, wenn überhaupt, nur einander heiraten werden. Entsprechend fühlt sich Julianne vor den Kopf geschlagen, als Michael sie aus heiterem Himmel zu seiner Hochzeit mit der Millionenerbin Kimmy einlädt. Für Julianne steht fest: Die Nebenbuhlerin muss aus dem Feld geschlagen werden – koste es, was es wolle. Dabei schreckt Julianne vor nichts zurück: Hinterlist, Lügen und E-Mail-Betrug sollen sie ans Ziel ihrer heimlichen Träume führen. Und tatsächlich: Kurz vor der Hochzeit scheint Michael langsam weich zu werden …",
-        "poster": "posters/poster_Die_Hochzeit_meines_besten_Freundes_1997.jpg",
-        "rating": "6.6/10",
-        "rating_val": 6.6
-    },
-    {
-        "title": "Elektra",
-        "year": "2005",
-        "genre": "Action, Fantasy, Abenteuer",
-        "cast": "Jennifer Garner, Goran Višnjić, Will Yun Lee, Cary-Hiroyuki Tagawa, Terence Stamp",
-        "plot": "Sie ist schnell, durchtrainiert, perfekt - Elektra ist nach ihrem Beinahe-Tod in \"Daredevil\" nach wie vor die beste Auftragsmörderin der Welt. Man vergleicht sie mit einem tödlichen Phantom und keine kann so elegant mit Messern umgehen wie sie. Doch als Elektra die 13-jährige Abby und deren Vater Mark töten soll, bringt sie es nicht übers Herz, beschützt die beiden sogar vor einen Anschlag des dunklen Geheimbunds \"The Hand\". Ein gnadenloser Krieg zwischen Gut und Böse beginnt, bei dem Elektra all ihr Können und Wissen auf eine Karte setzen muss, um Mark und Abby zu retten...",
-        "poster": "posters/poster_Elektra_2005.jpg",
-        "rating": "5.0/10",
-        "rating_val": 5.0
-    },
-    {
-        "title": "Escape Plan 2 - Hades",
-        "year": "2018",
-        "genre": "Action, Thriller, Krimi, Mystery, Science Fiction",
-        "cast": "Sylvester Stallone, Dave Bautista, Jesse Metcalfe, 50 Cent, 黄晓明",
-        "plot": "Ray Breslin und sein Team sind darauf spezialisiert, selbst aus den sichersten Gefängnissen der Welt Menschen zu befreien. Doch dann wird Breslins bester Agent Shu Ren entführt und in einem High-Tech-Gefängnis eingesperrt, das so modern ist, wie kein anderer Knast zuvor. Für Breslin scheint es keine Möglichkeit zu geben, seinen Mitarbeiter zu befreien, zumal das Gefängnis sogar stetig seine Form verändert, es also keinerlei Plan gibt. Doch gemeinsam mit unter anderem Tech-Experte Hush ist Breslin wild entschlossen, trotzdem einen Weg zu finden...",
-        "poster": "posters/poster_Escape_Plan_2_-_Hades_2018.jpg",
-        "rating": "5.2/10",
-        "rating_val": 5.2
-    },
-    {
-        "title": "Fargo",
-        "year": "1996",
-        "genre": "Krimi, Drama, Thriller",
-        "cast": "Frances McDormand, William H. Macy, Steve Buscemi, Peter Stormare, Harve Presnell",
-        "plot": "Es könnte der Plan zum perfekten Verbrechen sein: Der abgebrannte Autoverkäufer Jerry Lundegaard engagiert zwei Galgenvögel, die seine Ehefrau entführen und vom ebenso reichen wie geizigen Schwiegervater ein Lösegeld erpressen sollen. Doch die beiden Schmalspur-Gangster, der eine ein hypernervöses Wrack, der andere ein schweigsamer Psychopath, gehen derart stümperhaft zu Werke, daß mit einemmal drei Menschen tot in der verschneiten Einöde Minnesotas liegen. Ein Fall für Marge Gunderson. Die hochschwangere Polizistin nimmt die Spur auf – Blutstropfen für Blutstropfen.",
-        "poster": "posters/poster_Fargo_1996.jpg",
-        "rating": "7.8/10",
-        "rating_val": 7.8
-    },
-    {
-        "title": "Genie und Schnauze",
-        "year": "1988",
-        "genre": "Komödie, Krimi",
-        "cast": "Michael Caine, Ben Kingsley, Jeffrey Jones, Lysette Anthony, Nigel Davenport",
-        "plot": "Sherlock Holmes hat es nie gegeben. Dr. Watson ist in Wirklichkeit das Superhirn und präsentiert den drittklassigen Schauspieler, Trinker und Schürzenjäger Reginald Kincaid der Öffentlichkeit als Sherlock Holmes. Als Watson seinen Strohmann nach einem seiner Exzesse entläßt, muß er feststellen, daß an der Wahrheit kein Interesse besteht und niemand dem “Assistenten” Watson einen Fall anvertrauen will. Kincaid wird reaktiviert und steht mehr oder weniger zufällig bei der Wiederbeschaffung gestohlener 5-Pfund-Druckplatten seinen Mann, mit denen Bösewicht Moriarty die britische Wirtschaft in den Ruin treiben will.",
-        "poster": "posters/poster_Genie_und_Schnauze_1988.jpg",
+        "title": "A Working Man",
+        "year": "2025",
+        "genre": "Action, Krimi, Thriller",
+        "cast": "Jason Statham, Jason Flemyng, Merab Ninidze, Maximilian Osinski, Cokey Falkow",
+        "plot": "Levon Cade hat eine erfolgreiche Militärkarriere im Bereich Geheimoperationen hinter sich gelassen, um ein einfaches Leben als Arbeiter auf dem Bau zu führen. Als jedoch die Tochter seines Vorgesetzten, die für ihn wie eine Tochter ist, von einem Menschenhändlerring entführt wird, zieht er noch einmal in den Kampf. Bei seiner Suche stößt er auf eine Welt voller Korruption, die selbst seine schlimmsten Vorstellungen übertrifft.",
+        "poster": "posters/poster_A_Working_Man_2025.jpg",
         "rating": "6.7/10",
         "rating_val": 6.7
     },
     {
-        "title": "Jane Got a Gun",
-        "year": "2015",
-        "genre": "Western, Action, Drama",
-        "cast": "Natalie Portman, Joel Edgerton, Ewan McGregor, Noah Emmerich, Boyd Holbrook",
-        "plot": "Jane ist mit einem der übelsten Gangster der Stadt verheiratet. Als dieser sich dazu entschließt, sich gegen seine eigene Bande zu stellen, wird er schnell zum Ziel und bei einem Angriff der ehemaligen, von dem skrupellosen Colin McCann angeführten, Kumpanen schwer verletzt. Der Ehemann schafft es trotz acht Kugeln in seinem Körper, nach Hause zurückzukehren, wo er Jane warnen kann, dass seine ehemalige Bande nun nach ihm suchen wird. Jane wird klar, dass nur sie die Familie und das Grundstück noch beschützen kann und so holt sie sich Hilfe bei ihrem alten Freund Dan Frost, einem Revolverhelden, der den Anführer der Gangster-Bande schon länger ins Auge gefasst hat. Darüber hinaus ist er heimlich in Jane verliebt und sieht so seine Chance gekommen. Jane und Dan entdecken alte Gefühle füreinander, als sie sich der Bande entgegenstellen und um ihr eigenes Überleben kämpfen.",
-        "poster": "posters/poster_Jane_Got_a_Gun_2015.jpg",
-        "rating": "5.8/10",
-        "rating_val": 5.8
-    },
-    {
-        "title": "Kandahar",
-        "year": "2023",
-        "genre": "Action, Thriller, Kriegsfilm",
-        "cast": "Gerard Butler, Navid Negahban, Travis Fimmel, Ali Fazal, Bahador Foladi",
-        "plot": "Tom Harris ist ein im Nahen Osten stationierter Undercover-CIA-Agent. Als ein Geheimdienstleck seine geheime Mission aufdeckt, müssen Harris und sein Übersetzer sich durch die Wüste kämpfen, um Kandahar in Afghanistan zu erreichen und den Elite-Spezialeinheiten, die sie jagen, zu entkommen.",
-        "poster": "posters/poster_Kandahar_2023.jpg",
+        "title": "Charles Dickens - Der Mann der Weihnachten erfand",
+        "year": "2017",
+        "genre": "Drama, Historie, Komödie, Familie",
+        "cast": "Dan Stevens, Christopher Plummer, Jonathan Pryce, Justin Edwards, Morfydd Clark",
+        "plot": "Im Oktober des Jahres 1843 leidet Autor Charles Dickens stark unter den Misserfolgen seiner letzten drei Bücher. Von seinen Verlegern im Stich gelassen, beschließt er auf eigene Faust einen Roman zu veröffentlichen, von dem er hofft, dass er seine Familie finanziell über Wasser halten und seiner ins Stocken geratenen Karriere wieder neuen Schwung verleihen kann. Dabei heraus kommt „A Christmas Carol“ („Eine Weihnachtsgeschichte“) – eine der berühmtesten Erzählungen des legendären Schriftstellers.",
+        "poster": "posters/poster_Charles_Dickens_-_Der_Mann_der_Weihnachten_erfand_2017.jpg",
         "rating": "6.8/10",
         "rating_val": 6.8
     },
     {
-        "title": "Kompromat - Die Macht der Lüge",
-        "year": "2022",
-        "genre": "Thriller, Drama",
-        "cast": "Gilles Lellouche, Joanna Kulig, Michail Witaljewitsch Gorewoi, Sasha Piltsin, Михаил Сафронов",
-        "plot": "Sibirien, 2017: Der französische Diplomat Mathieu wird Opfer einer Intrige des russischen Geheimdienstes. Vor den Augen seiner Tochter wird er verhaftet, inhaftiert und isoliert. Ohne Chance auf Verteidigung oder Hilfe von der eigenen Regierung bleibt dem Staatsfeind nur ein Ausweg, wenn er seine Familie je wiedersehen will: die abenteuerliche Flucht auf eigene Faust durch ein fremdes und feindseliges Land.",
-        "poster": "posters/poster_Kompromat_-_Die_Macht_der_Lüge_2022.jpg",
-        "rating": "6.3/10",
-        "rating_val": 6.3
-    },
-    {
-        "title": "Mord im Orientexpress",
-        "year": "1974",
-        "genre": "Drama, Thriller, Mystery",
-        "cast": "Albert Finney, Lauren Bacall, Martin Balsam, Ingrid Bergman, Sean Connery",
-        "plot": "Hercule Poirot steht vor einem seiner schwierigsten Fälle: In einer eisigen Winternacht muss der Orient Express aus Istanbul anhalten und am nächsten Morgen wird die Leiche eines, mit 12 Messerstichen ermordeten, reichen Geschäftsmannes aufgefunden.",
-        "poster": "posters/poster_Mord_im_Orientexpress_1974.jpg",
+        "title": "Der einzige Zeuge",
+        "year": "1985",
+        "genre": "Krimi, Drama, Liebesfilm, Thriller",
+        "cast": "Harrison Ford, Kelly McGillis, Josef Sommer, Lukas Haas, Jan Rubeš",
+        "plot": "Inspector John Book soll einen Mord an einem Kollegen aufklären, den ein zehnjähriger Amish- Junge als einziger Zeuge beobachtet hat. Als er merkt, daß er mit dem Fall in ein Wespennest sticht, taucht Book in der ländlichen Sicherheit der Amish-People unter. Diese Nachfahren einer altdeutschen Reformsekte führen ein Leben mit den Mitteln des 16. Jahrhunderts, was für den überzeugten Großstädter Book eine Menge neuer Erfahrungen bedeutet. Auf die Bösewichte braucht er trotzdem nicht lange zu warten.",
+        "poster": "posters/poster_Der_einzige_Zeuge_1985.jpg",
         "rating": "7.1/10",
         "rating_val": 7.1
     },
     {
-        "title": "Pakt der Rache",
-        "year": "2011",
-        "genre": "Action, Drama, Thriller",
-        "cast": "Nicolas Cage, January Jones, Guy Pearce, Harold Perrineau, Jennifer Carpenter",
-        "plot": "Will Gerards geordnetes Leben als Highschool-Lehrer nimmt ein plötzliches Ende, als seine Frau Laura Opfer eines brutalen Überfalls wird. Vom Täter fehlt jede Spur. Im Krankenhaus trifft Will auf einen unbekannten, der sich selbst Simon nennt. Von Verzweiflung und Rachedurst getrieben lässt sich Will auf ein unmoralisches Angebot ein: Der zwielichtige Simon ist Mitglied einer Untergrundorganisation, die sich auf Selbstjustiz spezialisiert hat. Er verspricht Will Gerechtigkeit, indem er Lauras Angreifer findet und tötet. Doch alles im Leben hat seinen Preis. Die Gegenleistung, die Simon einfordert, bringt nicht nur Laura, sondern auch Will selbst in Lebensgefahr.",
-        "poster": "posters/poster_Pakt_der_Rache_2011.jpg",
-        "rating": "5.9/10",
-        "rating_val": 5.9
+        "title": "Der Hobbit - Eine unerwartete Reise",
+        "year": "2012",
+        "genre": "Abenteuer, Fantasy, Action",
+        "cast": "Martin Freeman, Ian McKellen, Richard Armitage, James Nesbitt, Ken Stott",
+        "plot": "Mit dem Besuch des weisen Zauberers Gandalf verändert sich das beschauliche Leben eines Hobbits für immer. Zögerlich schließt sich der unbedarfte Bilbo mit Gandalf der Mission von 13 mutigen Zwergen an, die ihr Reich zurückerobern wollen. Der furchterregende Drache Smaug, der es einst zerstörte, ist seit Jahrzehnten verschwunden. Doch ist das Monstrum wirklich tot und können die großen Gefahren dieses Abenteuers, darunter gefräßige Orks und wütende Trolle, wirklich von so kleinen Helden überwunden werden?",
+        "poster": "posters/poster_Der_Hobbit_-_Eine_unerwartete_Reise_2012.jpg",
+        "rating": "7.4/10",
+        "rating_val": 7.4
     },
     {
-        "title": "Running Man",
-        "year": "1987",
-        "genre": "Action, Thriller, Science Fiction",
-        "cast": "Arnold Schwarzenegger, Richard Dawson, María Conchita Alonso, Yaphet Kotto, Jim Brown",
-        "plot": "Im Jahr 2011 trägt die populärste Fernsehshow den Namen 'Running Man'. Straffällig gewordene Männer und Frauen müssen ihren Preis gegenüber der Gesellschaft mit dem Tod bezahlen. Dieser Tod tritt allerdings erst nach einem brutalen, aussichtslosen Kampf gegen die Gladiatoren von 'Running Man' ein. Jetzt allerdings befindet sich Ben Richards in der Todeszone und der Moderator der Show, Damon Killian  sollte niemals Richards letzte Worte vergessen: Ich komme wieder.",
-        "poster": "posters/poster_Running_Man_1987.jpg",
-        "rating": "6.5/10",
-        "rating_val": 6.5
+        "title": "Der Hobbit - Smaugs Einöde",
+        "year": "2013",
+        "genre": "Fantasy, Abenteuer, Action",
+        "cast": "Ian McKellen, Martin Freeman, Richard Armitage, Benedict Cumberbatch, Orlando Bloom",
+        "plot": "Die Gefährten haben den Beginn ihrer unerwarteten Reise überstanden – auf ihrem Weg gen Osten begegnen sie nun dem Hautwechsler Beorn und im trügerischen Düsterwald einem Schwarm gigantischer Spinnen. Sie werden von den gefährlichen Waldelben gefangen genommen, können aber entkommen, erreichen Seestadt und schließlich den Einsamen Berg selbst, wo sie sich der größten Gefahr stellen müssen – einem Monster, das alle bisherigen an Grässlichkeit übertrifft: Der Drache Smaug fordert nicht nur den ganzen Mut der Gefährten heraus, sondern stellt auch ihre Freundschaft auf eine harte Probe – bis sie sich schließlich fragen müssen, ob ihre Reise überhaupt noch einen Sinn ergibt.",
+        "poster": "posters/poster_Der_Hobbit_-_Smaugs_Einöde_2013.jpg",
+        "rating": "7.6/10",
+        "rating_val": 7.6
     },
     {
-        "title": "Schnappt Shorty",
-        "year": "1995",
-        "genre": "Komödie, Thriller, Krimi",
-        "cast": "John Travolta, Gene Hackman, Rene Russo, Danny DeVito, Dennis Farina",
-        "plot": "Chili Palmer ist nicht nur ein recht „erfolgreicher“ Schuldeneintreiber, sondern auch ein Kinofan, und das von ganzem Herzen. Da trifft es sich doch gut, dass sein neuester Auftrag ihn nach Hollywood, das Herz der amerikanischen Filmproduktion, verschlägt. Schon bald erkennt Chili eine Sache ganz deutlich: Zwischen seinem Job und dem eines Filmproduzenten gibt es gar nicht so viele Unterschiede.",
-        "poster": "posters/poster_Schnappt_Shorty_1995.jpg",
-        "rating": "6.5/10",
-        "rating_val": 6.5
+        "title": "Der Hobbit - Die Schlacht der fünf Heere",
+        "year": "2014",
+        "genre": "Action, Abenteuer, Fantasy",
+        "cast": "Ian McKellen, Martin Freeman, Richard Armitage, Orlando Bloom, Evangeline Lilly",
+        "plot": "Nachdem Smaug besiegt wurde, sitzt Thorin endlich auf dem Zwergenthron und hat sein Reich wieder. Doch der Kampf gegen den Drachen hat Spuren hinterlassen. Die Stadt Esgaroth wurde zerstört, ihre Bewohner sind nun obdachlos. Doch Thorin verweigert jede Hilfe genauso wie die Rückgabe von Teilen des Schatzes, die Smaug gestohlen hatte. Hobbit Bilbo versucht zwischen Zwergen, Elben und den Bürgern zu vermitteln, doch vergeblich. Thorin hält ihn für einen Verräter und auch Gandalf kann nichts mehr ausrichten. Es wird aufgerüstet und bald stehen sich die Armeen gegenüber…",
+        "poster": "posters/poster_Der_Hobbit_-_Die_Schlacht_der_fünf_Heere_2014.jpg",
+        "rating": "7.3/10",
+        "rating_val": 7.3
     },
     {
-        "title": "Shorta - Das Gesetz der Straße",
-        "year": "2020",
-        "genre": "Action, Krimi",
-        "cast": "Jacob Lohmann, Simon Sears, Tarek Zayat, Issa Khattab, Abdelmalik Dhaflaoui",
-        "plot": "Als der 19-jährige Talib in Polizeigewahrsam seinen tödlichen Verletzungen erliegt, brechen in einem dänischen Vorstadt-Ghetto Proteste aus. In dieser heiklen Situation werden zwei ungleiche Cops auf Streife geschickt. Als sie einen jungen Unruhestifter festnehmen, kommt es zur Eskalation. Zusammen mit ihrem Gefangenen fliehen sie durch das urbane Labyrinth, das sich immer mehr in einen Bürgerkriegsschauplatz verwandelt.",
-        "poster": "posters/poster_Shorta_-_Das_Gesetz_der_Straße_2020.jpg",
-        "rating": "6.3/10",
-        "rating_val": 6.3
+        "title": "Die drei Musketiere - D'Artagnan",
+        "year": "2023",
+        "genre": "Abenteuer, Action, Drama, Historie",
+        "cast": "François Civil, Vincent Cassel, Romain Duris, Pio Marmaï, Eva Green",
+        "plot": "D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.",
+        "poster": "posters/poster_Die_drei_Musketiere_-_D_Artagnan_2023.jpg",
+        "rating": "6.9/10",
+        "rating_val": 6.9
     },
     {
-        "title": "Snatch - Schweine und Diamanten",
-        "year": "2000",
-        "genre": "Krimi, Komödie",
-        "cast": "Jason Statham, Alan Ford, Stephen Graham, Brad Pitt, Dennis Farina",
-        "plot": "Diamantendieb und -kurier Franky Four Fingers, der im Auftrag des New Yorker Gangsters Avi in Antwerpen einen großen Stein geraubt hat, macht auf seinem Weg zurück nach Manhattan in London halt. Er soll kleinere Steine bei Avis Cousin Doug „The Head“ und anderen Juwelieren in Hatton Garden abliefern. Zur gleichen Zeit steht der unerfahrene Boxpromoter Turkish mit seinem Geschäftspartner Tommy vor seinem ersten großen Kampf, den er mit dem uneingeschränkten Boss der Gegend, dem Boxpromoter und Schweinefarmbesitzer Brick Top auf die Beine stellt. Ungünstig ist allerdings, dass Turkishs Kämpfer Gorgeous George zuvor bei einem anderen Fight von dem irischen Zigeuner Mickey O'Neil auf die Bretter geschickt worden ist. Kurzerhand setzen Turkish und Tommy ihren neuen Schützling Mickey für den abgekarteten Kampf ein ...",
-        "poster": "posters/poster_Snatch_-_Schweine_und_Diamanten_2000.jpg",
+        "title": "Die drei Musketiere - D'Artagnan",
+        "year": "2023",
+        "genre": "Abenteuer, Action, Drama, Historie",
+        "cast": "François Civil, Vincent Cassel, Romain Duris, Pio Marmaï, Eva Green",
+        "plot": "D’Artagnan zieht es aus der verschlafenen Gascogne im Südwesten Frankreichs ins Herz der Nation: Paris. Dort schließ er sich den drei Musketieren des Königs – Athos, Porthos und Aramis – an. Das Quartett will in einem von Religionskriegen gespaltenen und von der britischen Armee bedrohten Land für Stabilität Sorgen. Zunächst müssen sie aber gegen Kardinal Richelieu, der dunkle Pläne hegt, in die Spur gehen. Wirklich ernst wird es für D’Artagnan jedoch erst, als er sein Herz an Constance Bonacieux, eine Vertraute der Königin, verliert. Denn die Nähe zu ihr lässt auch zwielichtige Gestalten auf ihn aufmerksam werden. So hat es Milady de Winter schnell auf sein Leben abgesehen.",
+        "poster": "posters/poster_Die_drei_Musketiere_-_D_Artagnan_2023.jpg",
+        "rating": "6.9/10",
+        "rating_val": 6.9
+    },
+    {
+        "title": "Doctor Strange - In the Multiverse of Madness",
+        "year": "2022",
+        "genre": "Horror, Fantasy",
+        "cast": "Benedict Cumberbatch, Elizabeth Olsen, Xochitl Gomez, Benedict Wong, Rachel McAdams",
+        "plot": "Dr. Stephen Strange stellt sich den Konsequenzen seines Handelns, nachdem er einen verbotenen Zauber angewandt hat, um ein Portal zum Multiversum zu öffnen. Begleitet von der America Chavez begibt er sich auf eine Reise durch die Dimensionen. Die junge Superheldin kann Portale zu den Multiversen öffnen, während sie von bösen Mächten verfolgt wird. Während sich Dr. Strange an Wanda Maximoff wendet, wird ihm bewusst, dass sie nicht auf seiner Seite steht, um America vor den Kreaturen zu schützen.",
+        "poster": "posters/poster_Doctor_Strange_in_the_Multiverse_of_Madness_2022.jpg",
+        "rating": "7.2/10",
+        "rating_val": 7.2
+    },
+    {
+        "title": "Edward mit den Scherenhänden",
+        "year": "1990",
+        "genre": "Fantasy, Drama, Liebesfilm",
+        "cast": "Johnny Depp, Winona Ryder, Dianne Wiest, Anthony Michael Hall, Kathy Baker",
+        "plot": "Ein Erfinder hat den großen Traum, einen künstlichen Menschen zu erschaffen. Doch bevor er Edward vollenden kann, stirbt er an einem Herzinfarkt. Von da an lebt Edward alleine in dessen Schloss weiter und hat dort Scheren wo eigentlich seine Hände sein sollten. Eines Tages macht sein Leben eine Wendung, als die Avon-Vertreterin Peg das Schloss betritt. Peg nimmt den Jungen mit den Scherenhänden bei sich auf. Schnell macht er sich bei der Nachbarschaft beliebt, indem er ihre Büsche in den unterschiedlichsten Formen trimmt und später sogar die Haare der Frauen des Vorortes frisiert. Als er sich allerdings in Pegs Tochter Kim verliebt und deren Freund Edward für seine Zwecke missbraucht, droht diese anfängliche Begeisterung langsam zu schwinden.",
+        "poster": "posters/poster_Edward_mit_den_Scherenhänden_1990.jpg",
+        "rating": "7.7/10",
+        "rating_val": 7.7
+    },
+    {
+        "title": "Fluch der Karibik",
+        "year": "2003",
+        "genre": "Abenteuer, Fantasy, Action",
+        "cast": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley, Jack Davenport",
+        "plot": "Im 17.Jahrhundert sucht der Pirat Jack Sparrow nach einem sagenumwobenen Schatz in der Karibik, als ihn das Schicksal mit dem jungen Will Turner zusammenführt, der aus anderen Gründen auf derselben Fährte ist: nämlich den berüchtigten Captain Barbossa und seine Crew abzufangen, die Wills große Liebe Elizabeth, die Tochter des britischen Gouverneurs entführt haben. Doch Barbossa umhüllt selbst ein düsteres Geheimnis: er und seine Männer sind verflucht und das Licht des Mondes bringt ihre Existenz zum Vorschein: sie sind wie lebende Skelette, monströs und tödlich. Um den Fluch zu brechen, brauchen sie Elizabeth als Opfer. Ein Wettrennen zur Insel des Todes beginnt...",
+        "poster": "posters/poster_Fluch_der_Karibik_2003.jpg",
         "rating": "7.8/10",
         "rating_val": 7.8
     },
     {
-        "title": "Sterne",
-        "year": "1959",
-        "genre": "Drama, Kriegsfilm",
-        "cast": "Sasha Krusharska, Jürgen Frohriep, Erik S. Klein, Stefan Pejchev, Georgi Naumov",
-        "plot": "Griechische Juden haben 1943 auf ihrer Deportation ins Todeslager Auschwitz einen dreitägigen Aufenthalt in einer kleinen bulgarischen Stadt. Hier begegnet der Wehrmachts-Unteroffizier Walter  der Jüdin Ruth. Sie bittet ihn um Hilfe für eine gebärende Mitgefangene. Er hilft so gut er kann, verliebt sich in Ruth und sie sich in ihn. Durch diese Liebe beginnt sich der ehemalige Kunststudent, der als Soldat seine Pflicht erfüllen wollte, zu wandeln. Er gerät in Konflikt mit seinem Vorgesetzten und Freund Kurt, der sehr überheblich und brutal ist. Zunächst lehnt Walter es ab, den im Wehrmachtsstützpunkt arbeitenden bulgarischen Widerstandskämpfern zu helfen. Aber dann ...",
-        "poster": "posters/poster_Sterne_1959.jpg",
-        "rating": "7.5/10",
-        "rating_val": 7.5
-    },
-    {
-        "title": "The Florida Project",
-        "year": "2017",
-        "genre": "Drama",
-        "cast": "Brooklynn Prince, Bria Vinaite, Willem Dafoe, Christopher Rivera, Valeria Cotto",
-        "plot": "Die sechsjährige Moonee (Brooklynn Prince) lebt unweit des Disneylands im sonnigen Orlando. Gemeinsam mit ihren Freunden Scooty (Christopher Rivera) und Jancey (Valeria Cotto) streicht sie durch die Gegend und treibt allerhand Schabernack. Das Trio erbettelt sich Geld für Eis, legen die Stromversorgung eines gesamten Wohnblockes lahm und klettern in leerstehende Häuser. Als Moonees Mutter die Miete für ihre kleine Wohnung nicht mehr zahlen kann und auch die tatkräftige Unterstützung der Tochter durch den Verkauf von billigen Parfüm-Kopien nicht mehr hilft, entscheidet sie sich zu einem drastischen Schritt...",
-        "poster": "posters/poster_The_Florida_Project_2017.jpg",
+        "title": "Pirates of the Caribbean - Fluch der Karibik 2",
+        "year": "2006",
+        "genre": "Abenteuer, Fantasy, Action",
+        "cast": "Johnny Depp, Orlando Bloom, Keira Knightley, Stellan Skarsgård, Bill Nighy",
+        "plot": "Diesmal sieht sich Captain Jack Sparrow, gerade erst dem Fluch der Black Pearl entkommen, mit einem neuen lebensbedrohenden Abenteuer konfrontiert: Denn Jack steht in lebenslanger Schuld bei Davy Jones, dem legendären Kapitän des Flying Dutchman und Herrscher über die Tiefen des Ozeans. Wenn er keinen Weg findet, den Bann zu brechen, ist er zu einem höllischen Leben nach dem Tode in ewiger Finsternis verdammt. Doch damit nicht genug: Jacks ausgesprochen existenzielle Probleme erweisen sich obendrein als Hindernis für die bevorstehende Hochzeit seiner Freunde Will Turner und Elizabeth Swann, die wider Willen in die andauernden Eskapaden des Kapitäns verwickelt werden. Das Abenteuer kann beginnen ...",
+        "poster": "posters/poster_Pirates_of_the_Caribbean_-_Fluch_der_Karibik_2_2006.jpg",
         "rating": "7.4/10",
         "rating_val": 7.4
     },
     {
-        "title": "The Foreigner",
-        "year": "2017",
-        "genre": "Action, Thriller, Krimi",
-        "cast": "Pierce Brosnan, Jackie Chan, Rory Fleck-Byrne, Ray Fearon, Charlie Murphy",
-        "plot": "Der demütige Restaurantbesitzer Quan hat in seiner Vergangenheit schon unendliches Leid ertragen müssen und hoffte in London alles hinter sich gelassen zu haben. Mit seiner Tochter Fan führt er ein glückliches Leben … bis diese bei einem Bombenattentat irischer Terroristen ums Leben kommt. Weil die Polizei auch nach Wochen noch keine Ermittlungsergebnisse präsentieren kann, macht er sich selbst auf die Suche nach Antworten und stößt dabei auf den irischen Politiker Liam Hennessy. Der hat dem Terror zwar öffentlich abgeschworen, doch Quan ist überzeugt, dass Hennessy die Namen der Täter kennt. Deswegen nimmt er ihn ins Visier und bedroht ihn selbst mit einer Bombe, um an die Namen der Täter zu kommen. Weil er nun selbst in Gefahr schwebt, schlägt Hennessy zurück. Es kommt zum erbitterten Duell der beiden Männer …",
-        "poster": "posters/poster_The_Foreigner_2017.jpg",
+        "title": "Pirates of the Caribbean - Am Ende der Welt",
+        "year": "2007",
+        "genre": "Abenteuer, Fantasy, Action",
+        "cast": "Johnny Depp, Geoffrey Rush, Orlando Bloom, Keira Knightley, Jack Davenport",
+        "plot": "Seitdem Cutler Beckett und die East India Trading Company das Herz von Davy Jones besitzen und so über ihn und seine scheinbar unbesiegbare Flying Dutchman gebieten, machen sie erbarmungslos Jagd auf sämtliche Piraten und deren Sympathisanten. Der hohe Rat der Piraten will sich versammeln, um über eine Taktik zu beratschlagen, doch dafür müssen alle Piratenfürsten anwesend sein - auch Captain Jack Sparrow, der nun in der Unterwelt weilt. Seine Freunde Will Turner und Elizabeth Swann machen sich mit Hilfe des wieder zum Leben erweckten Kapitän Barbossa auf die Suche nach dem Ende der Welt, an dem sich der Eingang zur Unterwelt befindet. Dafür benötigen sie die Hilfe des unbarmherzigen Piratenfürsten Sao Feng...",
+        "poster": "posters/poster_Pirates_of_the_Caribbean_-_Am_Ende_der_Welt_2007.jpg",
+        "rating": "7.3/10",
+        "rating_val": 7.3
+    },
+    {
+        "title": "Green Lantern",
+        "year": "2011",
+        "genre": "Abenteuer, Action, Thriller, Science Fiction",
+        "cast": "Ryan Reynolds, Blake Lively, Peter Sarsgaard, Mark Strong, Tim Robbins",
+        "plot": "Im ebenso endlosen wie geheimnisvollen Universum existiert seit Jahrhunderten eine kleine, aber schlagkräftige Einheit, die für Gesetz und Gerechtigkeit eintritt: das Green Lantern Corps. Jeder Green Lantern wird durch einen Eid auf die Bruderschaft der Krieger dazu verpflichtet, in der Galaxis Recht und Ordnung aufrecht zu erhalten, alle tragen einen Ring, der ihnen übernatürliche Kräfte verleiht. Doch als ein neuer Gegner namens Parallax das Gleichgewicht der Kräfte im Universum auszuhebeln droht, liegt das Schicksal der Green Lanterns und der gesamten Erde in der Hand ihres jüngsten Rekruten: Er ist der erste Mensch, der in ihre Reihen aufgenommen wurde – Hal Jordan.",
+        "poster": "posters/poster_Green_Lantern_2011.jpg",
+        "rating": "5.2/10",
+        "rating_val": 5.2
+    },
+    {
+        "title": "Horton hört ein Hu!",
+        "year": "2008",
+        "genre": "Animation, Komödie, Familie, Abenteuer, Fantasy",
+        "cast": "Jim Carrey, Steve Carell, Carol Burnett, Will Arnett, Seth Rogen",
+        "plot": "Horton ist ein sympathischer, phantasievoller Elefant, auf den man sich verlassen kann. Er lebt im Dschungel von Nümpels und hört eines Tages den Hilferuf eines Staubkorns: es sind die Hus. Für Horton ist klar, er muss Hu-Heim und dessen winzig kleine Kreaturen trotz des Spottes und der bösen Streiche anderer Dschungelbewohner beschützen: denn ein Mensch ist ein Mensch wie klein er auch sei. Dabei muss er sich vor allem gegen das überfürsorgliche Känguru und den fiesen Adler Vlad durchsetzen; aber auch die anderen Bewohner des Dschungels sehen durch Hortons angebliche Verrücktheit ihre Gemeinschaft bedroht.",
+        "poster": "posters/poster_Horton_hört_ein_Hu__2008.jpg",
+        "rating": "6.5/10",
+        "rating_val": 6.5
+    },
+    {
+        "title": "Legende",
+        "year": "1985",
+        "genre": "Abenteuer, Fantasy",
+        "cast": "Tom Cruise, Mia Sara, Tim Curry, David Bennent, Alice Playten",
+        "plot": "Um die Welt in seine Gewalt zu bringen, will der Herr der Finsternis alle lebenden Einhörner umbringen. Denn erst, wenn das strahlende, positive Licht, das von den Einhörnern in die Welt gebracht wird, erlischt, kann die Dunkelheit um sich greifen und ihre Herrschaft beginnen. Um dies zu erreichen, sendet der Herr der Finsternis zahlreiche Kobolde in den magischen Wald, in dem die letzten Einhörner beheimatet sind. Durch eine List gelingt es ihnen, die arglose junge Prinzessin Lily in ihre Pläne einzubinden und eines der magischen Wesen zu töten. Das letzte lebende Einhorn und die Prinzessin selbst werden von den Kobolden gefangen genommen und zu ihrem Herren verschleppt. Als der Geliebte der Prinzessin, der Waldläufer Jack, davon erfährt, macht er sich auf den Weg seine Liebe und das Licht der Welt vor dem Bösen zu bewahren...",
+        "poster": "posters/poster_Legende_1985.jpg",
+        "rating": "6.2/10",
+        "rating_val": 6.2
+    },
+    {
+        "title": "Mufasa: Der König der Löwen",
+        "year": "2024",
+        "genre": "Abenteuer, Familie, Animation",
+        "cast": "Aaron Pierre, Kelvin Harrison, Jr., Tiffany Boone, Kagiso Lediga, Preston Nyman",
+        "plot": "Der verwaiste Mufasa ist verloren und allein, bis er auf Taka, den Erben einer königlichen Blutlinie, trifft. Dies ist der Beginn einer sagenhaften Reise, welche die Verbundenheit der beiden auf die Probe stellt, als sie sich einem tödlichen Feind gegenübersehen.",
+        "poster": "posters/poster_Mufasa__Der_König_der_Löwen_2024.jpg",
+        "rating": "7.3/10",
+        "rating_val": 7.3
+    },
+    {
+        "title": "Nobody 2",
+        "year": "2025",
+        "genre": "Action, Thriller",
+        "cast": "Bob Odenkirk, Connie Nielsen, John Ortiz, Colin Hanks, RZA",
+        "plot": "Vier Jahre nachdem er sich versehentlich mit der russischen Mafia angelegt hatte, arbeitet Hutch noch immer seinen Schuldenberg von 30 Millionen Dollar ab. Unzählige dreckige Jobs erledigt, zahllose Auftragsmorde vor sich: Ein Ende ist für den gestressten Killer nicht absehbar. Zunehmend leidet die Ehe mit seiner Frau Becca unter seinem zeitintensiven Job. Um mehr Zeit miteinander zu verbringen, machen sie einen Kurzurlaub mit ihren Kindern im Wild Bill’s Majestic Midway Wasserpark, wo Hutch schon als Kind glückliche Ferien verbrachte. Mit Hutchs Vater freuen sie sich auf eine entspannte Zeit in Plummerville. Doch eine Begegnung mit Vorstadtschlägern weckt die Aufmerksamkeit des korrupten Wasserparkbesitzers und seines zwielichtigen Sheriffs. Hutch steckt plötzlich in neuen Schwierigkeiten und trifft auf den härtesten Gangsterboss, dem er je gegenüberstand.",
+        "poster": "posters/poster_Nobody_2_2025.jpg",
         "rating": "7.0/10",
         "rating_val": 7.0
     },
     {
-        "title": "The Glass House",
-        "year": "2001",
-        "genre": "Drama, Thriller",
-        "cast": "Leelee Sobieski, Diane Lane, Stellan Skarsgård, Trevor Morgan, Chris Noth",
-        "plot": "Ruby lebt ein ganz normales Leben mit ihren Eltern und ihrem Bruder. Ihre Freizeit verbringt sie damit, Partys zu feiern und ihr Leben zu genießen. Als sie von einer Party zurückkommt, ändert sich ihr Leben jedoch schlagartig, denn ihre Eltern sind bei einem Autounfall verunglückt. Danach nimmt das benachbarte Ehepaar Glass sich der beiden Geschwister an. Die Kinder ziehen mit den neuen Vormündern nach Malibu in einen beeindruckenden Palast aus Glas und Stahl. Zunächst fühlen sich die Kinder bei den neuen Eltern recht wohl, doch mit der Zeit haben die beiden immer mehr Zweifel an den guten Absichten des Ehepaares Glass …",
-        "poster": "posters/poster_The_Glass_House_2001.jpg",
-        "rating": "6.0/10",
-        "rating_val": 6.0
-    },
-    {
-        "title": "The Green Knight",
-        "year": "2021",
-        "genre": "Abenteuer, Drama, Fantasy",
-        "cast": "Dev Patel, Alicia Vikander, Joel Edgerton, Sarita Choudhury, Sean Harris",
-        "plot": "Sir Gawain, Ritter der Tafelrunde, begibt sich auf die Reise seines Lebens. Um sich vor seiner Familie, seinem Volk und nicht zuletzt auch vor sich selbst unter Beweis zu stellen, will der Neffe von König Artus sich mit dem Prüfer der Menschen messen: dem sagenumwobenen Grünen Ritter.",
-        "poster": "posters/poster_The_Green_Knight_2021.jpg",
-        "rating": "6.6/10",
-        "rating_val": 6.6
-    },
-    {
-        "title": "The Last Stand",
-        "year": "2013",
-        "genre": "Action, Krimi, Thriller",
-        "cast": "Arnold Schwarzenegger, Johnny Knoxville, Jaimie Alexander, Zach Gilford, Kristen DeVore Rakes",
-        "plot": "Sheriff Ray Owens, einst ein knallharter Cop aus Los Angeles, hat es in eine verschlafene Kleinstadt an der Grenze zu Mexiko verschlagen. Schon bald wird seine geballte Erfahrung gefordert, denn einem gewieften Drogengangster ist in Las Vegas die Flucht aus einem schwer bewachten Gefangenenkonvoi gelungen und er rast direkt auf Owens Bezirk zu - begleitet von seinen Spießgesellen. Owens will ihn keinesfalls über die Grenze lassen – auch wenn ihm nur ein kleines Grüppchen von Laien und Chaoten zur Seite steht.",
-        "poster": "posters/poster_The_Last_Stand_2013.jpg",
-        "rating": "6.1/10",
-        "rating_val": 6.1
-    },
-    {
-        "title": "Cold Prey 3 - The Beginning",
+        "title": "Planet der Affen",
         "year": "2011",
-        "genre": "Horror",
-        "cast": "Ida Marie Bakkerud, Julie Rusti, Kim S. Falck-Jørgensen, Pål Stokka, Arthur Berning",
-        "plot": "In den Siebzigern von seinem Vater im Keller der einsamen Wohnhütte missbraucht, von der Mutter im Stich gelassen, möchte er aus Missgunst Jugendliche töten, die all die Freiheiten, Freuden und den Spaß genießen können, die er niemals hatte. In den 80ern ist er für sich allein verantwortlich und lässt seiner Rache freien Lauf. Eine Gruppe von Jugendlichen macht Urlaub in den vereisten Bergen Norwegens. Doch sie rechnen nicht damit, dass in dem stillgelegten Hotel noch jemand wohnt. Der frühere Hotelmanager hatte einen Sohn. Dessen Mordgelüsten kommen die Jugendlichen gerade recht. Die Saga des Spitzhackenmörders nimmt hier ihren Anfang.",
-        "poster": "posters/poster_Cold_Prey_3_-_The_Beginning_2011.jpg",
-        "rating": "5.8/10",
-        "rating_val": 5.8
+        "genre": "Science Fiction, Abenteuer, Drama, Action",
+        "cast": "Charlton Heston, Roddy McDowall, Kim Hunter, Maurice Evans, James Whitmore",
+        "plot": "Astronaut Taylor überlebt den Raum-Zeitsprung durch das All – 2000 Jahre in die Zukunft. Eine Notlandung verschlägt ihn auf einen entfernten Planeten, der von Affen regiert wird. Auf grausame Weise missbrauchen die herrschenden Affen eine primitive Menschenrasse für Experimente und zur Unterhaltung. Schon bald wird Taylor selbst zum Gejagten, seine einzige Hoffnung auf Rettung ist ein hilfsbereiter Schimpansen-Wissenschaftler.",
+        "poster": "posters/poster_Planet_der_Affen_2011.jpg",
+        "rating": "7.6/10",
+        "rating_val": 7.6
     },
     {
-        "title": "Underworld",
-        "year": "2003",
-        "genre": "Fantasy, Action, Thriller",
-        "cast": "Kate Beckinsale, Scott Speedman, Michael Sheen, Shane Brolly, Bill Nighy",
-        "plot": "Seit Jahrhunderten herrscht Krieg zwischen den Vampiren und den Werwölfen, Lycans genannt. Gegen den Willen des Vampir-Anführer Kraven findet die schöne Selene heraus, dass es die Werwölfe auf den unscheinbaren Menschen Michael abgesehen haben. Denn dieser trägt den ewigen Konflikt der beiden Parteien in sich. Als sich Michael nach dem Biss von Chef-Lycan Lucian allmählich in einen Werwolf verwandelt, ist das Liebespaar auf sich allein gestellt. Verzweifelt wendet sich Selene an Vampirgott Viktor. Ein fataler Fehler.",
-        "poster": "posters/poster_Underworld_2003.jpg",
-        "rating": "6.8/10",
-        "rating_val": 6.8
+        "title": "Planet der Affen - Revolution",
+        "year": "2014",
+        "genre": "Science Fiction, Action, Drama, Thriller",
+        "cast": "Andy Serkis, Jason Clarke, Toby Kebbell, Gary Oldman, Keri Russell",
+        "plot": "Nachdem durch die randalierenden und genetisch veränderten Affen und den ausgebrochenen Virus die Weltbevölkerung drastisch reduziert wurde, versuchen einige wenige Überlebende ihr Dasein in San Francisco zu fristen. Aber auch bei den Affen ergeben sich Probleme. Der Anführer Caesar muss seine Machtposition in den eigenen Rängen behaupten. Mittlerweile hat er selbst eine Frau und ein Baby. Seinen Artgenossen hat er mittlerweile beigebracht, sich mithilfe einer Zeichenspracheuntereinander zu verständigen. Alles deutet darauf hin, dass der Waffenstillstand zwischen Affen und den überlebenden Menschen nicht von Dauer sein wird. Bald schon wird sich entscheiden, welche der beiden Spezies die Erde in Zukunft dominieren wird.",
+        "poster": "posters/poster_Planet_der_Affen_-_Revolution_2014.jpg",
+        "rating": "7.3/10",
+        "rating_val": 7.3
     },
     {
-        "title": "Wind River",
+        "title": "Planet der Affen - Survival",
         "year": "2017",
-        "genre": "Krimi, Mystery, Drama",
-        "cast": "Jeremy Renner, Elizabeth Olsen, Gil Birmingham, Graham Greene, Jon Bernthal",
-        "plot": "Cory Lambert arbeitet für den United States Fish and Wildlife Service und macht vor allem Jagd auf Kojoten und andere Raubtiere im Indianer-Reservat Wind River. Den kürzlichen Tod seiner Teenager-Tochter hat er noch nicht überwunden, da stolpert er in der Wildnis über die Leiche einer vergewaltigten und erfrorenen Jugendlichen. Um den Täter zu fassen, wird die noch sehr junge FBI-Agentin Jane Banner auf den Fall angesetzt. Weil sie sich in dem rauen Gelände und mit den schwierigen Wetterverhältnissen vor Ort allerdings nicht auskennt, bittet sie Cory um Hilfe bei ihren Ermittlungen und gemeinsam brechen sie auf ins Ungewisse.",
-        "poster": "posters/poster_Wind_River_2017.jpg",
-        "rating": "7.4/10",
-        "rating_val": 7.4
+        "genre": "Drama, Science Fiction, Kriegsfilm",
+        "cast": "Andy Serkis, Woody Harrelson, Karin Konoval, Terry Notary, Steve Zahn",
+        "plot": "Der Krieg, den Koba mit den von der Seuche stark dezimierten Menschen angezettelt hat, ist in vollem Gange. Affen-Anführer Caesar geht es dabei gar nicht länger ums Gewinnen, er will lediglich einen Weg finden, wie er mit seinem Stamm in Frieden leben kann. Doch eine Spezialeinheit unter Führung des brutalen Colonel will Caesar um jeden Preis tot sehen und so werden im Urwald vor den Toren San Franciscos weiterhin blutige Gefechte ausgetragen, die in einem heimtückischen Anschlag auf das geheime Versteck der Affen gipfeln, das ein Verräter preisgegeben hat. Nun gärt in dem sonst friedliebenden Caesar das Bedürfnis nach Rache und mit seiner rechten Hand Rocket und einigen weiteren Getreuen macht er sich auf die beschwerliche Suche nach dem Colonel, fest entschlossen, keine Gnade mehr walten zu lassen.",
+        "poster": "posters/poster_Planet_der_Affen_-_Survival_2017.jpg",
+        "rating": "7.2/10",
+        "rating_val": 7.2
+    },
+    {
+        "title": "Planet der Affen: New Kingdom",
+        "year": "2024",
+        "genre": "Science Fiction, Abenteuer, Action",
+        "cast": "Owen Teague, Freya Allan, Kevin Durand, Peter Macon, William H. Macy",
+        "plot": "Etwa 300 Jahre nach der blutigen und verlustreichen Schlacht zwischen den von Caesar angeführten Affen und den Menschen unter Kommando des Colonels, haben sich in der Oase, in die Caesar seine Artgenossen einst geführt hat, mehrere Affengesellschaften parallel entwickelt. Die Menschen hingegen sind wieder Wilde geworden. Einige der Affenclans haben noch nie etwas von Caesar gehört. Andere wiederum nutzen dessen Legendenstatus aus, um seine Lehren zugunsten ehrgeiziger Ziele zu verdrehen. Vor diesem Hintergrund versklavt der Affenanführer Proximus Caesar andere Clans, um eine geheime, menschliche Technologie zu finden. Als der Schimpanse Noa mitansehen muss, wie seine Sippe entführt wird, begibt er sich zusammen mit dem menschlichen Mädchen Mae auf die Suche, um seine verschleppten Artgenossen zu finden und zu befreien...",
+        "poster": "posters/poster_Planet_der_Affen__New_Kingdom_2024.jpg",
+        "rating": "7.1/10",
+        "rating_val": 7.1
+    },
+    {
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "year": "2021",
+        "genre": "Action, Abenteuer, Fantasy",
+        "cast": "Simu Liu, Tony Leung Chiu-wai, Awkwafina, Ben Kingsley, 张梦儿",
+        "plot": "Shang-Chi wurde von der terroristischen Geheimorganisation der Ten Rings seit frühster Kindheit zum Killer ausgebildet. Trotz dieses intensiven Martial-Arts-Trainings hat der junge Mann aber versucht, sich ein normales Leben in San Francisco aufzubauen.  Doch als er gerade glaubt, sein früheres Leben vielleicht wirklich hinter sich gelassen zu haben, holt die Vergangenheit ihn wieder ein. Zusammen mit seiner alten Kindheitsfreundin Katy wird er von seinem kriminellen Vater Wenwu in eine Welt gezogen, in der niemand irgendjemanden mit Samthandschuhen anfasst. Nur die zehn Ringe des Mandarin können das Blatt im Kampf gegen das Böse vielleicht noch wenden.",
+        "poster": "posters/poster_Shang-Chi_and_the_Legend_of_the_Ten_Rings_2021.jpg",
+        "rating": "7.5/10",
+        "rating_val": 7.5
+    },
+    {
+        "title": "Terminator 2 - Tag der Abrechnung",
+        "year": "1991",
+        "genre": "Action, Thriller, Science Fiction",
+        "cast": "Arnold Schwarzenegger, Linda Hamilton, Edward Furlong, Robert Patrick, Earl Boen",
+        "plot": "Zehn Jahre nach der Terrorherrschaft des ersten Terminators kehrt ein neuer Killer-Cyborg auf die Erde zurück. Der Auftrag des T-1000 lautet: John Connor muss sterben. Der zwölfjährige John ist der einzige, der eines fernen Tages die Menschheit vor der Übernahme der Weltherrschaft durch die Maschinen retten könnte. Doch die Rebellen aus der Zukunft sind wachsam. Zum Schutz für John entsenden sie einen umprogrammierten Terminator der alten Generation, den T-800, auf die Erde.",
+        "poster": "posters/poster_Terminator_2_-_Tag_der_Abrechnung_1991.jpg",
+        "rating": "8.1/10",
+        "rating_val": 8.1
+    },
+    {
+        "title": "Terminator 3 - Rebellion der Maschinen",
+        "year": "2003",
+        "genre": "Action, Thriller, Science Fiction",
+        "cast": "Arnold Schwarzenegger, Nick Stahl, Claire Danes, Kristanna Loken, Earl Boen",
+        "plot": "Zehn Jahre sind vergangen, seit mit John Connors Hilfe der Weltuntergang verhindert und die Menschheit vor ihrer Zerstörung bewahrt wurde. Heute, im Alter von 25 Jahren, führt Connor ein Leben am Rande der Gesellschaft – ohne Wohnung, Kreditkarten, Mobiltelefon und ohne Job. Es gibt keinen Hinweis auf seine Existenz: er hinterlässt keine Spur, die von “Skynet” verfolgt werden könnte – dem hoch entwickelten Netzwerk von Maschinen, die einst versucht hatten, ihn zu töten und Krieg gegen die Menschen zu führen. Bis der T-X aus dem Schatten der Zukunft tritt: Skynets bisher am höchsten entwickelte, tödliche Menschmaschine, ebenso sexy wie gnadenlos. T-X soll vollenden, was ihr Vorgänger T-1000 nicht ausführen konnte. Connors einzige Überlebenschance ist der Terminator, die legendäre, einst auf ihn angesetzte Killermaschine. Ihnen bleibt nur wenig Zeit: Sie müssen T-X ausschalten – sonst ist die Apokalypse nicht aufzuhalten.",
+        "poster": "posters/poster_Terminator_3_-_Rebellion_der_Maschinen_2003.jpg",
+        "rating": "6.2/10",
+        "rating_val": 6.2
+    },
+    {
+        "title": "The Factory",
+        "year": "2012",
+        "genre": "Krimi, Thriller, Mystery",
+        "cast": "John Cusack, Jennifer Carpenter, Mae Whitman, Dallas Roberts, Sonya Walger",
+        "plot": "Die Statistik besagt, falls eine Entführung nicht innerhalb der ersten 48 Stunden aufgeklärt wird, bleibt das Opfer für immer verschwunden. Für den Polizisten Mike Fletcher wird diese Statistik zur bitteren Wahrheit: Seine eigene Tochter wird entführt! Damit beginnt die Jagd nach einem wahnsinnigen Serientäter, bei der Fletcher mit Hilfe seiner Kollegin Kelsey Walker alle Regeln und Gesetze bricht -- während seine Tochter sich einem grausamen Schicksal in einem Kellerverlies stellen muss.",
+        "poster": "posters/poster_The_Factory_2012.jpg",
+        "rating": "5.6/10",
+        "rating_val": 5.6
+    },
+    {
+        "title": "Titanic",
+        "year": "1997",
+        "genre": "Drama, Liebesfilm",
+        "cast": "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates, Frances Fisher",
+        "plot": "Atlantischer Ozean, 1912: Auf der Jungfernfahrt der Titanic trifft der mittellose Maler Jack Dawson auf die schöne, aber unglückliche Erste-Klasse-Passagierin Rose DeWitt Bukater. Rose reist gemeinsam mit ihrer Mutter und ihrem versnobten Verlobten Cal, den sie aus finanziellen Gründen heiraten soll, aber nicht liebt. Als Jack beobachtet, wie Rose über die Reling klettert, um sich ins Meer zu stürzen, und ihren sicheren Tod abwenden kann, beginnt für beide eine Liebesgeschichte über Klassengrenzen hinweg. Gemeinsam mit Jack entdeckt Rose das ausgelassene Leben der einfachen Passagiere unter Deck der Titanic und das wahre Wesen der Liebe. Währenddessen steuert die als unsinkbar geltende Titanic geradewegs auf einen Eisberg zu.",
+        "poster": "posters/poster_Titanic_1997.jpg",
+        "rating": "7.9/10",
+        "rating_val": 7.9
     }
 ];
 
