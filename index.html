@@ -13,19 +13,13 @@
             --text-grey: #b3b3b3;
         }
 
-        * { 
-            box-sizing: border-box; 
-            -webkit-tap-highlight-color: transparent;
-        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
         body {
             background-color: var(--netflix-black);
             color: var(--text-white);
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            overflow-x: hidden;
+            margin: 0; padding: 0; width: 100%; overflow-x: hidden;
         }
 
         header {
@@ -34,18 +28,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+            position: sticky; top: 0; z-index: 100;
         }
 
-        h1 {
-            color: var(--netflix-red);
-            margin: 0;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
+        h1 { color: var(--netflix-red); margin: 0; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
 
         .controls {
             padding: 10px 15px;
@@ -55,122 +41,91 @@
             background-color: var(--netflix-dark-grey);
         }
 
-        .control-group {
-            display: flex;
-            flex-direction: column;
-        }
+        .control-group { display: flex; flex-direction: column; }
+        .control-group.full-width { grid-column: span 2; }
 
-        .control-group.full-width {
-            grid-column: span 2;
-        }
-
-        label {
-            font-size: 0.7rem;
-            color: var(--text-grey);
-            margin-bottom: 2px;
-        }
+        label { font-size: 0.7rem; color: var(--text-grey); margin-bottom: 2px; }
 
         input, select {
-            width: 100%;
-            background: #333;
-            border: 1px solid #444;
-            color: white;
-            padding: 8px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            outline: none;
+            width: 100%; background: #333; border: 1px solid #444;
+            color: white; padding: 8px; border-radius: 4px; font-size: 0.85rem; outline: none;
         }
 
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-            gap: 12px 8px;
-            padding: 15px;
-            width: 100%;
-            max-width: 100vw;
+            gap: 12px 8px; padding: 15px; width: 100%;
         }
 
-        .movie-card {
-            display: flex;
-            flex-direction: column;
-            cursor: pointer;
-        }
+        .movie-card { display: flex; flex-direction: column; cursor: pointer; }
 
         .poster-container {
-            width: 100%;
-            aspect-ratio: 2/3;
-            border-radius: 4px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            background: #222;
+            width: 100%; aspect-ratio: 2/3; border-radius: 4px;
+            overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); background: #222;
         }
 
-        .poster-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+        .poster-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-        .movie-info {
-            padding: 5px 2px;
-        }
-
-        .movie-title {
-            font-size: 0.75rem;
-            font-weight: bold;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-bottom: 2px;
-        }
-
-        .movie-meta {
-            font-size: 0.65rem;
-            color: #46d369;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
+        .movie-info { padding: 5px 2px; }
+        .movie-title { font-size: 0.75rem; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .movie-meta { font-size: 0.65rem; color: #46d369; display: flex; align-items: center; gap: 4px; }
 
         .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
+            display: none; position: fixed; z-index: 1000;
             left: 0; top: 0; width: 100%; height: 100%;
-            background-color: rgba(0,0,0,0.95);
-            overflow-y: auto;
+            background-color: rgba(0,0,0,0.95); overflow-y: auto;
         }
 
-        .modal-content {
-            background-color: var(--netflix-dark-grey);
-            margin: 0 auto;
-            width: 100%;
-            min-height: 100vh;
-            position: relative;
-        }
-
+        .modal-content { background-color: var(--netflix-dark-grey); width: 100%; min-height: 100vh; position: relative; }
         .modal-header img { width: 100%; display: block; }
-
         .modal-body { padding: 20px; }
 
         .close {
-            position: absolute;
-            right: 15px; top: 15px;
-            font-size: 30px;
-            background: rgba(0,0,0,0.6);
-            width: 35px; height: 35px;
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            z-index: 10;
+            position: absolute; right: 15px; top: 15px; font-size: 30px;
+            background: rgba(0,0,0,0.6); width: 35px; height: 35px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10;
         }
 
         .play-btn {
             background-color: white; color: black; padding: 12px;
             border-radius: 4px; border: none; font-weight: bold;
-            display: block; width: 100%; text-align: center; margin-bottom: 20px;
-            cursor: pointer; font-size: 1rem;
+            display: block; width: 100%; text-align: center; margin-bottom: 20px; font-size: 1rem;
         }
+
+        /* Back to Top Button - Kleinere Version */
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 20px; /* Etwas näher am Rand */
+            right: 20px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--netflix-red);
+            color: white;
+            cursor: pointer;
+            width: 40px;  /* Vorher 50px */
+            height: 40px; /* Vorher 50px */
+            border-radius: 50%;
+            font-size: 18px; /* Vorher 24px */
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            transition: opacity 0.3s, transform 0.2s;
+            display: none; 
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8; /* Leicht transparent, damit er dezenter wirkt */
+        }
+
+        #backToTop:hover {
+            opacity: 1; /* Volle Sichtbarkeit beim Drüberfahren */
+            background-color: #ff0a16;
+        }
+
+        #backToTop:active {
+            transform: scale(0.9);
+        }
+
 
         @media (max-width: 380px) {
             .video-grid { grid-template-columns: repeat(3, 1fr); padding: 8px; gap: 8px 5px; }
@@ -306,6 +261,8 @@
 
 <div class="video-grid" id="filmList"></div>
 
+<button onclick="scrollToTop()" id="backToTop" title="Nach oben">↑</button>
+
 <div id="movieModal" class="modal" onclick="closeModal()">
     <div class="modal-content">
         <span class="close">&times;</span>
@@ -320,6 +277,19 @@
     const listContainer = document.getElementById('filmList');
     const modal = document.getElementById('movieModal');
     const videoPlayer = document.getElementById('globalVideoPlayer');
+
+    window.onscroll = function() {
+        const btn = document.getElementById("backToTop");
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            btn.style.display = "flex";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
     function renderList(films) {
         listContainer.innerHTML = films.map((f) => `
@@ -347,9 +317,7 @@
             <div class="modal-body">
                 <h2 style="margin-top:0">${f.title} (${f.year})</h2>
                 <div style="margin-bottom: 15px; color: #46d369; font-weight: bold;">Rating: ${f.rating}</div>
-                
                 <button onclick="event.stopPropagation(); startVideo('${f.file_name}')" class="play-btn">▶ Abspielen</button>
-                
                 <p style="color: var(--text-grey); font-size: 0.95rem; line-height: 1.6;">${f.plot}</p>
                 <div style="font-size: 0.8rem; color: #777; margin-top: 20px;">
                     <strong>Genre:</strong> ${f.genre}<br>
@@ -366,25 +334,8 @@
         videoPlayer.src = decodeURIComponent(url);
         videoPlayer.style.display = "block";
         videoPlayer.controls = true;
-
-        if (videoPlayer.requestFullscreen) {
-            videoPlayer.requestFullscreen();
-        } else if (videoPlayer.webkitRequestFullscreen) {
-            videoPlayer.webkitRequestFullscreen();
-        }
-
+        if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
         videoPlayer.play();
-
-        const exitHandler = () => {
-            if (!document.fullscreenElement && !document.webkitIsFullScreen) {
-                videoPlayer.pause();
-                videoPlayer.style.display = "none";
-                videoPlayer.src = "";
-            }
-        };
-
-        document.addEventListener('fullscreenchange', exitHandler);
-        document.addEventListener('webkitfullscreenchange', exitHandler);
     }
 
     function closeModal() {
