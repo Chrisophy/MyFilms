@@ -60,6 +60,10 @@
             flex-direction: column;
         }
 
+        .control-group.full-width {
+            grid-column: span 2;
+        }
+
         label {
             font-size: 0.7rem;
             color: var(--text-grey);
@@ -183,18 +187,12 @@
 
 <div class="controls">
     <div class="control-group">
-        <label>Suche</label>
+        <label>Titel Suche</label>
         <input type="text" id="titleSearch" onkeyup="applyFilters()" placeholder="Titel...">
     </div>
     <div class="control-group">
-        <label>Sortierung</label>
-        <select id="sortOrder" onchange="applyFilters()">
-            <option value="title">A-Z</option>
-            <option value="rating_desc">Top Rating</option>
-            <option value="rating_asc">Schlechteste</option>
-            <option value="year_desc">Neueste zuerst</option>
-            <option value="year_asc">Älteste zuerst</option>
-        </select>
+        <label>Schauspieler</label>
+        <input type="text" id="castSearch" onkeyup="applyFilters()" placeholder="Name...">
     </div>
     <div class="control-group">
         <label>Genre</label>
@@ -302,6 +300,16 @@
 <option value="1956">1956</option>
         </select>
     </div>
+    <div class="control-group full-width">
+        <label>Sortierung</label>
+        <select id="sortOrder" onchange="applyFilters()">
+            <option value="title">A-Z</option>
+            <option value="rating_desc">Top Rating</option>
+            <option value="rating_asc">Schlechteste</option>
+            <option value="year_desc">Neueste zuerst</option>
+            <option value="year_asc">Älteste zuerst</option>
+        </select>
+    </div>
 </div>
 
 <div class="video-grid" id="filmList"></div>
@@ -362,7 +370,7 @@
     }
 
     function startVideo(url) {
-        closeModal(); // Schließt die Info-Ansicht sofort
+        closeModal(); 
         videoPlayer.src = decodeURIComponent(url);
         videoPlayer.style.display = "block";
         videoPlayer.controls = true;
@@ -394,12 +402,14 @@
 
     function applyFilters() {
         const t = document.getElementById('titleSearch').value.toLowerCase();
+        const c = document.getElementById('castSearch').value.toLowerCase();
         const g = document.getElementById('genreFilter').value.toLowerCase();
         const y = document.getElementById('yearFilter').value;
         const s = document.getElementById('sortOrder').value;
         
         let filtered = allFilms.filter(f => {
             return (!t || f.title.toLowerCase().includes(t)) &&
+                   (!c || f.cast.toLowerCase().includes(c)) &&
                    (!g || f.genre.toLowerCase().includes(g)) &&
                    (!y || f.year === y);
         });
