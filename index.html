@@ -330,6 +330,18 @@
         `;
         modal.style.display = "block";
         document.body.style.overflow = "hidden";
+    
+    
+        // NEU: Der App sagen, dass das Modal offen ist
+        if(window.Android) window.Android.setModalStatus(true);
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    
+        // NEU: Der App sagen, dass das Modal zu ist
+        if(window.Android) window.Android.setModalStatus(false);
     }
 
     function startVideo(url) {
