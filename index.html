@@ -334,12 +334,19 @@
 
     function startVideo(url) {
         closeModal(); 
-        videoPlayer.src = decodeURIComponent(url);
-        videoPlayer.style.display = "block";
-        videoPlayer.controls = true;
-        if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
-        videoPlayer.play();
+
+        const fullUrl = decodeURIComponent(url);
+        if (window.Android && window.Android.playVideo) {
+            window.Android.playVideo(fullUrl);
+        } else {
+            videoPlayer.src = fullUrl;
+            videoPlayer.style.display = "block";
+            videoPlayer.controls = true;
+            if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
+            videoPlayer.play();
+        }
     }
+
 
     function closeModal() {
         modal.style.display = "none";
