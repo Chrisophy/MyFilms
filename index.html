@@ -310,27 +310,62 @@
         `).join('');
     }
 
-    function openDetails(title) {
-        const f = allFilms.find(x => x.title === title);
-        const modalData = document.getElementById('modalData');
-        modalData.innerHTML = `
-            <div class="modal-header">
-                <img src="${f.poster}" alt="Backdrop">
+function openDetails(title) {
+    // Den Film anhand des Titels finden
+    const f = allFilms.find(x => x.title === title);
+    if (!f) return; // Sicherheitshalber abbrechen, falls nichts gefunden wurde
+
+    const modalData = document.getElementById('modalData');
+    
+    // Die Basis-URL deines CX Explorer Servers
+    const baseUrl = "http://127.0.0.1:28861/SMB/1/Filme/";
+    
+    // URL zusammenbauen und sicherstellen, dass Sonderzeichen korrekt kodiert sind
+    let completeUrl = f.file_name.startsWith('http') ? f.file_name : baseUrl + f.file_name;
+    
+    // Wir kodieren die URL für den Button-Click, um Fehler durch ' oder " zu vermeiden
+    const safeUrl = encodeURIComponent(completeUrl);
+
+    modalData.innerHTML = `
+        <div class="modal-header">
+            <img src="${f.poster}" alt="Backdrop">
+        </div>
+        <div class="modal-body">
+            <h2 style="margin-top:0">${f.title.replace(/'/g, "&apos;")} (${f.year})</h2>
+            <div style="margin-bottom: 15px; color: #46d369; font-weight: bold;">Rating: ${f.rating}</div>
+            
+            <button onclick="event.stopPropagation(); startVideo(decodeURIComponent('${safeUrl}'))" class="play-btn">▶ Abspielen</button>
+            
+            <p style="color: var(--text-grey); font-size: 0.95rem; line-height: 1.6;">${f.plot}</p>
+            <div style="font-size: 0.8rem; color: #777; margin-top: 20px;">
+                <strong>Genre:</strong> ${f.genre}<br>
+                <strong>Cast:</strong> ${f.cast}
             </div>
-            <div class="modal-body">
-                <h2 style="margin-top:0">${f.title} (${f.year})</h2>
-                <div style="margin-bottom: 15px; color: #46d369; font-weight: bold;">Rating: ${f.rating}</div>
-                <button onclick="event.stopPropagation(); startVideo('${f.file_name}')" class="play-btn">▶ Abspielen</button>
-                <p style="color: var(--text-grey); font-size: 0.95rem; line-height: 1.6;">${f.plot}</p>
-                <div style="font-size: 0.8rem; color: #777; margin-top: 20px;">
-                    <strong>Genre:</strong> ${f.genre}<br>
-                    <strong>Cast:</strong> ${f.cast}
-                </div>
-            </div>
-        `;
-        modal.style.display = "block";
-        document.body.style.overflow = "hidden";
+        </div>
+    `;
+    
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+}
+
+    // Die startVideo Funktion muss dazu passend so aussehen:
+    function startVideo(url) {
+        closeModal(); 
+
+        if (window.Android && window.Android.playVideo) {
+            // Sendet die URL an Sketchware -> VLC
+            window.Android.playVideo(url);
+        } else {
+            // Fallback für normalen Browser
+            const videoPlayer = document.getElementById('globalVideoPlayer');
+            videoPlayer.src = url;
+            videoPlayer.style.display = "block";
+            videoPlayer.controls = true;
+            if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
+            videoPlayer.play();
+        }
     }
+
 
     function startVideo(url) {
         closeModal(); 
