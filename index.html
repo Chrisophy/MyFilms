@@ -185,7 +185,8 @@
         <label>Jahr filtern</label>
         <select id="yearFilter" onchange="applyFilters()">
             <option value="">Alle</option>
-            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+<option value="2025">2025</option>
 <option value="2024">2024</option>
 <option value="2023">2023</option>
 <option value="2022">2022</option>
@@ -328,21 +329,26 @@
                 </div>
             </div>
         `;
-        modal.style.display = "block";
+        document.getElementById('movieModal').style.display = "block";
         document.body.style.overflow = "hidden";
-    
-    
-        // NEU: Der App sagen, dass das Modal offen ist
-        if(window.Android) window.Android.setModalStatus(true);
-    }
+
+        // App mitteilen, dass offen
+        if (window.Android && window.Android.setModalStatus) {
+            window.Android.setModalStatus(true);
+        }
+    } // <-- Hier fehlte die Klammer!
 
     function closeModal() {
-        modal.style.display = "none";
+        // ID korrigiert auf movieModal
+        document.getElementById('movieModal').style.display = "none";
         document.body.style.overflow = "auto";
-    
-        // NEU: Der App sagen, dass das Modal zu ist
-        if(window.Android) window.Android.setModalStatus(false);
+
+        // App mitteilen, dass zu
+        if (window.Android && window.Android.setModalStatus) {
+            window.Android.setModalStatus(false);
+        }
     }
+
 
     function startVideo(url) {
         closeModal(); 
@@ -357,11 +363,6 @@
             if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
             videoPlayer.play();
         }
-    }
-
-    function closeModal() {
-        modal.style.display = "none";
-        document.body.style.overflow = "auto";
     }
 
     function applyFilters() {
